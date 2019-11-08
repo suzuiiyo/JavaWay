@@ -1,0 +1,28 @@
+{
+    "configurations": [
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GameLauncher",
+            "request": "launch",
+            "mainClass": "GameLauncher"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercise1b",
+            "request": "launch",
+            "mainClass": "Exercise1b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Exercise2b",
+            "request": "launch",
+            "mainClass": "Exercise2b"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - PhraseOMatic",
+            "request": "launch",
+            "mainClass": "PhraseOMatic"
+        }
+    ]
+}
