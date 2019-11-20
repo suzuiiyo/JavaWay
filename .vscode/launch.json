@@ -2,6 +2,40 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SimpleDotComTestDrive",
+            "request": "launch",
+            "mainClass": "SimpleDotComTestDrive",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Puzzle4",
+            "request": "launch",
+            "mainClass": "Puzzle4",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ClockTestDrive",
+            "request": "launch",
+            "mainClass": "ClockTestDrive",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GoodDogTestDrive",
+            "request": "launch",
+            "mainClass": "GoodDogTestDrive",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DogTestDrive",
+            "request": "launch",
+            "mainClass": "DogTestDrive"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GameLauncher",
             "request": "launch",
             "mainClass": "GameLauncher"
