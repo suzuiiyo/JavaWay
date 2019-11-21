@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DotComBust",
+            "request": "launch",
+            "mainClass": "DotComBust",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SimpleDotComTestDrive",
             "request": "launch",
             "mainClass": "SimpleDotComTestDrive",
