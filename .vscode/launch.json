@@ -2,6 +2,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SimpleGui3C",
+            "request": "launch",
+            "mainClass": "SimpleGui3C",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyPicture",
+            "request": "launch",
+            "mainClass": "MyPicture",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyDrawPanel",
+            "request": "launch",
+            "mainClass": "MyDrawPanel",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SimpleGui1B",
+            "request": "launch",
+            "mainClass": "SimpleGui1B",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SimpleGui1",
+            "request": "launch",
+            "mainClass": "SimpleGui1",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MiniMiniMusicApp",
+            "request": "launch",
+            "mainClass": "MiniMiniMusicApp",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MusicTest1",
+            "request": "launch",
+            "mainClass": "MusicTest1",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticSuper",
+            "request": "launch",
+            "mainClass": "StaticSuper",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticTests",
+            "request": "launch",
+            "mainClass": "StaticTests",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Overloads",
+            "request": "launch",
+            "mainClass": "Overloads",
+            "projectName": "JavaWay_7c04f386"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DotComBust",
             "request": "launch",
             "mainClass": "DotComBust",
