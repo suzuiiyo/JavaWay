@@ -2,6 +2,44 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DailyAdviceClient",
+            "request": "launch",
+            "mainClass": "DailyAdviceClient",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GoodDogTestDrive",
+            "request": "launch",
+            "mainClass": "GoodDogTestDrive",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticTry",
+            "request": "launch",
+            "mainClass": "StaticTry"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - StaticTests",
+            "request": "launch",
+            "mainClass": "StaticTests"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SimpleGui3C",
+            "request": "launch",
+            "mainClass": "SimpleGui3C"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SimpleGui1B",
+            "request": "launch",
+            "mainClass": "SimpleGui1B"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SimpleGui3C",
             "request": "launch",
             "mainClass": "SimpleGui3C",
