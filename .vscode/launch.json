@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Runnian",
+            "request": "launch",
+            "mainClass": "Runnian",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InPut",
+            "request": "launch",
+            "mainClass": "InPut",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestKg2",
             "request": "launch",
             "mainClass": "TestKg2",
