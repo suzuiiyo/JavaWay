@@ -12,7 +12,7 @@ public class SimpleGui3C implements ActionListener{
         frame = new JFrame();
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 
-        JButton button = new JButton("按E换色");
+        JButton button = new JButton("��E��ɫ");
         button.addActionListener(this);
 
         MyDrawPanel drawPanel = new MyDrawPanel();
