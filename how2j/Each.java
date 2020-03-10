@@ -41,7 +41,7 @@ public class Each{
         }
         System.out.println(" ");
         System.out.println("数组长度为: " + num1);
-        System.out.println("元素倍率为： " + num2);
+        System.out.println("元素倍率为：" + num2);
         System.out.println("数组中最大值为：" + max);
     }
 }
