@@ -1,4 +1,4 @@
-public class outloop {
+public class Outloop {
     public static void main(String[] args){
         boolean breakout = false;
         for(int i=0; i < 10; i++){
