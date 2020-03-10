@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Shuixian",
+            "request": "launch",
+            "mainClass": "Shuixian",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GoldPoint",
+            "request": "launch",
+            "mainClass": "GoldPoint",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Fuli",
+            "request": "launch",
+            "mainClass": "Fuli",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - P357",
+            "request": "launch",
+            "mainClass": "P357",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - outloop",
+            "request": "launch",
+            "mainClass": "outloop",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Runnian",
             "request": "launch",
             "mainClass": "Runnian",

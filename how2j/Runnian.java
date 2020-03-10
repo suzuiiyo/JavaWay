@@ -16,5 +16,6 @@ public class Runnian{
                 System.out.println(i +"ÄêÊÇÈòÄê£¡");
             }
         }
+        s.close();
     }
 }

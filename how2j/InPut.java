@@ -11,5 +11,6 @@ public class InPut{
         String a = s.nextLine();
         //System.out.println("读取的字符串是: " + rn);
         System.out.println("读取的字符串是: " + a);
+        s.close();
     }
 }
