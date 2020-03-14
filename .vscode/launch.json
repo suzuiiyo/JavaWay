@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MergeArr",
+            "request": "launch",
+            "mainClass": "MergeArr",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CopyArray",
+            "request": "launch",
+            "mainClass": "CopyArray",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Each",
             "request": "launch",
             "mainClass": "Each",
