@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SPHero",
+            "request": "launch",
+            "mainClass": "SPHero",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ADHero",
+            "request": "launch",
+            "mainClass": "ADHero",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Armor",
+            "request": "launch",
+            "mainClass": "Armor",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FiveMatrix",
+            "request": "launch",
+            "mainClass": "FiveMatrix",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Twodim",
             "request": "launch",
             "mainClass": "Twodim",
