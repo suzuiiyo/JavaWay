@@ -4,27 +4,27 @@ public class Hero2{
     private float Armor;
     private int moveSpeed;
 
-    //无参构造
-    public Hero2(){
+    // 无参构造
+    public Hero2() {
     }
-    
-    //有参构造
-    public Hero2(String name, float hp, float armor, int moveSpeed){
-        this.name = name;
-        this.hp = hp;
-        Armor = armor;
-        this.moveSpeed = moveSpeed;
-        }
 
-    public void legedary(){
+    // 有参构造
+    public Hero2(String Name, float hp, float armor, int MoveSpeed) {
+        this.name = Name;
+        this.hp = hp;
+        this.Armor = armor;
+        this.moveSpeed = MoveSpeed;
+    }
+
+    public void legedary() {
         System.out.println("超神");
     }
 
-    public float getHp(){
+    public float getHp() {
         return this.hp;
     }
 
-    public float recovery(float blood){
+    public float recovery(float blood) {
         return this.getHp() + blood;
     }
 

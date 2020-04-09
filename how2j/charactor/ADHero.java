@@ -1,3 +1,5 @@
+package charactor;
+
 public class ADHero extends Hero{
     public static void main(String[] args){
         ADHero bh = new ADHero();

@@ -1,4 +1,4 @@
-//package charactor;
+package charactor;
 
 public class Hero3{
     public String name;

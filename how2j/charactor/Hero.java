@@ -1,3 +1,4 @@
+package charactor;
 public class Hero{
     String name;
     float hp;
@@ -11,6 +12,7 @@ public class Hero{
     int paceOfattack;
     String wordsAfterkilled;
     String wordsAfterkilling;
+	public String copyright;
 
     public static void main(String[] args){
         Hero garen = new Hero();
@@ -40,6 +42,27 @@ public class Hero{
         fatiao.wordsAfterkilling = " what's wrong with you";
 
         
+    }
+    public Hero(){}
+
+    public Hero(String name, float hp){
+        this.name = name;
+        this.hp = hp;
+    }
+
+    /*public Hero(String heroName, float heroHP, float heroArmor, int heroMoveSpeed){
+        name = heroName;
+        hp = heroHP;
+        armor = heroArmor;
+        moveSpeed = heroMoveSpeed;
+    }*/
+
+    public Hero(String name, float hp, float armor, int moveSpeed){
+        this(name, hp);
+        this.name = name;
+        this.hp = hp;
+        this.armor = armor;
+        this.moveSpeed = moveSpeed;
     }
 }
 

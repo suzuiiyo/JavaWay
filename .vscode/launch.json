@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Hero2",
+            "request": "launch",
+            "mainClass": "charactor.Hero2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SPHero",
             "request": "launch",
             "mainClass": "SPHero",
