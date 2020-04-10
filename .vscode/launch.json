@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Support",
+            "request": "launch",
+            "mainClass": "charactor1.Support",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Item2",
+            "request": "launch",
+            "mainClass": "Item2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HeroSim2",
+            "request": "launch",
+            "mainClass": "charactor.HeroSim2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HeroSim",
+            "request": "launch",
+            "mainClass": "charactor.HeroSim",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hero4",
+            "request": "launch",
+            "mainClass": "charactor.Hero4",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Test",
+            "request": "launch",
+            "mainClass": "charactor.Test",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Hero2",
             "request": "launch",
             "mainClass": "charactor.Hero2",

@@ -1,7 +1,7 @@
 package charactor;
 public class Hero{
-    String name;
-    float hp;
+    protected String name;
+    protected float hp;
     float armor;
     int moveSpeed;
     int initGold;
