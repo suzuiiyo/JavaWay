@@ -12,7 +12,22 @@ public class Hero{
     int paceOfattack;
     String wordsAfterkilled;
     String wordsAfterkilling;
-	public String copyright;
+    public String copyright;
+    
+
+public void setName(String name){
+    this.name = name;
+}
+public String getName(){
+    return name;
+}
+public void setHp(float hp){
+    this.hp = hp;
+}
+public float getHp(){
+    return hp;
+}
+
 
     public static void main(String[] args){
         Hero garen = new Hero();
@@ -22,7 +37,7 @@ public class Hero{
         garen.moveSpeed = 350;
 
         Hero teemo = new Hero();
-        teemo.name = "ÌáÄª";
+        teemo.setName("ÌáÄª");
         teemo.hp = 383f;
         teemo.armor = 14f;
         teemo.moveSpeed = 330;
@@ -41,7 +56,8 @@ public class Hero{
         fatiao.wordsAfterkilled = " how much is this?"; 
         fatiao.wordsAfterkilling = " what's wrong with you";
 
-        
+        System.out.println(teemo.name);
+        System.out.println(teemo.getName());
     }
     public Hero(){}
 

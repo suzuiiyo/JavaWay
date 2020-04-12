@@ -3,19 +3,28 @@ import charactor.Hero;
 
 public class Support extends Hero implements healer{
     public void heal(){
-        System.out.println("救治自己！");
+        System.out.println("救治"+ this.name+"!");
     }
 
     public void heal(Hero hero){
-        System.out.println("给英雄" + hero.name + "治疗");
+        hero.getName();
+        System.out.println(this.name + "给英雄" + hero.getName()+ "治疗");
     }
 
     public void heal(Hero hero, int hp){
-        System.out.println("给英雄" + hero.name + "恢复" + hero.hp + "点生命");
+        //System.out.println(hero.hp);
+        hero.getName();
+        float HP = hero.getHp() + hp;
+        System.out.println(this.name + "治疗" + hero.getName()+ ",为其恢复" + hp + "点生命," + "\n" +hero.getName() +"当前生命值为" + HP);
     }
     public static void main(String[] args){
         Support Wyi = new Support();
+        Wyi.setName("巫医");
         Hero teemo = new Hero();
-		Wyi.heal(teemo);
+        teemo.setName("提莫");
+        teemo.setHp(782);
+		Wyi.heal();
+		Wyi.heal(teemo) ;
+		Wyi.heal(teemo, 345);
     }
 }
