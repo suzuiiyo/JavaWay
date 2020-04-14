@@ -1,7 +1,8 @@
 package charactor1;
 import charactor.Hero;
+import charactor.Mortal;
 
-public class ADAPHero extends Hero implements AD, AP {
+public class ADAPHero extends Hero implements AD, AP, Mortal {
 
     public void magicAttack(){
         System.out.println(this.name + "使用技能");
@@ -18,6 +19,13 @@ public class ADAPHero extends Hero implements AD, AP {
         String extName = hero.getName();
         System.out.println(this.name + "发起普攻对" + extName + "造成了" + hp + "点伤害");
     }
+    public void die(){
+        System.out.println("凡人皆需服侍");
+    }
+    public void die(Hero hero){
+        String extName = hero.getName();
+        System.out.println(extName + ",凡人皆需服侍," + this.name);
+    }
 
     public static void main(String[] args){
         ADAPHero QOP = new ADAPHero();
@@ -29,5 +37,7 @@ public class ADAPHero extends Hero implements AD, AP {
         QOP.physicAttack(AM, 134);
         QOP.magicAttack();
         QOP.magicAttack(AM, 342);
+
+        QOP.die(AM);
     }
 }

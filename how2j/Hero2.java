@@ -19,7 +19,7 @@ public class Hero2{
     public void legedary() {
         System.out.println("³¬Éñ");
     }
-
+    
     public float getHp() {
         return this.hp;
     }

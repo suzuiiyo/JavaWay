@@ -1,7 +1,8 @@
 package charactor1;
 import charactor.Hero;
+import charactor.Mortal;
 
-public class APHero extends Hero implements AP{
+public class APHero extends Hero implements AP, Mortal{
     public void magicAttack(){
         System.out.println(this.name + "发起了普攻！");
     }
@@ -16,6 +17,13 @@ public class APHero extends Hero implements AP{
         System.out.println(this.name + "对" + extName + "造成了" + hp + "点魔法伤害");
     }
     
+    public void die(){
+        System.out.println("凡人终有一死");
+    }
+    public void die(Hero hero){
+        String extName = hero.getName();
+        System.out.println(extName + ",凡人终有一死");
+    }
     public static void main(String[] args){
         APHero bm = new APHero();
         bm.name = "兽王";
@@ -29,6 +37,8 @@ public class APHero extends Hero implements AP{
         bm.magicAttack(h1);
         bm.magicAttack(h1, 345);
         bm.attack(h1, h2);
+
+        bm.die(h2);
     }
     /* public void attack(){
         System.out.println(name + "进行了一次攻击，但是不确定打中了谁");

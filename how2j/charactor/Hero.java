@@ -1,4 +1,8 @@
 package charactor;
+import charactor1.ADHero;
+import charactor1.APHero;
+import charactor1.ADAPHero;
+
 public class Hero{
     protected String name;
     protected float hp;
@@ -27,7 +31,9 @@ public void setHp(float hp){
 public float getHp(){
     return hp;
 }
-
+public void kill(Mortal m){
+    m.die();
+}
 
     public static void main(String[] args){
         Hero garen = new Hero();
@@ -58,6 +64,20 @@ public float getHp(){
 
         System.out.println(teemo.name);
         System.out.println(teemo.getName());
+
+        Hero juggnaut = new Hero();
+        juggnaut.setName("??");
+        ADHero DragonKnight = new ADHero();
+        DragonKnight.setName("???");
+        APHero Lion = new APHero();
+        Lion.setName("??");
+        ADAPHero QOP = new ADAPHero();
+        QOP.setName("????");
+        juggnaut.kill(DragonKnight);
+        juggnaut.kill(Lion);
+        juggnaut.kill(QOP);
+
+        System.out.println(QOP.getName());
     }
     public Hero(){}
 

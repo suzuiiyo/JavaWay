@@ -1,7 +1,9 @@
 package charactor1;
 import charactor.Hero;
+import charactor.Mortal;
 
-public class ADHero extends Hero implements AD{
+
+public class ADHero extends Hero implements AD, Mortal{
     
     public void physicAttack(){
         System.out.println(this.name + "发起了普攻！");
@@ -16,7 +18,15 @@ public class ADHero extends Hero implements AD{
         String extName = hero.getName();
         System.out.println(this.name + "对" + extName + "造成了" + hp + "点物理伤害");
     }
-    
+
+    public void die(){
+        System.out.println("挖了蘑菇立死");
+    }
+    public void die(Hero hero){
+        String extName = hero.getName();
+        System.out.println(extName + ",挖了蘑菇立死," + this.name);
+    }
+
     public static void main(String[] args){
         ADHero bh = new ADHero();
         bh.name = "赏金猎人";
@@ -30,6 +40,8 @@ public class ADHero extends Hero implements AD{
         bh.physicAttack(h1);
         bh.physicAttack(h1, 345);
         bh.attack(h1, h2);
+
+        bh.die(h1);
     }
     /* public void attack(){
         System.out.println(name + "进行了一次攻击，但是不确定打中了谁");
