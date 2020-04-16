@@ -41,7 +41,7 @@ public class ADHero extends Hero implements AD, Mortal{
         bh.physicAttack(h1, 345);
         bh.attack(h1, h2);
 
-        bh.die(h1);
+        bh.die(h2);
     }
     /* public void attack(){
         System.out.println(name + "进行了一次攻击，但是不确定打中了谁");

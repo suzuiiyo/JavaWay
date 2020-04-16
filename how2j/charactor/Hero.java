@@ -49,7 +49,7 @@ public void kill(Mortal m){
         teemo.moveSpeed = 330;
 
         Hero fatiao = new Hero();
-        fatiao.name = "发条";
+        fatiao.name = "发条魔灵";
         fatiao.hp = 342.53f;
         fatiao.armor = 32.54f;
         fatiao.moveSpeed = 309;
@@ -66,13 +66,13 @@ public void kill(Mortal m){
         System.out.println(teemo.getName());
 
         Hero juggnaut = new Hero();
-        juggnaut.setName("??");
+        juggnaut.setName("剑圣");
         ADHero DragonKnight = new ADHero();
-        DragonKnight.setName("???");
+        DragonKnight.setName("龙骑士");
         APHero Lion = new APHero();
-        Lion.setName("??");
+        Lion.setName("莱恩");
         ADAPHero QOP = new ADAPHero();
-        QOP.setName("????");
+        QOP.setName("痛苦女王");
         juggnaut.kill(DragonKnight);
         juggnaut.kill(Lion);
         juggnaut.kill(QOP);

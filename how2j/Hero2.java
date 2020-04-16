@@ -17,11 +17,14 @@ public class Hero2{
     }
 
     public void legedary() {
-        System.out.println("超神");
+        System.out.println("超神了吗？");
     }
     
     public float getHp() {
         return this.hp;
+    }
+    public String getName(){
+        return this.name;
     }
 
     public float recovery(float blood) {
@@ -30,9 +33,10 @@ public class Hero2{
 
     public static void main(String[] args) {
         Hero2 garen = new Hero2("盖伦", 200.342f, 70.0f, 350);
-        System.out.println("当前血量：" + garen.getHp());
+        System.out.println(garen.getName() + "当前血量为" + garen.getHp());
+        System.out.println(garen.getName() + "当前速度为" + garen.moveSpeed + ",其当前护甲为" + garen.Armor);
         garen.legedary();
-        System.out.println("调用回血后：" + garen.recovery(100.f));
+        System.out.println("调用回血后," + garen.getName() + "的当前血量为" + garen.recovery(100.f));
     }
 }
 
