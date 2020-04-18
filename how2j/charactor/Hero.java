@@ -86,6 +86,9 @@ public void kill(Mortal m){
         this.hp = hp;
     }
 
+    public static void battleWin(){
+        System.out.println("hero battle win");
+    }
     /*public Hero(String heroName, float heroHP, float heroArmor, int heroMoveSpeed){
         name = heroName;
         hp = heroHP;

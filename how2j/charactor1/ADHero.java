@@ -26,6 +26,9 @@ public class ADHero extends Hero implements AD, Mortal{
         String extName = hero.getName();
         System.out.println(extName + ",挖了蘑菇立死," + this.name);
     }
+    public static void battleWin(){
+        System.out.println("ADHero battle win");
+    }
 
     public static void main(String[] args){
         ADHero bh = new ADHero();
@@ -42,6 +45,13 @@ public class ADHero extends Hero implements AD, Mortal{
         bh.attack(h1, h2);
 
         bh.die(h2);
+
+        Hero h = new ADHero();
+        ADHero h3  = (ADHero) h;
+        Hero.battleWin();
+        ADHero.battleWin();
+        h.battleWin();
+        h3.battleWin();
     }
     /* public void attack(){
         System.out.println(name + "进行了一次攻击，但是不确定打中了谁");

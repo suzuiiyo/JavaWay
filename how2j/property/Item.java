@@ -1,7 +1,7 @@
 package property;
 
 public class Item{
-    String name;
+    public String name;
     int price;
 
     public void effect(){

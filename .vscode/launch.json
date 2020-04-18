@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Hero9",
+            "request": "launch",
+            "mainClass": "charactor.Hero9",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - NTR",
+            "request": "launch",
+            "mainClass": "charactor.NTR",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hero8",
+            "request": "launch",
+            "mainClass": "charactor.Hero8",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hero8",
+            "request": "launch",
+            "mainClass": "charactor1.Hero8",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestGiantDragon",
+            "request": "launch",
+            "mainClass": "charactor.TestGiantDragon",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Hero7",
             "request": "launch",
             "mainClass": "charactor.Hero7",
