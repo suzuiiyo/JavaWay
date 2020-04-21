@@ -103,5 +103,8 @@ public void kill(Mortal m){
         this.armor = armor;
         this.moveSpeed = moveSpeed;
     }
+
+    //public abstract void attack(){
+    //}
 }
 

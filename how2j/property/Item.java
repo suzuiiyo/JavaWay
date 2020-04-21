@@ -24,7 +24,6 @@ public class Item{
         return false;
     }
 
-
     public static void main(String[] args){
         Item one = new Item();
         one.name = "∫Ï∆ø";

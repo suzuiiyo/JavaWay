@@ -5,6 +5,9 @@ public class JudgePrime {
     public void judgePrime(int m){
         boolean flag = true;
         if(m%2==0&&m!=2){
+            System.out.println(m + "不是质数");
+        }
+        else{
             for(int h=2; h<=Math.sqrt(m); h++){
                 if(m%h==0&&h>=2){
                     System.out.println(m + "不是质数");
