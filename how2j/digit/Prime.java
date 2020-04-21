@@ -20,16 +20,21 @@ public class Prime{
 
     public int judgePrime(int m){
         boolean flag=true;
-        for(int h=2; h<=Math.sqrt(m); h++){
-            if(m%h==0&&h>=2){
-                System.out.println(m + "不是质数");
-                flag = false;
-                break;
-            }
+        if(m%2==0&&m!=2){
+            System.out.println(m + "不是质数");
         }
-        if(flag){   
-            System.out.println(m + "是质数");
-            this.count++;
+        else{
+            for(int h=3; h<=Math.sqrt(m); h+=2){
+                if(m%h==0){
+                    System.out.println(m + "不是质数");
+                    flag = false;
+                    break;
+                }
+            }
+            if(flag){   
+                System.out.println(m + "是质数");
+                this.count++;
+            }
         }
         return count;
     }
