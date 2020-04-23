@@ -2,6 +2,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - InsertSort",
+            "request": "launch",
+            "mainClass": "digit.InsertSort",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestString6",
+            "request": "launch",
+            "mainClass": "digit.TestString6",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestString5",
+            "request": "launch",
+            "mainClass": "digit.TestString5",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestString4",
+            "request": "launch",
+            "mainClass": "digit.TestString4",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestString3",
+            "request": "launch",
+            "mainClass": "digit.TestString3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestChar3",
+            "request": "launch",
+            "mainClass": "digit.TestChar3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testchar2",
+            "request": "launch",
+            "mainClass": "digit.Testchar2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestChar",
+            "request": "launch",
+            "mainClass": "digit.TestChar",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestString2",
+            "request": "launch",
+            "mainClass": "digit.TestString2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestNum4",
+            "request": "launch",
+            "mainClass": "digit.TestNum4",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestNum3",
+            "request": "launch",
+            "mainClass": "digit.TestNum3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Prime",
             "request": "launch",
             "mainClass": "digit.Prime",
