@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestMain",
+            "request": "launch",
+            "mainClass": "digit.TestMain",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Passwd",
+            "request": "launch",
+            "mainClass": "digit.Passwd",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - InsertSort",
             "request": "launch",
             "mainClass": "digit.InsertSort",
