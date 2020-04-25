@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Raokouling",
+            "request": "launch",
+            "mainClass": "digit.Raokouling",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EachUpper",
+            "request": "launch",
+            "mainClass": "digit.EachUpper",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestMain",
             "request": "launch",
             "mainClass": "digit.TestMain",
