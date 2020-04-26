@@ -11,7 +11,7 @@
 			"**/.settings": true,
 			"**/.factorypath": true
 		},
-		"maven.view": "hierarchical"
+        "maven.view": "hierarchical"
 	},
 	"code-runner.executorMap": {
         "javascript": "node",
@@ -57,5 +57,4 @@
         "lisp": "sbcl --script",
         "kit": "kitc --run"
     },
-	"editor.codeActionsOnSave": null
 }

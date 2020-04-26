@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestFuzhi",
+            "request": "launch",
+            "mainClass": "digit.TestFuzhi",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Replace",
+            "request": "launch",
+            "mainClass": "digit.Replace",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - LastUpper",
+            "request": "launch",
+            "mainClass": "digit.LastUpper",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - interval",
+            "request": "launch",
+            "mainClass": "digit.interval",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Raokouling",
             "request": "launch",
             "mainClass": "digit.Raokouling",
