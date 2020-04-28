@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestString7",
+            "request": "launch",
+            "mainClass": "digit.TestString7",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CompareString",
+            "request": "launch",
+            "mainClass": "digit.CompareString",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TsetSubString",
+            "request": "launch",
+            "mainClass": "digit.TsetSubString",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestStringEqual2",
+            "request": "launch",
+            "mainClass": "digit.TestStringEqual2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestStringEqual",
+            "request": "launch",
+            "mainClass": "digit.TestStringEqual",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestFuzhi",
             "request": "launch",
             "mainClass": "digit.TestFuzhi",
