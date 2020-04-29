@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestPerformance",
+            "request": "launch",
+            "mainClass": "digit.TestPerformance",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyStringBuffer",
+            "request": "launch",
+            "mainClass": "digit.MyStringBuffer",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestString7",
             "request": "launch",
             "mainClass": "digit.TestString7",
