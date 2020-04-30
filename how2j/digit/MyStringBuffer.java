@@ -1,6 +1,6 @@
 package digit;
 
-public class MyStringBuffer implements IStringButter{
+public class MyStringBuffer implements IStringBuffer{
         int capacity = 16;
         int length = 0;
         char[] value;
@@ -87,7 +87,7 @@ public class MyStringBuffer implements IStringButter{
             return length;
         }
 
-        public String toString(){
+        public String toString(){              //object类的toString方法，返回每个对象的字符串表达形式
             char[] realValue = new char[length];
             System.arraycopy(value, 0, realValue, 0, length);
             return new String(realValue);
@@ -111,7 +111,7 @@ public class MyStringBuffer implements IStringButter{
             sb.reverse();
             System.out.println(sb);
 
-            String str= "jsdjajsdjfhdgndkskfksajdjslajd";
+            String str= "qwertyuiopefdgfhgddfsd";
             MyStringBuffer str2 = new MyStringBuffer(str);
             double t5=System.currentTimeMillis();
             for(int j=0; j<10000; j++)
@@ -120,7 +120,7 @@ public class MyStringBuffer implements IStringButter{
             System.out.println(str2);
             System.out.printf("MyStringBuffer耗时: %.2f\n", t6-t5);
         }
-		public void append(int i) {
-		}
+		//public void append(int i) {
+		//}
 }
 

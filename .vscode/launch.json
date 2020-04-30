@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestRandomTime",
+            "request": "launch",
+            "mainClass": "date.TestRandomTime",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestDate",
+            "request": "launch",
+            "mainClass": "date.TestDate",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyStringBufferCopy",
+            "request": "launch",
+            "mainClass": "digit.MyStringBufferCopy",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestPerformance",
             "request": "launch",
             "mainClass": "digit.TestPerformance",
