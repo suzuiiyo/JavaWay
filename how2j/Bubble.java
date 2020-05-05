@@ -1,8 +1,8 @@
 public class Bubble{
     public static void main(String[] args){
-        int[] a = new int[10];
+        int[] a = new int[35];
         for(int i=0; i<a.length; i++){
-            a[i] = (int)(Math.random()*100);
+            a[i] = (int)(Math.random()*4523);
         }
         bubbleSort(a);
         for(int j=0; j<a.length; j++){

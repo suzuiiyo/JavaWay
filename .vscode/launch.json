@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - WhichDay",
+            "request": "launch",
+            "mainClass": "date.WhichDay",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestCalendar",
+            "request": "launch",
+            "mainClass": "date.TestCalendar",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DateFormat",
+            "request": "launch",
+            "mainClass": "date.DateFormat",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestDate2",
+            "request": "launch",
+            "mainClass": "date.TestDate2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestRandomTime",
             "request": "launch",
             "mainClass": "date.TestRandomTime",
