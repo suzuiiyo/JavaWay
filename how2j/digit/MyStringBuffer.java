@@ -30,6 +30,10 @@ public class MyStringBuffer implements IStringBuffer{
         public void insert(int pos, char b){
             insert(pos, String.valueOf(b));
         }
+
+        public IndexIsNagetiveException(){
+            
+        }
         public void insert(int pos, String b){
             //边界体条件判断
             if(pos<0){

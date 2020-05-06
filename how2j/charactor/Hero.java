@@ -1,6 +1,7 @@
 package charactor;
 import charactor1.ADHero;
 import charactor1.APHero;
+import exception.EnemyHeroIsDeadException;
 import charactor1.ADAPHero;
 
 public class Hero{
@@ -35,21 +36,28 @@ public void kill(Mortal m){
     m.die();
 }
 
+public void attackHero(Hero h) throws EnemyHeroIsDeadException {
+    System.out.println(this.name + "攻击了" + h.name);
+    if(h.hp == 0){
+        throw new EnemyHeroIsDeadException(h.name + "已扑街，无法作为被攻击对象");
+    }
+}
+
     public static void main(String[] args){
         Hero garen = new Hero();
         garen.name = "盖伦";
         garen.hp = 616.28f;
-        garen.armor = 27.536f;
+        garen.armor = 27.65f;
         garen.moveSpeed = 350;
 
         Hero teemo = new Hero();
         teemo.setName("提莫");
-        teemo.hp = 383f;
+        teemo.hp = 0;
         teemo.armor = 14f;
         teemo.moveSpeed = 330;
 
         Hero fatiao = new Hero();
-        fatiao.name = "发条魔灵";
+        fatiao.name = "????";
         fatiao.hp = 342.53f;
         fatiao.armor = 32.54f;
         fatiao.moveSpeed = 309;
@@ -78,6 +86,14 @@ public void kill(Mortal m){
         juggnaut.kill(QOP);
 
         System.out.println(QOP.getName());
+
+        try{
+            garen.attackHero(teemo);
+        }
+        catch(EnemyHeroIsDeadException e){
+            System.out.println("显示具体异常原因: "); // + e.getMessage());
+            e.printStackTrace();
+        }
     }
     public Hero(){}
 
