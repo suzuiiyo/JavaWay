@@ -57,7 +57,7 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
         teemo.moveSpeed = 330;
 
         Hero fatiao = new Hero();
-        fatiao.name = "????";
+        fatiao.name = "·¢ÌõÄ§Áé";
         fatiao.hp = 342.53f;
         fatiao.armor = 32.54f;
         fatiao.moveSpeed = 309;

@@ -1,10 +1,15 @@
 package exception;
 
 public class IndexIsNagetiveException extends Exception {
-    public IndexIsNagetiveException(){
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
+    public IndexIsNagetiveException() {
     }
 
-    public IndexIsNagetiveException(int pos){
-        super(pos);
+    public IndexIsNagetiveException(String msg){
+        super(msg);
     }
 }

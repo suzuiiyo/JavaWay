@@ -1,50 +1,56 @@
 package digit;
 
-public class MyStringBuffer implements IStringBuffer{
-        int capacity = 16;
-        int length = 0;
-        char[] value;
-        public MyStringBuffer(){
+import exception.IndexIsNagetiveException;
+import exception.IndexOutOfRangeException;
+import exception.NullPointerException;
+
+public class MyStringBuffer implements IStringBuffer {
+    int capacity = 16;
+    int length = 0;
+    char[] value;
+
+    public MyStringBuffer() {
+        value = new char[capacity];
+    }
+
+    public MyStringBuffer(String str) {
+        this();
+        if (null == str)
+            return;
+
+        if (capacity < str.length()) {
+            capacity = value.length * 2;
             value = new char[capacity];
         }
-        public MyStringBuffer(String str){
-            this();
-            if(null==str)
-                return;
-            
-            if(capacity < str.length()){
-                capacity = value.length *2;
-                value = new char[capacity];
-            }
-            
-            if(capacity >= str.length())
-                System.arraycopy(str.toCharArray(), 0, value, 0, str.length());
-            length = str.length();
-        }
-        public void append(String str){
-            insert(length, str);
-        }
-        public void append(char c){
-            append(String.valueOf(c));
-        }
-        public void insert(int pos, char b){
-            insert(pos, String.valueOf(b));
-        }
 
-        public IndexIsNagetiveException(){
-            
+        if (capacity >= str.length())
+            System.arraycopy(str.toCharArray(), 0, value, 0, str.length());
+        length = str.length();
+    }
+
+    public void append(String str) {
+        try {
+            insert(length, str);
+        } catch (NullPointerException | IndexIsNagetiveException | IndexOutOfRangeException e) {
+            System.out.println("显示具体的异常信息" + e.getMessage());
+            e.printStackTrace();
         }
-        public void insert(int pos, String b){
-            //边界体条件判断
-            if(pos<0){
-                return;
-            }
-            if(pos>length){
-                return;
-            }
-            if(null==b){
-                return;
-            }
+    }
+
+    public void append(char c) {
+        append(String.valueOf(c));
+    }
+
+    public void insert(int pos, char b) {
+        try {
+            insert(pos, String.valueOf(b));
+        } catch (NullPointerException | IndexIsNagetiveException | IndexOutOfRangeException e) {
+            System.out.println("显示具体的异常信息" + e.getMessage());
+            e.printStackTrace();
+        }
+    }
+
+        public void insert(int pos, String b) throws IndexIsNagetiveException, IndexOutOfRangeException, NullPointerException {
             //拓容
             while(length+b.length()>capacity){
                 capacity = (int)((length+b.length())*1.5f);
@@ -60,25 +66,36 @@ public class MyStringBuffer implements IStringBuffer{
             System.arraycopy(cs, 0, value, pos, cs.length);
 
             length = length + cs.length;
-        }
-        public void delete(int start){
-            delete(start,  length);
-        }
-        public void delete(int start, int end){
-            //判断边界条件
-            if(start<0)
-                return;
-            if(start>length)            
-                return;
-            if(end<0)
-                return;
-            if(end>length)
-                return;
-            if(start>=end)
-                return;
 
+            if(pos<0){
+                throw new IndexIsNagetiveException("pos的值不能小于0!");
+            }
+            if(pos>length){
+                throw new IndexOutOfRangeException("pos的值不能大于字符串长度！");
+            }
+            /*if(null==b){
+                throw new NullPointerException("字符串不能为空！");    
+            }*/
+        }
+        
+        public void delete(int start){
+            try {
+                delete(start, length);                      //此处有一个bug, 无论start的值是多少都会抛出异常 
+            } catch (IndexIsNagetiveException | IndexOutOfRangeException e) {
+                System.out.println("突出一个错误！");
+                e.printStackTrace();
+            }
+        }
+        public void delete(int start, int end) throws IndexIsNagetiveException, IndexOutOfRangeException{
             System.arraycopy(value, end, value, start, length-end);
             length-=end-start;
+
+            if(start<0 || end <0){
+                throw new IndexIsNagetiveException("删除的初始位置不能小于0");
+            }
+            if(start>length || end > length || start >= end){
+                throw new IndexOutOfRangeException("删除的初始位置不能大于字符串长度也不能比末尾位置大");
+            }            
         }
         public void reverse(){
             for(int i=0; i<length / 2; i++){
@@ -97,16 +114,16 @@ public class MyStringBuffer implements IStringBuffer{
             return new String(realValue);
         }
 
-        public static void main(String[] args){
+        public static void main(String[] args) throws IndexIsNagetiveException, IndexOutOfRangeException, NullPointerException{
             MyStringBuffer sb = new MyStringBuffer("there light");
             //sb.reverse();
             System.out.println(sb);
             sb.insert(0, "let");
             System.out.println(sb);
 
-            sb.insert(10, "be");
+            sb.insert(3, "be");
             System.out.println(sb);
-            sb.insert(0, "God say");
+            sb.insert(2, "God say");
             System.out.println(sb);
             sb.append("!");
             System.out.println(sb);
@@ -114,11 +131,15 @@ public class MyStringBuffer implements IStringBuffer{
             System.out.println(sb);
             sb.reverse();
             System.out.println(sb);
+            sb.delete(1);
+            System.out.println(sb);
+            sb.delete(1, 7);
+            System.out.println(sb);
 
             String str= "qwertyuiopefdgfhgddfsd";
             MyStringBuffer str2 = new MyStringBuffer(str);
             double t5=System.currentTimeMillis();
-            for(int j=0; j<10000; j++)
+            for(int j=0; j<10; j++)
                 str2.append((char)(Math.random()*1000));
             double t6 = System.currentTimeMillis();
             System.out.println(str2);
