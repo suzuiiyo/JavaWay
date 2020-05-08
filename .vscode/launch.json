@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestFile2",
+            "request": "launch",
+            "mainClass": "file.TestFile2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestFile",
+            "request": "launch",
+            "mainClass": "file.TestFile",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - checkingAccount",
+            "request": "launch",
+            "mainClass": "digit.checkingAccount",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Account",
+            "request": "launch",
+            "mainClass": "digit.Account",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestOpenException",
             "request": "launch",
             "mainClass": "exception.TestOpenException",
