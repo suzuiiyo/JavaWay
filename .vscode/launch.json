@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - compareFileSize",
+            "request": "launch",
+            "mainClass": "file.compareFileSize",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindWindows",
+            "request": "launch",
+            "mainClass": "file.FindWindows",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestFile3",
+            "request": "launch",
+            "mainClass": "file.TestFile3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestFile2",
             "request": "launch",
             "mainClass": "file.TestFile2",
