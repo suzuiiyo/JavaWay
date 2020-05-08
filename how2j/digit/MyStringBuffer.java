@@ -81,9 +81,10 @@ public class MyStringBuffer implements IStringBuffer {
         public void delete(int start){
             try {
                 delete(start, length);                      //此处有一个bug, 无论start的值是多少都会抛出异常 
-            } catch (IndexIsNagetiveException | IndexOutOfRangeException e) {
+            } catch (IndexIsNagetiveException | IndexOutOfRangeException e) {  //测试发现是当end>length时会自动抛出IndexOutOfBoundsException,即数组越界
                 System.out.println("突出一个错误！");
                 e.printStackTrace();
+                System.out.println(start + " " + length);
             }
         }
         public void delete(int start, int end) throws IndexIsNagetiveException, IndexOutOfRangeException{
@@ -93,7 +94,7 @@ public class MyStringBuffer implements IStringBuffer {
             if(start<0 || end <0){
                 throw new IndexIsNagetiveException("删除的初始位置不能小于0");
             }
-            if(start>length || end > length || start >= end){
+            if(start>length || start >= end){
                 throw new IndexOutOfRangeException("删除的初始位置不能大于字符串长度也不能比末尾位置大");
             }            
         }
@@ -131,9 +132,9 @@ public class MyStringBuffer implements IStringBuffer {
             System.out.println(sb);
             sb.reverse();
             System.out.println(sb);
-            sb.delete(1);
+            sb.delete(11);
             System.out.println(sb);
-            sb.delete(1, 7);
+            sb.delete(0, 7);
             System.out.println(sb);
 
             String str= "qwertyuiopefdgfhgddfsd";
