@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - fileSplit2",
+            "request": "launch",
+            "mainClass": "file.fileSplit2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - InputStreamtoByteArray",
+            "request": "launch",
+            "mainClass": "file.InputStreamtoByteArray",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestPrintStream",
+            "request": "launch",
+            "mainClass": "file.TestPrintStream",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - mergeFiles",
+            "request": "launch",
+            "mainClass": "file.mergeFiles",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSplitFile",
+            "request": "launch",
+            "mainClass": "file.TestSplitFile",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestStream",
+            "request": "launch",
+            "mainClass": "file.TestStream",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - compareFileSize",
             "request": "launch",
             "mainClass": "file.compareFileSize",
