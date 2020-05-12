@@ -23,14 +23,14 @@ public class mergeFiles {
             if(!f2.exists()){
                 f2.createNewFile();
             }
-            fout = new FileOutputStream(f2);
+            fout = new FileOutputStream(f2);        //输出流fout写入文件f2
 
             for(int i=0; i<=(int)(f1.length()/size); i++){
                 //if(fs[i].length() == size){
-                File f3 = new File(dirHead + name + i + dirTail);
-                in = new FileInputStream(f3);
-                byteArr = InputStreamtoByteArray.read(in);
-                fout.write(byteArr);
+                File f3 = new File(dirHead + name + i + dirTail);    //为之前分割出来的每一个文件创建对象
+                in = new FileInputStream(f3);               //将每一个分割出的文件读入输入流
+                byteArr = InputStreamtoByteArray.read(in);          //将输入流里的byte存到byte数组
+                fout.write(byteArr);                        //将byte数组的元素写入输出流，从而写入f2文件
             }
             fout.flush();
             fout.close();

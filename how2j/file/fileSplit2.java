@@ -33,11 +33,14 @@ public class fileSplit2 {
                         break;
                 }
             }
-            fout.flush();
+            //fout.flush();
             fout.close();
             in.close();
         }catch(IOException e){
             e.printStackTrace();
+        }
+        finally{
+            if()
         }
     }
 }
