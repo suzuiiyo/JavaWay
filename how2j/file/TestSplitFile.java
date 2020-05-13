@@ -19,10 +19,8 @@ public class TestSplitFile {
         File f = new File(path1 + name + end);    //转换成文件对象
         File f2;
         byte[] byteArr = new byte[(int)f.length()];
-        InputStream in = null;              //申明输入流
         FileOutputStream out = null;             //申明输出流
-        try{
-            in = new FileInputStream(f);    //将文件f转换成字节流
+        try(InputStream in = new FileInputStream(f)){
             byteArr = InputStreamtoByteArray.read(in);
             int i = 0;
             int len =0;
@@ -46,9 +44,7 @@ public class TestSplitFile {
                 if(f2.length()>size)
                     break;                  //子文件到达指定大小就创建下一个文件;
             }
-            out.flush();
             out.close();
-            in.close();
         }catch (IOException e){
             e.printStackTrace();
             return;

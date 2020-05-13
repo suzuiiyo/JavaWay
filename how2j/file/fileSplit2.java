@@ -13,12 +13,11 @@ public class fileSplit2 {
         String dirTail = ".gif";
         double size = Math.pow(2, 10)*100;
         File f = new File(dirHead + name + dirTail);
-        InputStream in = null;
+        //InputStream in = null;
         FileOutputStream fout = null;
         byte[] byteArr = new byte[(int)Math.pow(2, 20)*2];
-        try{
+        try(InputStream in = new FileInputStream(f)){
             int tempbyte;
-            in = new FileInputStream(f);
             byteArr = InputStreamtoByteArray.read(in);
             for(int i=0; i<f.length()/size; i++){
                 File f2 = new File(dirHead + name + i + dirTail);
@@ -35,12 +34,8 @@ public class fileSplit2 {
             }
             //fout.flush();
             fout.close();
-            in.close();
         }catch(IOException e){
             e.printStackTrace();
-        }
-        finally{
-            if()
         }
     }
 }

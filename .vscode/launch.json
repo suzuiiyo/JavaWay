@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - testCharStream2",
+            "request": "launch",
+            "mainClass": "file.testCharStream2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestCharStream",
+            "request": "launch",
+            "mainClass": "file.TestCharStream",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestStream1",
+            "request": "launch",
+            "mainClass": "file.TestStream1",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - fileSplit2",
             "request": "launch",
             "mainClass": "file.fileSplit2",

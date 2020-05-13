@@ -32,9 +32,8 @@ public class mergeFiles {
                 byteArr = InputStreamtoByteArray.read(in);          //将输入流里的byte存到byte数组
                 fout.write(byteArr);                        //将byte数组的元素写入输出流，从而写入f2文件
             }
-            fout.flush();
-            fout.close();
             in.close();
+            fout.close();
         }catch(IOException e){
             e.printStackTrace();
             return;
