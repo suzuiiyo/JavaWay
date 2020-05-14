@@ -5,7 +5,7 @@ import java.io.FileInputStream;
 import java.io.IOException;
 
 
-public class TestStream1 {
+public class FileRead {
     public static void main(String[] args){
         File f = new File("d:/Studio/JavaWay/AC/DC/testStream.txt");
 

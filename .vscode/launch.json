@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - encodingFile",
+            "request": "launch",
+            "mainClass": "file.encodingFile",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FileRead",
+            "request": "launch",
+            "mainClass": "file.FileRead",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - testCharStream2",
             "request": "launch",
             "mainClass": "file.testCharStream2",
