@@ -1,7 +1,6 @@
 package exception;
 
 import java.io.File;
-import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 
 public class TestException {
@@ -19,8 +18,10 @@ public class TestException {
 
     private static void method2() throws FileNotFoundException{
         File f = new File("d:/dota2.exe");
+        if(!f.exists()){
+            throw new FileNotFoundException();
+        }
         System.out.println("试图打开d:/dota2.exe");
-        new FileInputStream(f);
         System.out.println("成功打开");
     }
 }

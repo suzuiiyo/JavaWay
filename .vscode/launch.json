@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FileReaderChinese",
+            "request": "launch",
+            "mainClass": "stream.FileReaderChinese",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EncodeChinese",
+            "request": "launch",
+            "mainClass": "stream.EncodeChinese",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DecodeFile",
+            "request": "launch",
+            "mainClass": "file.DecodeFile",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - encodingFile",
             "request": "launch",
             "mainClass": "file.encodingFile",
