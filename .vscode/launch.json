@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Deunicode",
+            "request": "launch",
+            "mainClass": "stream.Deunicode",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EncodeOfChinese",
+            "request": "launch",
+            "mainClass": "stream.EncodeOfChinese",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FileReaderChinese",
             "request": "launch",
             "mainClass": "stream.FileReaderChinese",
