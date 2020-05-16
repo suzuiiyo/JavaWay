@@ -1,0 +1,6 @@
+@startuml timeline
+scale 3
+Amber ->Hsing : test
+a -> b : To request
+b --> a : To response
+@enduml

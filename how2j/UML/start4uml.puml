@@ -1,0 +1,13 @@
+@startuml arrow
+hsing -> amber
+hsing ->> amber
+hsing <-> amber
+hsing ->o amber
+hsing --> amber
+hsing -/ amber
+hsing -\ amber
+hsing -\\ amber
+hsing -// amber
+hsing //-- amber
+hsing ->x amber
+@enduml

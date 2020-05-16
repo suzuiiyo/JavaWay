@@ -1,0 +1,6 @@
+
+@startuml color
+gsing -[#red]> amber
+amber -[#pink]-> hsing
+hsing -[#blue]// amber
+@enduml
