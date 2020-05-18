@@ -22,17 +22,17 @@ public class Deunicode {
             //System.out.println((int)str.charAt(i));    //返回的是索引为i的元素的(ASCII码)
             tempByte = (byte) (((int) str.charAt(i)) & 0xff);
             if (tempByte >= 48 && tempByte <= 57) {
-                tempHigh = (byte) ((tempByte - 48) << 4);
+                tempHigh = (byte) ((tempByte - 48) << 4);       //取高四位
             } else if (tempByte >= 97 && tempByte <= 101) {
                 tempHigh = (byte) ((tempByte - 97 + 10) << 4);
             }
             tempByte = (byte) (((int) str.charAt(i + 1)) & 0xff);
-            if (tempByte >= 48 && tempByte <= 57) {
-                tempLow = (byte) (tempByte - 48);
+            if (tempByte >= 48 && tempByte <= 57) {             
+                tempLow = (byte) (tempByte - 48);               //取低四位
             } else if (tempByte >= 97 && tempByte <= 101) {
                 tempLow = (byte) (tempByte - 97 + 10);
             }
-            bytes[j] = (byte) (tempHigh | tempLow);
+            bytes[j] = (byte) (tempHigh | tempLow);             
         }
         String result = null;
         try {

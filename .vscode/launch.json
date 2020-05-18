@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestDataStream",
+            "request": "launch",
+            "mainClass": "stream.TestDataStream",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestBufferedReader",
+            "request": "launch",
+            "mainClass": "stream.TestBufferedReader",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ForceDecode",
+            "request": "launch",
+            "mainClass": "file.ForceDecode",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestBOM",
+            "request": "launch",
+            "mainClass": "stream.TestBOM",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RemoveBOM",
+            "request": "launch",
+            "mainClass": "stream.RemoveBOM",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Deunicode",
             "request": "launch",
             "mainClass": "stream.Deunicode",

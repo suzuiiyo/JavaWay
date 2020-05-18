@@ -3,7 +3,7 @@ import java.io.UnsupportedEncodingException;
 
 public class EncodeChinese {
     public static void main(String[] args){
-        String str = "ÖÐ";
+        String str = "½ì";
         showCode(str);
     }
 
