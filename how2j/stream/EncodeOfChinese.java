@@ -30,7 +30,7 @@ public class EncodeOfChinese {
             
             /*String str = new String(bb, "ISO8859-1");        //用String(byte[], Charset)来解码
             byte[] bb2 = str.getBytes("ISO8859-1");            //不知道byte[]编码方式的前提下，先变成ISO8859-1再用String(byte[], Charset)解码
-            String str2 = new String(bb2, encode);             //据说是“ISO8859-1”兼容比较号？
+            String str2 = new String(bb2, encode);             //据说是“ISO8859-1”兼容比较好？
             System.out.println();
             System.out.println(str + "   " + str2);*/
         }catch(UnsupportedCharsetException e) {
