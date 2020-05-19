@@ -2,11 +2,15 @@ package charactor;
 import charactor1.ADHero;
 import charactor1.APHero;
 import exception.EnemyHeroIsDeadException;
+
+import java.io.Serializable;
+
 import charactor1.ADAPHero;
 
-public class Hero{
-    protected String name;
-    protected float hp;
+public class Hero implements Serializable{
+    private static final long serialVersionUID = 1L; 
+    public String name;
+    public float hp;
     float armor;
     int moveSpeed;
     int initGold;
