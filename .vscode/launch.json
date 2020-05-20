@@ -2,6 +2,76 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GetFileName",
+            "request": "launch",
+            "mainClass": "stream.GetFileName",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CopyFolder",
+            "request": "launch",
+            "mainClass": "stream.CopyFolder",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CopyFile",
+            "request": "launch",
+            "mainClass": "stream.CopyFile",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AutoCreateClass",
+            "request": "launch",
+            "mainClass": "stream.AutoCreateClass",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSystemIn",
+            "request": "launch",
+            "mainClass": "stream.TestSystemIn",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HeroSerial",
+            "request": "launch",
+            "mainClass": "stream.HeroSerial",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestObjetcStream",
+            "request": "launch",
+            "mainClass": "stream.TestObjetcStream",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestBufferData2",
+            "request": "launch",
+            "mainClass": "stream.TestBufferData2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TwoBufferData2",
+            "request": "launch",
+            "mainClass": "stream.TwoBufferData2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestBufferData",
+            "request": "launch",
+            "mainClass": "stream.TestBufferData",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestDataStream",
             "request": "launch",
             "mainClass": "stream.TestDataStream",
