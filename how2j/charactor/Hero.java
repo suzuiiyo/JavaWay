@@ -99,7 +99,12 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
             e.printStackTrace();
         }
     }
+
     public Hero(){}
+
+    public Hero(String name){
+        this.name = name;
+    }
 
     public Hero(String name, float hp){
         this.name = name;
@@ -126,5 +131,8 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
 
     //public abstract void attack(){
     //}
+    public String toString(){    //重写toString方法，否则返回哈希值
+        return name;
+    }
 }
 

@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestCollection2",
+            "request": "launch",
+            "mainClass": "collection.TestCollection2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestCollection",
+            "request": "launch",
+            "mainClass": "stream.TestCollection",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GetFileName",
             "request": "launch",
             "mainClass": "stream.GetFileName",
