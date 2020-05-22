@@ -3,6 +3,12 @@ package property;
 public class Item{
     public String name;
     int price;
+    public Item(){
+    }
+
+    public Item(String str){
+        this.name = str;
+    }
 
     public void effect(){
         System.out.println("使用物品");

@@ -119,22 +119,22 @@ public class MyStringBuffer implements IStringBuffer {
             MyStringBuffer sb = new MyStringBuffer("there light");
             //sb.reverse();
             System.out.println(sb);
-            sb.insert(0, "let");
+            sb.insert(7, "let");
             System.out.println(sb);
 
             sb.insert(3, "be");
             System.out.println(sb);
             sb.insert(2, "God say");
             System.out.println(sb);
-            sb.append("!");
+            sb.append('!');
             System.out.println(sb);
-            sb.append("?");
+            sb.append("???");
             System.out.println(sb);
             sb.reverse();
             System.out.println(sb);
-            sb.delete(11);
+            sb.delete(2, 7);
             System.out.println(sb);
-            sb.delete(0, 7);
+            sb.delete(5);
             System.out.println(sb);
 
             String str= "qwertyuiopefdgfhgddfsd";

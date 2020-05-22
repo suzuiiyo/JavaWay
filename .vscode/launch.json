@@ -2,6 +2,69 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - GenericArrayList",
+            "request": "launch",
+            "mainClass": "collection.GenericArrayList",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestListInterface",
+            "request": "launch",
+            "mainClass": "collection.TestListInterface",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestCollection",
+            "request": "launch",
+            "mainClass": "collection.TestCollection",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testremove",
+            "request": "launch",
+            "mainClass": "collection.Testremove",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TesttoArray",
+            "request": "launch",
+            "mainClass": "collection.TesttoArray",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSet",
+            "request": "launch",
+            "mainClass": "collection.TestSet",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestIndexOf",
+            "request": "launch",
+            "mainClass": "collection.TestIndexOf",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestContain",
+            "request": "launch",
+            "mainClass": "collection.TestContain",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MyStringBufferList",
+            "request": "launch",
+            "mainClass": "collection.MyStringBufferList",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestCollection2",
             "request": "launch",
             "mainClass": "collection.TestCollection2",

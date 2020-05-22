@@ -42,7 +42,7 @@ public class MyStringBufferList implements IStringBuffer{
         }
     }
 
-    public void insert(int pos, String str) throws IndexIsNagetiveException{
+    public void insert(int pos, String str) throws IndexIsNagetiveException{     //有add(int pos, Object obj)方法
         if(pos<0){
             throw new IndexIsNagetiveException("pos的值不能小于0");
         }else{
@@ -120,11 +120,12 @@ public class MyStringBufferList implements IStringBuffer{
             objCh[i] = objCh[objCh.length - i-1];
             objCh[objCh.length - i-1] = temp;
         }
-        while(ch.size() != 0){                  //ch.size不为0一直删除，直到删空
+        /*while(ch.size() != 0){                  //ch.size不为0一直删除，直到删空
             ch.remove(0);
-        }
+        }*/
+        ch.clear();                             //清空
         for(Object ob : objCh){
-            ch.add((char)ob);
+            ch.add((char)ob);                   //不传递类型只能转换为object数组
         }
     }
 
@@ -157,6 +158,7 @@ public class MyStringBufferList implements IStringBuffer{
         System.out.println(msbl);
         msbl.delete(5);
         System.out.println(msbl);
+        System.out.println(msbl.length());
 
         String str= "qwertyuiopefdgfhgddfsd";
         MyStringBufferList str2 = new MyStringBufferList(str);
