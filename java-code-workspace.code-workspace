@@ -57,4 +57,5 @@
         "lisp": "sbcl --script",
         "kit": "kitc --run"
     },
+    "C_Cpp.default.includePath": [],
 }

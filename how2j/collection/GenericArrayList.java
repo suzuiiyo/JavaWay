@@ -7,7 +7,7 @@ import property.Item;
 
 public class GenericArrayList extends ArrayList {
     public boolean add(Object o){
-        if((o instanceof Hero) || (o instanceof Item)){
+        if((o instanceof Hero) || (o instanceof Item)){     //判断是否是实例
             //判断是否是hero或者item对象
             super.add(o);     //为真就调用调用父类的add方法
             return true;

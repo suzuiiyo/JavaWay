@@ -2,6 +2,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Power",
+            "request": "launch",
+            "mainClass": "collection.Power",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Febonaci",
+            "request": "launch",
+            "mainClass": "collection.Febonaci",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestRemove2",
+            "request": "launch",
+            "mainClass": "collection.TestRemove2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestIterator",
+            "request": "launch",
+            "mainClass": "collection.TestIterator",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestGeneric3",
+            "request": "launch",
+            "mainClass": "collection.TestGeneric3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestGerneric",
+            "request": "launch",
+            "mainClass": "collection.TestGerneric",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GenericArrayList2",
+            "request": "launch",
+            "mainClass": "digit.GenericArrayList2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - GenericArrayList",
             "request": "launch",
             "mainClass": "collection.GenericArrayList",
