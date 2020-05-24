@@ -1,9 +1,22 @@
 {
 	"folders": [
-		{
-			"path": "."
-		}
-	],
+        {
+            "name": "matrix",
+            "path": "C:\\Users\\Public\\Desktop\\Studio\\JavaWay\\matrix"
+        },
+        {
+            "name": "how2j",
+            "path": "how2j"
+        },
+        {
+            "name": ".vscode",
+            "path": "C:\\Users\\Public\\Desktop\\Studio\\JavaWay\\.vscode"
+        },
+        {
+            "name": "AC",
+            "path": "C:\\Users\\Public\\Desktop\\Studio\\JavaWay\\AC"
+        }
+    ],
 	"settings": {
 		"files.exclude": {
 			"**/.classpath": true,

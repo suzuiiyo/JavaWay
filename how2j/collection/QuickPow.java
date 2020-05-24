@@ -2,7 +2,7 @@ package collection;
 
 public class QuickPow {
     public static void main(String[] args) {
-        long c = poww(2, 8);
+        long c = poww(3, 3);
         System.out.println("快速幂的值为：" + c);
     }
 

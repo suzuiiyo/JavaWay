@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - BeerSong",
+            "request": "launch",
+            "mainClass": "BeerSong",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hero2",
+            "request": "launch",
+            "mainClass": "how2j.charactor.Hero2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Power",
+            "request": "launch",
+            "mainClass": "matrix.Power",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Power",
+            "request": "launch",
+            "mainClass": "Power",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Power",
             "request": "launch",
             "mainClass": "collection.Power",
