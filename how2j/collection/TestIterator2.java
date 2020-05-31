@@ -7,22 +7,22 @@ import java.util.List;
 
 public class TestIterator2 {
     public static void main(String[] args) {
-        List<test> l = new ArrayList<>();       //自定义的test数据类型
-        System.out.println("初始化时l里的test数据的count的值: ");
+        List<customDataType> l = new ArrayList<>();       //自定义的test数据类型
+        System.out.println("初始化时l里的自定义数据的count的值: ");
         for(int i=0; i<3; i++){
-            test pi = new test();
+            customDataType pi = new customDataType();
             l.add(pi);
             System.out.println(pi.kkk[0].count);
         }
-        Iterator<test> ite = l.iterator();
-        System.out.println("用迭代器修改test数据的count的值: ");
+        Iterator<customDataType> ite = l.iterator();
+        System.out.println("用迭代器修改自定义数据的count的值: ");
         while(ite.hasNext()){
-            test a = ite.next();
+            customDataType a = ite.next();
             a.kkk[0].count = 2;
             System.out.println(a.kkk[0].count);
         }
-        System.out.println("用迭代器修改之后l里test数据的count的值: ");
-        for(test b : l){
+        System.out.println("用迭代器修改之后l里自定义数据的count的值: ");
+        for(customDataType b : l){
             System.out.println(b.kkk[0].count);                 //发生了变化,引用传递
         }
 

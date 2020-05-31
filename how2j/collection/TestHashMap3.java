@@ -9,7 +9,7 @@ import charactor.Hero;
 public class TestHashMap3 {
     public static void main(String[] args) {
         List<Hero> heroList = new ArrayList<>();
-        for(int i=0; i<3000000; i++){
+        for(int i=0; i<30000; i++){
             int random = (int)(Math.random()*10000);
             heroList.add(new Hero("hero-" + random));
             heroList.get(i).hp += i;
@@ -34,7 +34,7 @@ public class TestHashMap3 {
             heroMap.put(h, h.getName());
         }
         int count=0;
-        for(Map.Entry<Hero, String> entry : heroMap.entrySet()){     //遍历hashmap
+        for(Map.Entry<Hero, String> entry : heroMap.entrySet()){     //遍历hashmap的键值对
             if(entry.getValue().equals("hero-5555")){
                 count++;
             }
@@ -54,5 +54,7 @@ public class TestHashMap3 {
         System.out.println(hero555);
         System.out.println("名字为hero-5555的Hero对象总共有: " + hero555.size() + "个");
         System.out.println("hashMap耗时: " + (t4 - t3));
+
+        System.out.println(heroMap);
     }
 }
