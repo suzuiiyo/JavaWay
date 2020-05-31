@@ -2,6 +2,10 @@ package charactor1;
 import charactor.Hero;
 
 public class Support extends Hero implements healer{
+    public Support(){};
+    public Support(String name){
+        this.name = name;
+    }
     public void heal(){
         System.out.println("æ»÷Œ"+ this.name+"!");
     }
@@ -26,5 +30,16 @@ public class Support extends Hero implements healer{
 		Wyi.heal();
 		Wyi.heal(teemo) ;
 		Wyi.heal(teemo, 345);
+    }
+
+    public String getClassName(){
+        String className=null;
+        try {
+            throw new Exception();
+        } catch (Exception e) {
+            StackTraceElement[] element=e.getStackTrace();
+            className=element[0].getClassName();
+        }
+        return className;
     }
 }

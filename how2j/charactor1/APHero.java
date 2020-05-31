@@ -3,6 +3,11 @@ import charactor.Hero;
 import charactor.Mortal;
 
 public class APHero extends Hero implements AP, Mortal{
+    public APHero(){};
+
+    public APHero(String name){
+        this.name = name;
+    }
     public void magicAttack(){
         System.out.println(this.name + "发起了普攻！");
     }
@@ -56,4 +61,15 @@ public class APHero extends Hero implements AP, Mortal{
             System.out.println(name + "攻击了" + heros[i].getName() + ",造成了" +hurt +"点魔法伤害");
         }
     }
+
+    /*public String getClassName(){
+        String className=null;
+        try {
+            throw new Exception();
+        } catch (Exception e) {
+            StackTraceElement[] element=e.getStackTrace();
+            className=element[0].getClassName();
+        }
+        return className;
+    }*/
 }

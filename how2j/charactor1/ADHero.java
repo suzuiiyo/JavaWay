@@ -4,6 +4,11 @@ import charactor.Mortal;
 
 
 public class ADHero extends Hero implements AD, Mortal{
+    public ADHero(){};
+
+    public ADHero(String name){
+        this.name = name;
+    }
     
     public void physicAttack(){
         System.out.println(this.name + "发起了普攻！");
@@ -67,5 +72,16 @@ public class ADHero extends Hero implements AD, Mortal{
         for(int i=0; i<heros.length; i++){
             System.out.println(name + "攻击了" + heros[i].getName());
         }
+    }
+
+    public String getClassName(){
+        String className=null;
+        try {
+            throw new Exception();
+        } catch (Exception e) {
+            StackTraceElement[] element=e.getStackTrace();
+            className=element[0].getClassName();
+        }
+        return className;
     }
 }

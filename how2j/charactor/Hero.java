@@ -132,8 +132,18 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
     //public abstract void attack(){
     //}
     public String toString(){    //重写toString方法，否则返回哈希值
-        //return name;
-        return String.format("[name:%s hp:%.0f]%n", name, hp);
+        return name;
+        //return String.format("[name:%s hp:%.0f]%n", name, hp);
+    }
+    public String getClassName(){
+        String className=null;
+        try {
+            throw new Exception();
+        } catch (Exception e) {
+            StackTraceElement[] element=e.getStackTrace();
+            className=element[0].getClassName();
+        }
+        return className;
     }
 }
 
