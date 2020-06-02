@@ -38,13 +38,15 @@ public class reverseHashMap {
             }
             listDes.add(h);
         }
-        //System.out.println(heroMap);
+        System.out.println(heroMap);
         //System.out.println(heroMap.keySet());
         //System.out.println(heroMap.values());
+        System.out.println("\n\n\t *************** \n");
         HashMap<List<Hero>, String> heroMapRev = new HashMap<>();
         for(Map.Entry<String, List<Hero>> entry : heroMap.entrySet()){
-            String name = heroMapRev.get(entry.)
-            
+            String name = entry.getKey();
+            heroMapRev.put(heroMap.get(entry.getKey()), name);
         }
+        System.out.println(heroMapRev);
     }
 }
