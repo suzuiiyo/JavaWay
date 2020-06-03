@@ -1,6 +1,6 @@
 package property;
 
-public class Item{
+public class Item implements Comparable<Item> {
     public String name;
     int price;
     public Item(){
@@ -9,13 +9,17 @@ public class Item{
     public Item(String str){
         this.name = str;
     }
+    public Item(String str, int price){
+        this.name = str;
+        this.price = price;
+    }
 
     public void effect(){
         System.out.println("使用物品");
     }
 
     public String toString(){
-        return (name + price);
+        return String.valueOf("[name:" + name + " " + "item.price: " + price + "]");
     }
 
     public void finalize(){
@@ -46,5 +50,9 @@ public class Item{
 
         System.out.println(one.equals(two));
         System.out.println(one.equals(three));
+    }
+
+    public int compareTo(Item anoItem) {
+        return anoItem.price - price;
     }
 }
