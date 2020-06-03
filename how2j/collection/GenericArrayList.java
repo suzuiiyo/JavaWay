@@ -18,7 +18,7 @@ public class GenericArrayList extends ArrayList {
     }
 
     public void add(int pos, Object o){
-        if((o instanceof Hero) && (o instanceof Item)){
+        if((o instanceof Hero) || (o instanceof Item)){
             super.add(pos, o);
         }else {
             throw new IllegalAccessError();
@@ -38,8 +38,10 @@ public class GenericArrayList extends ArrayList {
         Hero h = new Hero("ÊÞÍõ");
         ga.add(h);
         System.out.println(ga);
-        Item i = new Item("");
-        ga.add(i);
+        Item i = new Item("ÑªÆ¿");
+        ga.add(0, i);
+        System.out.println(ga);
+        ga.add(1, i);
         System.out.println(ga);
         String str = "";
         ga.add(str);
