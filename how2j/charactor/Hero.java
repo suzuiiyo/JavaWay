@@ -7,10 +7,11 @@ import java.io.Serializable;
 
 import charactor1.ADAPHero;
 
-public class Hero implements Serializable{
+public class Hero implements Serializable, Comparable<Hero>{
     private static final long serialVersionUID = 1L; 
     public String name;
     public float hp;
+    float damage;
     float armor;
     int moveSpeed;
     int initGold;
@@ -110,6 +111,11 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
         this.name = name;
         this.hp = hp;
     }
+    public Hero(String name, float hp, float damage){
+        this.name = name;
+        this.hp = hp;
+        this.damage = damage;
+    }
 
     public static void battleWin(){
         System.out.println("hero battle win");
@@ -120,6 +126,13 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
         armor = heroArmor;
         moveSpeed = heroMoveSpeed;
     }*/
+
+    public int compareTo(Hero anohero){
+        if(damage >= anohero.damage)
+            return 1;
+        else
+            return -1;
+    }
 
     public Hero(String name, float hp, float armor, int moveSpeed){
         this(name, hp);
@@ -133,7 +146,8 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
     //}
     public String toString(){    //重写toString方法，否则返回哈希值
         //return name;
-        return String.format("[name:%s hp:%.0f]%n", name, hp);
+        //return String.format("[name:%s hp:%.0f]%n", name, hp);
+        return String.format("[name:%s hp:%.0f damage:%.0f]%n", name, hp, damage);
     }
     public String getClassName(){
         String className=null;
