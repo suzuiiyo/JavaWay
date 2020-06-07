@@ -11,7 +11,7 @@ public class Hero implements Serializable, Comparable<Hero>{
     private static final long serialVersionUID = 1L; 
     public String name;
     public float hp;
-    float damage;
+    public float damage;
     float armor;
     int moveSpeed;
     int initGold;
@@ -127,11 +127,16 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
         moveSpeed = heroMoveSpeed;
     }*/
 
+
     public int compareTo(Hero anohero){
         if(damage >= anohero.damage)
             return 1;
         else
             return -1;
+    }
+
+    public boolean matched(){
+        return this.hp>100 && this.damage<50;
     }
 
     public Hero(String name, float hp, float armor, int moveSpeed){
