@@ -16,24 +16,27 @@ public class testStream2 {
         }
         System.out.println("集合初始化之后: ");
         System.out.println(heros);
+        System.out.println("\n\t **********************\n");
 
-        Collections.sort(heros);
-        //System.out.println(heros);
-        System.out.println(heros.get(7));
+        /*Collections.sort(heros);
+        System.out.println(heros);
+        System.out.println("Colloctions的sort方法筛选: " + heros.get(7));*/
         System.out.println("\n\t **********************\n");
         //lambda表达式根据hp升序排序
-        filter(heros, Hero::matched);
-        System.out.println(heros.get(7));
+        /*filter(heros, Hero::matched);
+        System.out.println(heros);
+        System.out.println("lambda表达式筛选：" + heros.get(7));*/
         System.out.println("\n\t **********************\n");
         //使用聚合操作根据hp排序
-        heros.stream().sorted(Hero::compareTo).forEach(h->System.out.println(heros));
-        System.out.println(heros.get(7));
+        System.out.println(heros);
+        String name = heros.stream().sorted((h1,h2)->h1.hp>h2.hp?-1:1).skip(2).map(h->h.getName()).findFirst().get();       //聚合操作返回一个String
+        System.out.println("聚合操作筛选hp第三高的英雄名称是: " + name);                                                       //.map根据条件转换成流
     }
 
     private static void filter(List<Hero> heros, HeroChecker hChecker){
         for(Hero h : heros){
-            if(hChecker.test(h))
-                System.out.println(h);
+            if(hChecker.test(h));
+                //System.out.println(h);
         }
     }
 }

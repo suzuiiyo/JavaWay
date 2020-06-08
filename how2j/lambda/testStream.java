@@ -23,7 +23,7 @@ public class testStream {
 
         //管道源是数组
         Hero hs[] = heros.toArray(new Hero[heros.size()]);
-        Arrays.stream(hs)
+        Arrays.stream(hs)                               //数组转换城源
         .forEach(h->System.out.println(h));
     }
 }
