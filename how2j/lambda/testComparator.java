@@ -16,7 +16,8 @@ public class testComparator {
         System.out.println("初始化后的集合: ");
         System.out.println(herolist);
         System.out.println("使用静态方法得过滤结果: ");
-        Collections.sort(herolist, (h1, h2)->testComparator.compare(h1, h2));    //按照hp升序排序
+        //Collections.sort(herolist, (h1, h2)->testComparator.compare(h1, h2));    //按照hp升序排序
+        Collections.sort(herolist, testComparator::compare);    //类名调用静态方法，进一步简化
         System.out.println(herolist);
         System.out.println("使用容器中对象方法得到的过滤结果: ");
         Collections.sort(herolist, Hero::compareTo);   //按照damage升序排序
