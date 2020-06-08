@@ -19,13 +19,13 @@ public class TestLambda5 {
         l=new LinkedList<>();
         insertFirst(l, "LinkedList");*/
 
-        insertFirst(ArrayList::new, "ArrayList");
+        insertFirst(ArrayList::new, "ArrayList");                       //调用过滤器,接受lambda表达式作为传参
         insertFirst(LinkedList::new, "LinkedList");
 
     }
 
     //private static void insertFirst(List<Integer> l, String type){
-    private static void insertFirst(Supplier<List> s, String type){
+    private static void insertFirst(Supplier<List> s, String type){             
         int total = 1000 * 100;
         final int number = 5;
         long start = System.currentTimeMillis();

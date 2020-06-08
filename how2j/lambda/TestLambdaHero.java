@@ -17,7 +17,7 @@ public class TestLambdaHero {
         System.out.println(herolist);
         System.out.println("\n\t****************************\n");
 
-        Collections.sort(herolist, (h1, h2)->h1.hp>h2.hp?1:-1);
+        Collections.sort(herolist, (h1, h2)->h1.hp>h2.hp?1:-1);                 //比较器也是一种过滤器,筛选满足条件的对象
         System.out.println(herolist);
     }
 }

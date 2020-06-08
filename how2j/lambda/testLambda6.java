@@ -23,9 +23,9 @@ public class testLambda6 {
         }
 
         System.out.println("通过聚合操作方式找出来满足条件的数据: ");
-        heros
-            .stream()
-            .filter(h -> h.hp > 100 && h.damage<50)
-            .forEach(h -> System.out.println(h.name));
+        heros                                                           //接受collection
+            .stream()                                                   //转换成源
+            .filter(h -> h.hp > 100 && h.damage<50)                     //管道操作
+            .forEach(h -> System.out.println(h.name));                  //结束源
     }
 }

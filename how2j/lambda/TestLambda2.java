@@ -15,7 +15,7 @@ public class TestLambda2 {
         System.out.println("初始化后的集合: ");
         System.out.println(heros);
         System.out.println("使用Lamdba的方式，筛选出hp>100&&damage<50的英雄");
-        filter(heros, h->h.hp>100&&h.damage<50);
+        filter(heros, h->h.hp>100&&h.damage<50);             //lambda表达式
     }
 
     private static void filter(List<Hero> heros, HeroChecker checker){
