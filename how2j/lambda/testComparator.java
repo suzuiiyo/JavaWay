@@ -24,6 +24,6 @@ public class testComparator {
     }
 
     public static int compare(Hero h1, Hero h2){
-        return h1.hp>=h2.hp?1:-1;
+        return h1.hp>=h2.hp?1:-1;                           //比较器方法
     }
 }
