@@ -33,7 +33,7 @@ public class testStream2 {
         System.out.println("聚合操作筛选hp第三高的英雄名称是: " + name);                                                       //.map根据条件转换成流
     }
 
-    private static void filter(List<Hero> heros, HeroChecker hChecker){
+    private static void filter(List<Hero> heros, HeroChecker hChecker){      //过滤器接受匿名类
         for(Hero h : heros){
             if(hChecker.test(h));
                 //System.out.println(h);
