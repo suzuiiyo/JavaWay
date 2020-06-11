@@ -46,6 +46,17 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
     if(h.hp == 0){
         throw new EnemyHeroIsDeadException(h.name + "已扑街，无法作为被攻击对象");
     }
+
+    try {
+        //为了表示攻击需要时间,每次攻击暂停1000毫秒
+        Thread.sleep(1000);
+    }catch (InterruptedException e){
+        e.printStackTrace();
+    }
+    h.hp-=damage;
+    System.out.format("%s 正在攻击 %s, %s的血变成了%.0f%n", name, h.name, h.name, h.hp);
+    if(h.isDead())
+        System.out.println(h.name + "死了！");
 }
 
     public static void main(String[] args){
@@ -101,6 +112,10 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
         }
     }
 
+    public boolean isDead(){
+        return 0>=hp?true:false;
+    }
+
     public Hero(){}
 
     public Hero(String name){
@@ -126,7 +141,6 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
         armor = heroArmor;
         moveSpeed = heroMoveSpeed;
     }*/
-
 
     public int compareTo(Hero anohero){
         if(damage >= anohero.damage)
