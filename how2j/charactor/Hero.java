@@ -59,6 +59,21 @@ public void attackHero(Hero h) throws EnemyHeroIsDeadException {
         System.out.println(h.name + "死了！");
 }
 
+public void bodongquan(Hero h) throws InterruptedException {
+    int bodongDamage = 32;
+    for(int count=1; count<4; count++){
+        System.out.printf(name + "对%s使出第%d发波动拳!%n", h, count);
+        h.hp -= bodongDamage;
+        Thread.sleep(1000);          //每一发暂停一秒
+        if(count==3){
+            System.out.println("等待5秒进行充能");
+            Thread.sleep(5000);
+            count=0;
+            System.out.println("充能完毕,重新发起波动拳\n");
+        }
+    }
+}
+
     public static void main(String[] args){
         Hero garen = new Hero();
         garen.name = "盖伦";
