@@ -2,16 +2,38 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - EnumCrackThread2",
+            "request": "launch",
+            "mainClass": "multithreading.EnumCrackThread2",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EnumCrackThread",
+            "request": "launch",
+            "mainClass": "multithreading.EnumCrackThread",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSkill",
+            "request": "launch",
+            "mainClass": "multithreading.TestSkill",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestThreadDaemon",
+            "request": "launch",
+            "mainClass": "multithreading.TestThreadDaemon",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestThreadJoin",
             "request": "launch",
             "mainClass": "multithreading.TestThreadJoin",
             "projectName": "how2j_39e61726"
-        },
-        {
-            "command": "npm start",
-            "name": "Run npm start",
-            "request": "launch",
-            "type": "node-terminal"
         },
         {
             "type": "java",
@@ -154,9 +176,9 @@
         },
         {
             "type": "java",
-            "name": "Debug (Launch)-Runnian<how2j_39e61726>",
+            "name": "Debug (Launch)-Debujnian<how2j_39e61726>",
             "request": "launch",
-            "mainClass": "Runnian",
+            "mainClass": "Debugnian",
             "projectName": "how2j_39e61726"
         },
         {
