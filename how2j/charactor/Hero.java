@@ -41,6 +41,21 @@ public void kill(Mortal m){
     m.die();
 }
 
+//回血
+//直接在方法前加上修饰符synchronized
+//其所对应的同步对象，就是this
+//和hurt方法达到的效果一样
+public synchronized void recover(){
+    hp += 1;
+}
+
+public void hurt(){
+    //使用this作为同步对象
+    synchronized(this){
+        hp -= 1;
+    }
+}
+
 public void attackHero(Hero h) throws EnemyHeroIsDeadException {
     System.out.println(this.name + "攻击了" + h.name);
     if(h.hp == 0){
