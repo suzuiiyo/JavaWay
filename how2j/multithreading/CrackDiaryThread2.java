@@ -2,9 +2,9 @@ package multithreading;
 
 import java.util.List;
 
-public class CrackDiaryThread extends Thread{
+public class CrackDiaryThread2 extends Thread{
     private List<String> list;
-    public CrackDiaryThread(List<String> list){
+    public CrackDiaryThread2(List<String> list){
         this.setDaemon(true);               //本线程设为Daemon
         this.list = list;
     }

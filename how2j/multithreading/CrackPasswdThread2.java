@@ -3,12 +3,12 @@ package multithreading;
 import java.util.List;
 import java.util.Random;
 
-public class CrackPasswdThread extends Thread {
+public class CrackPasswdThread2 extends Thread {
     private String passStr;
-    private List<String> passVes;               //此处不能实例化,否则访问不到main里面的passVes,这个地方是一个声明
-    public CrackPasswdThread(String passStr, List<String> passVes){
+    private List<String> passVes;               //此处不能实例化,否则访问不到main里面的list,这个地方是一个声明j
+    public CrackPasswdThread2(String passStr, List<String> list){
         this.passStr = passStr;
-        this.passVes = passVes;
+        this.passVes = list;
     }
 
     public void run(){

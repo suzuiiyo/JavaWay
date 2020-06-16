@@ -15,10 +15,11 @@ public class EnumCrackThread2 {
         System.out.println("密码是: " + passwd);
         System.out.println("\n ******************\n");
 
-        CrackPasswdThread crackPassThread = new CrackPasswdThread(passwd, passVes);
+        CrackPasswdThread2 crackPassThread = new CrackPasswdThread2(passwd, passVes);
         crackPassThread.start();
+        System.out.println(passVes.size());     //为什么始终是0??
 
-        CrackDiaryThread crackDiaryThread = new CrackDiaryThread(passVes);
+        CrackDiaryThread2 crackDiaryThread = new CrackDiaryThread2(passVes);
         crackDiaryThread.start();
     }
 }

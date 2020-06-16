@@ -2,6 +2,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestDeadLock2",
+            "request": "launch",
+            "mainClass": "multithreading.TestDeadLock2",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestDeadLock",
+            "request": "launch",
+            "mainClass": "multithreading.TestDeadLock",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSynchronizedList",
+            "request": "launch",
+            "mainClass": "collection.TestSynchronizedList",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSynchronized4",
+            "request": "launch",
+            "mainClass": "multithreading.TestSynchronized4",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSychronized3",
+            "request": "launch",
+            "mainClass": "multithreading.TestSychronized3",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSychronized2",
+            "request": "launch",
+            "mainClass": "charactor.TestSychronized2",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSychronized",
+            "request": "launch",
+            "mainClass": "charactor.TestSychronized",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - EnumCrackThread3",
+            "request": "launch",
+            "mainClass": "multithreading.EnumCrackThread3",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - EnumCrackThread2",
             "request": "launch",
             "mainClass": "multithreading.EnumCrackThread2",
