@@ -2,7 +2,7 @@ package collection;
 
 import charactor.Hero;
 
-public interface Stack {
+public interface Stack<T> {
     //把英雄推入到最后位置
     public void push(Hero h);
     //把最后一个英雄取出来
