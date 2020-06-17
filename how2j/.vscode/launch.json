@@ -2,6 +2,41 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - AnonymosInnerClass",
+            "request": "launch",
+            "mainClass": "multithreading.AnonymosInnerClass",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ProducerCustomer",
+            "request": "launch",
+            "mainClass": "multithreading.ProducerCustomer",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestWaitAndNotify2",
+            "request": "launch",
+            "mainClass": "multithreading.TestWaitAndNotify2",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestWaitAndNotify",
+            "request": "launch",
+            "mainClass": "multithreading.TestWaitAndNotify",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestbadFun",
+            "request": "launch",
+            "mainClass": "multithreading.TestbadFun",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestDeadLock2",
             "request": "launch",
             "mainClass": "multithreading.TestDeadLock2",

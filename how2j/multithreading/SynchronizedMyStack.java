@@ -7,7 +7,7 @@ import java.util.List;
 import charactor.Hero;
 import collection.Stack;
 
-public class SynchronizedMyStack implements Stack{
+public class SynchronizedMyStack<T> implements Stack<T>{
     LinkedList<Hero> list = new LinkedList<>();
     List<Hero> list2 = (List<Hero>)Collections.synchronizedList(list);
 
