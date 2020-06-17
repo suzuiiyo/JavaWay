@@ -1,4 +1,5 @@
 package charactor;
+
 import charactor1.ADHero;
 import charactor1.APHero;
 import exception.EnemyHeroIsDeadException;
@@ -7,8 +8,8 @@ import java.io.Serializable;
 
 import charactor1.ADAPHero;
 
-public class Hero implements Serializable, Comparable<Hero>{
-    private static final long serialVersionUID = 1L; 
+public class Hero implements Serializable, Comparable<Hero> {
+    private static final long serialVersionUID = 1L;
     public String name;
     public float hp;
     public float damage;
@@ -23,37 +24,54 @@ public class Hero implements Serializable, Comparable<Hero>{
     String wordsAfterkilled;
     String wordsAfterkilling;
     public String copyright;
-    
 
-public void setName(String name){
-    this.name = name;
-}
-public String getName(){
-    return name;
-}
-public void setHp(float hp){
-    this.hp = hp;
-}
-public float getHp(){
-    return hp;
-}
-public void kill(Mortal m){
-    m.die();
-}
-
-//回血
-//直接在方法前加上修饰符synchronized
-//其所对应的同步对象，就是this
-//和hurt方法达到的效果一样
-public synchronized void recover(){
-    hp += 1;
-}
-
-public void hurt(){
-    //使用this作为同步对象
-    synchronized(this){
-        hp -= 1;
+    public void setName(String name) {
+        this.name = name;
     }
+
+    public String getName() {
+        return name;
+    }
+
+    public void setHp(float hp) {
+        this.hp = hp;
+    }
+
+    public float getHp() {
+        return hp;
+    }
+
+    public void kill(Mortal m) {
+        m.die();
+    }
+
+    // 回血
+    // 直接在方法前加上修饰符synchronized
+    // 其所对应的同步对象，就是this
+    // 和hurt方法达到的效果一样
+    public synchronized void recover() {
+        hp += 1;
+        System.out.printf("%s回血1点，增加血后, %s的血量是%.0f%n", name, name, hp);
+        // 通知哪些等待再this对象上的线程,可以醒过来了，如第20行，等待着的减血线程，苏醒过看来
+        //this.notify();
+        
+        try { this.wait(); } catch (InterruptedException e) { e.printStackTrace(); }
+    }
+
+    public synchronized void hurt() {
+        // 使用this作为同步对象
+        if (hp == 1) {
+            // 让占有this的减血线程,暂时释放对this的占有,并等待
+            this.notify();
+            /*try {
+                this.wait();
+            } catch (InterruptedException e) {
+                // TODO Auto-generated catch block
+                e.printStackTrace();
+            }*/
+    }
+    hp -= 1;
+    System.out.printf("%s减血1点， 减少血后，%s的血量是%.0f%n", name, name, hp);
 }
 
 public void attackHero(Hero h) throws EnemyHeroIsDeadException {
