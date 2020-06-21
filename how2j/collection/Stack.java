@@ -4,10 +4,10 @@ import charactor.Hero;
 
 public interface Stack<T> {
     //把英雄推入到最后位置
-    public void push(Hero h);
+    public void push(T h);
     //把最后一个英雄取出来
-    public Hero pull();
+    public T pull();
     //查看最后一个英雄
-    public Hero peek();
+    public T peek();
 
 }
