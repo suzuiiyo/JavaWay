@@ -3,7 +3,7 @@ package collection;
 import java.util.LinkedList;
 import charactor.Hero;
 
-public class MyStack<T> implements Stack<T> {
+public class MyStack<T> implements Stack<Hero> {
     LinkedList<Hero> heros = new LinkedList<Hero>();
     //Stack<Hero> heros = new Stack<Hero>();
     //插入的时候,加上synchronized，同步对象是当前实例
