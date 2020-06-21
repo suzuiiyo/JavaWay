@@ -5,9 +5,9 @@ import java.util.LinkedList;
 import java.util.List;
 
 import charactor.Hero;
-import collection.Stack;
+import collection.Stack3;
 
-public class SynchronizedMyStack<T> implements Stack<T>{
+public class SynchronizedMyStack<Hero> implements Stack3<Hero>{
     LinkedList<Hero> list = new LinkedList<>();
     List<Hero> list2 = (List<Hero>)Collections.synchronizedList(list);
 
