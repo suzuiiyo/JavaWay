@@ -2,6 +2,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestAtomicInteger2",
+            "request": "launch",
+            "mainClass": "multithreading.TestAtomicInteger2",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestAtomicInteger",
+            "request": "launch",
+            "mainClass": "multithreading.TestAtomicInteger",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testlock",
+            "request": "launch",
+            "mainClass": "multithreading.Testlock",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ThreadPoolFindFile2",
+            "request": "launch",
+            "mainClass": "multithreading.ThreadPoolFindFile2",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ThreadPoolFindFile",
+            "request": "launch",
+            "mainClass": "multithreading.ThreadPoolFindFile",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestThreadPoolExcutor",
+            "request": "launch",
+            "mainClass": "multithreading.TestThreadPoolExcutor",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestThreadPool2",
+            "request": "launch",
+            "mainClass": "multithreading.TestThreadPool2",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestThreadPool3",
+            "request": "launch",
+            "mainClass": "multithreading.TestThreadPool3",
+            "projectName": "how2j_39e61726"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - AnonymosInnerClass",
             "request": "launch",
             "mainClass": "multithreading.AnonymosInnerClass",

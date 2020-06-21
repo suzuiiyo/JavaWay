@@ -26,7 +26,7 @@ public class ThreadPool {
         }
     }
 
-    class TaskConsumeThread extends Thread{
+    class TaskConsumeThread extends Thread{             //内部内命名，允许添加任务到线程池
         public TaskConsumeThread(String name){
             super(name);
         }
@@ -38,7 +38,7 @@ public class ThreadPool {
                 synchronized(tasks){
                     while(tasks.isEmpty()){
                         try{
-                            task.wait();
+                            tasks.wait();
                         }catch(InterruptedException e){
                             e.printStackTrace();
                         }
