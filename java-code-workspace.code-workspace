@@ -6,7 +6,7 @@
         },
         {
             "name": "how2j",
-            "path": "how2j"
+            "path": "C:\\Users\\Public\\Desktop\\Studio\\JavaWay\\how2j"
         },
         {
             "name": ".vscode",
@@ -24,7 +24,10 @@
 			"**/.settings": true,
 			"**/.factorypath": true
 		},
-        "maven.view": "hierarchical"
+        "maven.view": "hierarchical",
+        "java.project.referencedLibraries": [
+            "lib/**/*.jar"
+        ]
 	},
 	"code-runner.executorMap": {
         "javascript": "node",
