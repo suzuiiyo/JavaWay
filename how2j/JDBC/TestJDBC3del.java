@@ -20,7 +20,7 @@ public class TestJDBC3del {
             //准备sql语句
             //注意:字符串要用单引号
             //String sql = "insert into hero value(null, "+"'冰女'"+", "+313.0f+", "+50+")";
-            for(int i=20356; i<43200; i++){
+            for(int i=71309; i<155200; i++){
                 String sql = "delete from hero where id = " + i;
                 s.execute(sql);
                 System.out.println("执行删除语句成功");

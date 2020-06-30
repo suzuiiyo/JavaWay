@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestConnectionPool2",
+            "request": "launch",
+            "mainClass": "jdbc.TestConnectionPool2",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JDBCPerformance2",
+            "request": "launch",
+            "mainClass": "jdbc.JDBCPerformance2",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - JDBCPerformance",
+            "request": "launch",
+            "mainClass": "jdbc.JDBCPerformance",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestConnectionPool",
+            "request": "launch",
+            "mainClass": "jdbc.TestConnectionPool",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DbUtil",
             "request": "launch",
             "mainClass": "jdbc.DbUtil",
