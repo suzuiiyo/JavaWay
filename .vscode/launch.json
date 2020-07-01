@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestGUI",
+            "request": "launch",
+            "mainClass": "gui.TestGUI",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestGUI",
+            "request": "launch",
+            "mainClass": "swing.TestGUI",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestConnectionPool2",
             "request": "launch",
             "mainClass": "jdbc.TestConnectionPool2",
