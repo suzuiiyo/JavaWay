@@ -2,6 +2,97 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Client4",
+            "request": "launch",
+            "mainClass": "network.Client4",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Server4",
+            "request": "launch",
+            "mainClass": "network.Server4",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Cient3_1",
+            "request": "launch",
+            "mainClass": "network.Cient3_1",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client3",
+            "request": "launch",
+            "mainClass": "network.Client3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Server3",
+            "request": "launch",
+            "mainClass": "network.Server3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client2",
+            "request": "launch",
+            "mainClass": "network.Client2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client",
+            "request": "launch",
+            "mainClass": "network.Client",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client2",
+            "request": "launch",
+            "mainClass": "network.Client2",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Server2",
+            "request": "launch",
+            "mainClass": "network.Server2",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Client",
+            "request": "launch",
+            "mainClass": "network.Client",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Srever",
+            "request": "launch",
+            "mainClass": "network.Srever",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestAvailableIP",
+            "request": "launch",
+            "mainClass": "network.TestAvailableIP",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestPing",
+            "request": "launch",
+            "mainClass": "network.TestPing",
+            "projectName": "JavaWay_1f6c2b4e"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestGUI",
             "request": "launch",
             "mainClass": "gui.TestGUI",
