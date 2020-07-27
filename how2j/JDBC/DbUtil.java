@@ -5,7 +5,7 @@ import java.sql.DriverManager;
 
 public class DbUtil {
     private String drive = "com.mysql.cj.jdbc.Driver";
-    private String url = "jdbc:mysql://localhost:3306/how2java";
+    private String url = "jdbc:mysql://localhost:3306/andriod";
     private String factor = "?characterEncoding=utf-8&serverTimezone=UTC";
     private String user = "root";
     private String upassword = "admin";
