@@ -15,17 +15,20 @@ public class Client4 {
 
             OutputStream os = s.getOutputStream();
             DataOutputStream dos = new DataOutputStream(os);
-            Scanner sc = new Scanner(System.in);
-            String str = sc.nextLine();
-            dos.writeUTF(str);
 
             InputStream is = s.getInputStream();
             DataInputStream dis = new DataInputStream(is);
-            String msgSer = dis.readUTF();
-            System.out.println("收到服务端的信息" + msgSer);
+
+            while(true){
+                Scanner sc = new Scanner(System.in);
+                System.out.println("请输入要发送给服务端的信息:");
+                String str = sc.nextLine();
+                dos.writeUTF(str);
+
+                String msgSer = dis.readUTF();
+                System.out.println("收到服务端的信息:" + msgSer + "\n");
+            }
             
-            s.close();
-            sc.close();
         }catch(UnknownHostException e){
             e.printStackTrace();
         }catch(IOException e){

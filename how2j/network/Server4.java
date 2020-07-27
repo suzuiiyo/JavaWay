@@ -21,24 +21,23 @@ public class Server4 {
 
             InputStream is= s.getInputStream();
             DataInputStream dis = new DataInputStream(is);
-            String msgCli = dis.readUTF();
-            System.out.println("收到客户端的信息" + msgCli);
 
             OutputStream os = s.getOutputStream();
             DataOutputStream dos = new DataOutputStream(os);
-            Scanner sc = new Scanner(System.in);
-            String str = sc.nextLine();
-            dos.writeUTF(str);
-            s1.close();
-            sc.close();
-            ss.close();
+
+            while(true){
+                Scanner sc = new Scanner(System.in);
+                System.out.println("请输入要发送给客户端的信息:");
+                String str = sc.nextLine();
+                dos.writeUTF(str);
+
+                String msgCli = dis.readUTF();
+                System.out.println("收到客户端的信息" + msgCli + "\n");
+            }
         }catch(UnknownHostException e){
             e.printStackTrace();
         }catch(IOException e){
             e.printStackTrace();
         }
-        
     }
-    
-    
 }
