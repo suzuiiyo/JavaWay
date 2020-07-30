@@ -9,26 +9,24 @@ import java.net.Socket;
 import java.net.UnknownHostException;
 import java.util.Scanner;
 
-public class AutoResponseClient {
+public class AutoResponseClientDAO {
     public static void main(String[] args) {
         try{
             Socket s = new Socket("127.0.0.1", 8888);
 
-            Scanner sc = new Scanner(System.in);
-            System.out.println("请输入要发送的消息");
-            String msg = sc.nextLine();
-
             OutputStream os = s.getOutputStream();
             DataOutputStream dos = new DataOutputStream(os);
-            dos.writeUTF(msg);
-
             InputStream is = s.getInputStream();
             DataInputStream dis = new DataInputStream(is);
-            String msgRec = dis.readUTF();
-            System.out.println("收到信息:" + msgRec);
 
-            s.close();
-            sc.close();
+            while(true){
+                Scanner sc = new Scanner(System.in);
+                String str = sc.nextLine();
+                dos.writeUTF(str);
+                String msg = dis.readUTF();
+                System.out.println(msg);
+                System.out.println();
+            }
         }catch(UnknownHostException e){
             e.printStackTrace();
         }catch(IOException e){
