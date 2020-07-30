@@ -8,7 +8,7 @@ public class TestConnectionPool2 {
     public static int insertTime = 1;
 
     public static void main(String[] args) {
-        //traditionalWay();
+        traditionalWay();
         connectionPoolWay();
     }
 
