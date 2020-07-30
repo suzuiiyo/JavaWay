@@ -10,9 +10,14 @@ public class DbUtil {
     private String user = "root";
     private String upassword = "admin";
 
-    public Connection getCon() throws Exception{
-        Class.forName(drive);
-        Connection con = DriverManager.getConnection(url+factor, user, upassword);
+    public Connection getCon() {
+        Connection con = null;
+        try{
+            Class.forName(drive);
+            con = DriverManager.getConnection(url+factor, user, upassword);
+        }catch(Exception e){
+            e.printStackTrace();
+        }
         return con;
     }
 
