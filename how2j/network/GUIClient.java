@@ -4,18 +4,20 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.DataInputStream;
 import java.io.DataOutputStream;
-import java.net.ServerSocket;
+import java.io.IOException;
 import java.net.Socket;
+import java.net.UnknownHostException;
+import java.util.Scanner;
 
 import javax.swing.JButton;
 import javax.swing.JFrame;
 import javax.swing.JTextArea;
 import javax.swing.JTextField;
 
-public class GUIServer {
-    public static void main(String[] args) throws Exception {
+public class GUIClient {
+    public static void main(String[] args) throws UnknownHostException, IOException {
         JFrame f = new JFrame();
-        f.setTitle("server");
+        f.setTitle("client");
 
         f.setSize(400, 300);
         f.setLocation(100, 200);
@@ -36,16 +38,18 @@ public class GUIServer {
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
 
-        ServerSocket ss = new ServerSocket(8888);
-
+        Socket s = new Socket("127.0.0.1", 8888);
         System.out.println("listenning on port:8888");
-        final Socket s = ss.accept();
+
         new Thread() {
             public void run() {
                 while (true) {
                     try {
-                        DataInputStream dis = new DataInputStream(s.getInputStream());
-                        String text = dis.readUTF();
+                        DataOutputStream dos = new DataOutputStream(s.getOutputStream());
+                        Scanner sc = new Scanner(System.in);
+                        System.out.println("请输入要发送的信息:");
+                        String text = sc.nextLine();
+                        dos.writeUTF(text);
                         ta.append(text + "\r\n");
                     } catch (Exception e) {
                         e.printStackTrace();
@@ -62,10 +66,10 @@ public class GUIServer {
                 ta.append(text + "\r\n");
 
                 try {
-                    DataOutputStream dos = new DataOutputStream(s.getOutputStream());
-                    dos.writeUTF(text);
-                } catch (Exception ex) {
-                    ex.printStackTrace();
+                    DataInputStream dis = new DataInputStream(s.getInputStream());
+                    dis.readUTF();
+                } catch (Exception e1) {
+                    e1.printStackTrace();
                 }
             }
         });

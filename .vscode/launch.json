@@ -2,6 +2,111 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - ObjectConfig",
+            "request": "launch",
+            "mainClass": "reflection.ObjectConfig",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hero",
+            "request": "launch",
+            "mainClass": "charactor.Hero",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CreateObject",
+            "request": "launch",
+            "mainClass": "reflection.CreateObject",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestReflection4",
+            "request": "launch",
+            "mainClass": "reflection.TestReflection4",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestReflection3",
+            "request": "launch",
+            "mainClass": "reflection.TestReflection3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestReflection2",
+            "request": "launch",
+            "mainClass": "reflection.TestReflection2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUIClient",
+            "request": "launch",
+            "mainClass": "network.GUIClient",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUIServer",
+            "request": "launch",
+            "mainClass": "network.GUIServer",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ClientT",
+            "request": "launch",
+            "mainClass": "network.ClientT",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ServerT",
+            "request": "launch",
+            "mainClass": "network.ServerT",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AutoResponseClientDAO",
+            "request": "launch",
+            "mainClass": "jdbc.AutoResponseClientDAO",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AutoResponseServerDAO",
+            "request": "launch",
+            "mainClass": "jdbc.AutoResponseServerDAO",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AutoResponseClient",
+            "request": "launch",
+            "mainClass": "jdbc.AutoResponseClient",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - UpdateAndriodDatabase",
+            "request": "launch",
+            "mainClass": "jdbc.UpdateAndriodDatabase",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - AutoResponseServer",
+            "request": "launch",
+            "mainClass": "jdbc.AutoResponseServer",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Client4",
             "request": "launch",
             "mainClass": "network.Client4",

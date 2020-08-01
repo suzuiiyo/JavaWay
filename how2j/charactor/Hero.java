@@ -1,16 +1,17 @@
 package charactor;
 
-import charactor1.ADHero;
 import charactor1.APHero;
 import exception.EnemyHeroIsDeadException;
 
+import java.io.BufferedReader;
+import java.io.File;
+import java.io.FileReader;
 import java.io.Serializable;
-
-import charactor1.ADAPHero;
 
 public class Hero implements Serializable, Comparable<Hero> {
     private static final long serialVersionUID = 1L;
-    public String name;
+    // 直接在声明的时候初始化
+    public String name = Hero.getName("属性声明");
     public float hp;
     public float damage;
     float armor;
@@ -23,7 +24,11 @@ public class Hero implements Serializable, Comparable<Hero> {
     int paceOfattack;
     String wordsAfterkilled;
     String wordsAfterkilling;
-    public String copyright;
+    static public String copyright;
+    static {
+        System.out.println("初始化 copyright");
+        copyright = "版权由Valve公司所有";
+    }
 
     public void setName(String name) {
         this.name = name;
@@ -31,6 +36,13 @@ public class Hero implements Serializable, Comparable<Hero> {
 
     public String getName() {
         return name;
+    }
+
+    // 静态方法返回类属性
+    public static String getName(String pos) {
+        String result = "name" + pos;
+        System.out.println(result);
+        return result;
     }
 
     public void setHp(float hp) {
@@ -53,9 +65,13 @@ public class Hero implements Serializable, Comparable<Hero> {
         hp += 1;
         System.out.printf("%s回血1点，增加血后, %s的血量是%.0f%n", name, name, hp);
         // 通知哪些等待再this对象上的线程,可以醒过来了，如第20行，等待着的减血线程，苏醒过看来
-        //this.notify();
-        
-        try { this.wait(); } catch (InterruptedException e) { e.printStackTrace(); }
+        // this.notify();
+
+        try {
+            this.wait();
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
     }
 
     public synchronized void hurt() {
@@ -63,49 +79,65 @@ public class Hero implements Serializable, Comparable<Hero> {
         if (hp == 1) {
             // 让占有this的减血线程,暂时释放对this的占有,并等待
             this.notify();
-            /*try {
-                this.wait();
-            } catch (InterruptedException e) {
-                // TODO Auto-generated catch block
-                e.printStackTrace();
-            }*/
-    }
-    hp -= 1;
-    System.out.printf("%s减血1点， 减少血后，%s的血量是%.0f%n", name, name, hp);
-}
-
-public void attackHero(Hero h) throws EnemyHeroIsDeadException {
-    System.out.println(this.name + "攻击了" + h.name);
-    if(h.hp == 0){
-        throw new EnemyHeroIsDeadException(h.name + "已扑街，无法作为被攻击对象");
+            /*
+             * try { this.wait(); } catch (InterruptedException e) { // TODO Auto-generated
+             * catch block e.printStackTrace(); }
+             */
+        }
+        hp -= 1;
+        System.out.printf("%s减血1点， 减少血后，%s的血量是%.0f%n", name, name, hp);
     }
 
-    try {
-        //为了表示攻击需要时间,每次攻击暂停1000毫秒
-        Thread.sleep(1000);
-    }catch (InterruptedException e){
-        e.printStackTrace();
-    }
-    h.hp-=damage;
-    System.out.format("%s 正在攻击 %s, %s的血变成了%.0f%n", name, h.name, h.name, h.hp);
-    if(h.isDead())
-        System.out.println(h.name + "死了！");
-}
+    public void attackHero(Hero h) throws EnemyHeroIsDeadException {
+        System.out.println(this.name + "攻击了" + h.name);
+        if (h.hp == 0) {
+            throw new EnemyHeroIsDeadException(h.name + "已扑街，无法作为被攻击对象");
+        }
 
-public void bodongquan(Hero h) throws InterruptedException {
-    int bodongDamage = 32;
-    for(int count=1; count<4; count++){
-        System.out.printf(name + "对%s使出第%d发波动拳!%n", h, count);
-        h.hp -= bodongDamage;
-        Thread.sleep(1000);          //每一发暂停一秒
-        if(count==3){
-            System.out.println("等待5秒进行充能");
-            Thread.sleep(5000);
-            count=0;
-            System.out.println("充能完毕,重新发起波动拳\n");
+        try {
+            // 为了表示攻击需要时间,每次攻击暂停1000毫秒
+            Thread.sleep(1000);
+        } catch (InterruptedException e) {
+            e.printStackTrace();
+        }
+        h.hp -= damage;
+        System.out.format("%s 正在攻击 %s, %s的血变成了%.0f%n", name, h.name, h.name, h.hp);
+        if (h.isDead())
+            System.out.println(h.name + "死了！");
+    }
+
+    public void bodongquan(Hero h) throws InterruptedException {
+        int bodongDamage = 32;
+        for (int count = 1; count < 4; count++) {
+            System.out.printf(name + "对%s使出第%d发波动拳!%n", h, count);
+            h.hp -= bodongDamage;
+            Thread.sleep(1000); // 每一发暂停一秒
+            if (count == 3) {
+                System.out.println("等待5秒进行充能");
+                Thread.sleep(5000);
+                count = 0;
+                System.out.println("充能完毕,重新发起波动拳\n");
+            }
         }
     }
-}
+
+    public static Hero getHero() {
+        File f = new File("d:/Studio/JavaWay/AC/DC/hero.config");
+        APHero aphero = null;
+        try(FileReader fr = new FileReader(f); BufferedReader br = new BufferedReader(fr)) {
+            // FileInputStream fis = new FileInputStream(f);
+            String className = br.readLine();
+
+            //Class pClass = Class.forName(className);
+            //Constructor c = pClass.getConstructor();
+            //APHero aphero = (APHero) c.newInstance();
+            aphero = (APHero) Class.forName(className).getConstructor().newInstance();
+
+        } catch (Exception e){
+            e.printStackTrace();
+        }
+        return aphero;
+    }
 
     public static void main(String[] args){
         Hero garen = new Hero();
@@ -114,7 +146,7 @@ public void bodongquan(Hero h) throws InterruptedException {
         garen.armor = 27.65f;
         garen.moveSpeed = 350;
 
-        Hero teemo = new Hero();
+        /*Hero teemo = new Hero();
         teemo.setName("提莫");
         teemo.hp = 0;
         teemo.armor = 14f;
@@ -157,17 +189,36 @@ public void bodongquan(Hero h) throws InterruptedException {
         catch(EnemyHeroIsDeadException e){
             System.out.println("显示具体异常原因: "); // + e.getMessage());
             e.printStackTrace();
-        }
+        }*/
+        new Hero();
+        APHero apHero = (APHero) getHero();
+        apHero.setName("受折磨的老鹿");
+        apHero.setHp(345);
+        System.out.println(apHero);
+        try {
+			apHero.bodongquan(garen);
+		} catch (InterruptedException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
     }
 
     public boolean isDead(){
         return 0>=hp?true:false;
     }
 
-    public Hero(){}
+    //无参构造方法初始化类属性
+    public Hero(){
+        name = Hero.getName("构造方法");
+    }
 
     public Hero(String name){
         this.name = name;
+    }
+
+    //代码块初始化
+    {
+        name = Hero.getName("初始化块");
     }
 
     public Hero(String name, float hp){
@@ -216,6 +267,7 @@ public void bodongquan(Hero h) throws InterruptedException {
         //return String.format("[name:%s hp:%.0f]%n", name, hp);
         return String.format("[name:%s hp:%.0f damage:%.0f]%n", name, hp, damage);
     }
+    
     public String getClassName(){
         String className=null;
         try {
