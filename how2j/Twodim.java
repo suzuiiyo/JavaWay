@@ -8,7 +8,6 @@ public class Twodim{
         String[] str1 = s.split(" ");
         if(str1.length<5 || str1.length>5){
             System.out.println("您输入的数字格式有误！");
-            return;
         }
         str.close();
         int[] dim1 = new int[5];
