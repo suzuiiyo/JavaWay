@@ -7,7 +7,7 @@ import java.util.Collections;
 
 import charactor.Hero;
 
-public class testStream2 {
+public class TestStream2 {
     public static void main(String[] args) {
         Random r = new Random();
         List<Hero> heros = new ArrayList<Hero>();

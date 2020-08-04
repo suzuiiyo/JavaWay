@@ -6,7 +6,7 @@ import java.util.Random;
 import java.util.List;
 import charactor.Hero;
 
-public class testStream {
+public class TestStream {
     public static void main(String[] args) {
         Random r = new Random();
         List<Hero> heros = new ArrayList<>();
