@@ -25,6 +25,7 @@ public class Hero implements Serializable, Comparable<Hero> {
     String wordsAfterkilled;
     String wordsAfterkilling;
     static public String copyright;
+    private float ultimate = 777;
     static {
         System.out.println("初始化 copyright");
         copyright = "版权由Valve公司所有";
@@ -55,6 +56,15 @@ public class Hero implements Serializable, Comparable<Hero> {
 
     public void kill(Mortal m) {
         m.die();
+    }
+
+    public void setUltimate(float ultra){
+        this.ultimate = ultra;
+    }
+
+    public float getUltimate(){
+        float ultra = this.ultimate;
+        return ultra;
     }
 
     // 回血
@@ -265,7 +275,7 @@ public class Hero implements Serializable, Comparable<Hero> {
     public String toString(){    //重写toString方法，否则返回哈希值
         //return name;
         //return String.format("[name:%s hp:%.0f]%n", name, hp);
-        return String.format("[name:%s hp:%.0f damage:%.0f]%n", name, hp, damage);
+        return String.format("[name:%s hp:%.0f damage:%.0f ultimate:%.0f]%n", name, hp, damage, ultimate);
     }
     
     public String getClassName(){
