@@ -9,12 +9,12 @@ public class APHero extends Hero implements AP, Mortal{
         this.name = name;
     }
     public void magicAttack(){
-        System.out.println(this.name + "发起了普攻！");
+        System.out.println(this.name + "发起了法术！");
     }
 
     public void magicAttack(Hero hero){
         String extName = hero.getName();
-        System.out.println(this.name + "对" + extName +"发起了普攻！");
+        System.out.println(this.name + "对" + extName +"发起了法术！");
     }
 
     public void magicAttack(Hero hero, float hp){
