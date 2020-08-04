@@ -6,7 +6,7 @@ import java.util.Random;
 import charactor.Hero;
 import java.util.Collections;
 
-public class testComparator {
+public class TestComparator {
     public static void main(String[] args) {
         List<Hero> herolist = new ArrayList<>();
         Random r = new Random();
@@ -17,7 +17,7 @@ public class testComparator {
         System.out.println(herolist);
         System.out.println("使用静态方法得过滤结果: ");
         //Collections.sort(herolist, (h1, h2)->testComparator.compare(h1, h2));    //按照hp升序排序
-        Collections.sort(herolist, testComparator::compare);    //类名调用静态方法，进一步简化
+        Collections.sort(herolist, TestComparator::compare);    //类名调用静态方法，进一步简化
         System.out.println(herolist);
         System.out.println("使用容器中对象方法得到的过滤结果: ");
         Collections.sort(herolist, Hero::compareTo);   //按照damage升序排序
