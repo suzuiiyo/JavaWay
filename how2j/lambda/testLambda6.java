@@ -5,7 +5,7 @@ import charactor.Hero;
 
 import java.util.Random;
 
-public class testLambda6 {
+public class TestLambda6 {
     public static void main(String[] args) {
         Random r= new Random();
         List<Hero> heros = new ArrayList<Hero>();
