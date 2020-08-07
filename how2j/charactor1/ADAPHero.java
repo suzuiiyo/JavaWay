@@ -4,7 +4,18 @@ import charactor.Mortal;
 
 public class ADAPHero extends Hero implements AD, AP, Mortal {
 
-    public void magicAttack(){
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+
+    //TODO 必须重写分别继承自AD和AP的重名的default方法,才不会报错
+    public void attack(){
+        System.out.println("往死里打");
+        //AD.super.attack();
+    }
+
+    public void magicAttack() {
         System.out.println(this.name + "使用技能");
     }
     public void magicAttack(Hero hero, float hp){
