@@ -2,6 +2,55 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - DBUtil2",
+            "request": "launch",
+            "mainClass": "annotation_hibernate.DBUtil2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ParseHibernateAnnotation",
+            "request": "launch",
+            "mainClass": "annotation_hibernate.ParseHibernateAnnotation",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindFiles2",
+            "request": "launch",
+            "mainClass": "annotation.FindFiles2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FindFiles",
+            "request": "launch",
+            "mainClass": "annotation.FindFiles",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DBUtil2",
+            "request": "launch",
+            "mainClass": "annotation.DBUtil2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DBUtil",
+            "request": "launch",
+            "mainClass": "annotation.DBUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ChangeProperity",
+            "request": "launch",
+            "mainClass": "reflection.ChangeProperity",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - ObjectConfig",
             "request": "launch",
             "mainClass": "reflection.ObjectConfig",
