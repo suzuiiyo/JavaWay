@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - billTable3",
+            "request": "launch",
+            "mainClass": "hutubill.database.billTable3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - billTable2",
+            "request": "launch",
+            "mainClass": "hutubill.database.billTable2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DBUtilChild",
+            "request": "launch",
+            "mainClass": "annotation.DBUtilChild",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - billTable",
+            "request": "launch",
+            "mainClass": "hutubill.database.billTable",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - DBUtil2",
             "request": "launch",
             "mainClass": "annotation_hibernate.DBUtil2",

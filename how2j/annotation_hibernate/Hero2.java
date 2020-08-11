@@ -1,7 +1,7 @@
 package annotation_hibernate;
 
 @MyEntity
-@MyTable(name="hero_");
+@MyTable(name="hero_")
 public class Hero2 {
     private int id;
     private String name;
