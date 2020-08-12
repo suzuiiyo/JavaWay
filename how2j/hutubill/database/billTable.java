@@ -9,10 +9,10 @@ import annotation.JDBCConfig;
 import jdbc.DbUtil;
 
 @JDBCConfig(ip="127.0.0.1", database="hutubill", encoding="utf-8", timezone="UTC", loginName="root", password="admin")
-public class billTable {
+public class BillTable {
     public static void main(String[] args) {
         //DBUtil没有使用注解, 这个地方用DBUtilChild解析注解
-        JDBCConfig config = billTable.class.getAnnotation(JDBCConfig.class);
+        JDBCConfig config = BillTable.class.getAnnotation(JDBCConfig.class);
         String ip = config.ip();
         int port = config.port();
         String database = config.database();

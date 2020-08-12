@@ -2,6 +2,34 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - CenterPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.CenterPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Protype",
+            "request": "launch",
+            "mainClass": "hutubill.database.Protype",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - billAlter2",
+            "request": "launch",
+            "mainClass": "hutubill.database.billAlter2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - billAlter",
+            "request": "launch",
+            "mainClass": "hutubill.database.billAlter",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - billTable3",
             "request": "launch",
             "mainClass": "hutubill.database.billTable3",

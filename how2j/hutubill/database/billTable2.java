@@ -8,8 +8,8 @@ import java.sql.Statement;
 import annotation.JDBCConfig;
 
 @JDBCConfig(ip = "127.0.0.1", database = "hutubill", encoding = "utf-8", timezone = "UTC", loginName = "root", password = "admin")
-public class billTable2 {
-    static JDBCConfig config = billTable2.class.getAnnotation(JDBCConfig.class);
+public class BillTable2 {
+    static JDBCConfig config = BillTable2.class.getAnnotation(JDBCConfig.class);
     static String ip = config.ip();
     static int port = config.port();
     static String database = config.database();
