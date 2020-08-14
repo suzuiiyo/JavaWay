@@ -8,63 +8,65 @@ import javax.swing.JComponent;
 import javax.swing.JFrame;
 import javax.swing.JPanel;
 
-public class CenterPanel extends JPanel{
-    /**
-     *
-     */
-    private static final long serialVersionUID = 1L;
-    private double rate; // 拉伸比例
-    private JComponent c;    //显示的组件
-    private boolean stretch;   //是否拉伸
+public class CenterPanel2 extends JPanel {
+    //拉伸率
+    private double rate;
+    //显示的组件
+    private JComponent c;
+    //是否拉伸的flag
+    private boolean stretch;
 
-    //构造函数
-    public CenterPanel(double rate, boolean strech){
+    public CenterPanel2(double rate){
+        this(rate, true);
+    }
+
+    public CenterPanel2(double rate, boolean streth){
+        //让所有组件都自定义分布
         this.setLayout(null);
         this.rate = rate;
         this.stretch = stretch;
     }
 
-    public CenterPanel(double rate){
-        this(rate, true);
-    }
-
     public void repaint(){
+        //如果存在组件
         if(null != c){
+            //容器的尺寸
             Dimension containerSize = this.getSize();
+            //组件的尺寸
             Dimension componentSize = c.getPreferredSize();
 
-            //可以拉伸
-            if(stretch)
+            if(stretch){
                 c.setSize((int)(containerSize.width * rate), (int)(containerSize.height * rate));
-            else
+            }
+            else{
                 c.setSize(componentSize);
+            }
 
             c.setLocation(containerSize.width / 2 - c.getSize().width / 2, containerSize.height / 2 - c.getSize().height / 2);
         }
-        //调用父类repaint()方法
         super.repaint();
     }
 
     public void show(JComponent p){
         this.c = p;
         Component[] cs = getComponents();
-        for(Component c :  cs){
+        for(Component c : cs){
             remove(c);
         }
         add(p);
         this.updateUI();
     }
-    
-    public static void main(String[] args) {
-        JFrame f = new JFrame();
-        f.setSize(200, 200);
-        f.setLocationRelativeTo(null);
-        //设置拉伸比和是否拉伸
-        CenterPanel cp = new CenterPanel(0.85, true);
-        f.setContentPane(cp);
-        f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
-        f.setVisible(true);
-        JButton b = new JButton("按E可赛艇");
-        cp.show(b);
+
+    public static void main(String[] args){
+        JFrame jf = new JFrame();
+        jf.setSize(200, 200);
+        jf.setLocationRelativeTo(null);
+
+        CenterPanel2 cp = new CenterPanel2(0.85, true);
+        jf.setContentPane(cp);
+        jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        jf.setVisible(true);
+        JButton jb = new JButton("按E可赛艇");
+        cp.show(jb);
     }
 }

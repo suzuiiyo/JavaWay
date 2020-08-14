@@ -31,7 +31,7 @@ public class TestGUI {
         JButton b = new JButton("神罗天征");
 
         //同时设置组件的大小喝位置
-        b.setBounds(50, 50, 280, 30);
+        b.setBounds(150, 100, 100, 30);
 
         //把按钮加入到主窗体中
         f.add(b);
