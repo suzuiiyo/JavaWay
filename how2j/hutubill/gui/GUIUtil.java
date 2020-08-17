@@ -51,6 +51,7 @@ public class GUIUtil {
         jf.setContentPane(cp);
         jf.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         jf.setVisible(true);
+        //CenterPanel类的show方法, 接收参数JComponet,JPanel是JComponent的子类
         cp.show(p);
     }
 
