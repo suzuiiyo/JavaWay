@@ -7,12 +7,17 @@ import java.awt.FontMetrics;
 import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.RenderingHints;
+import java.awt.BorderLayout;
 
 import javax.swing.JPanel;
 
 public class CircleProgressBar extends JPanel {
-    private int miniumProgress;
-    private int maxiumProgress;
+    /**
+     *
+     */
+    private static final long serialVersionUID = 1L;
+    private int minimumProgress;
+    private int maximumProgress;
 
     private int progress;
     private String progressText;
@@ -21,11 +26,12 @@ public class CircleProgressBar extends JPanel {
     private Color foregroundColor;
 
     public CircleProgressBar(){
-        miniumProgress = 0;
-        maxiumProgress = 100;
+        minimumProgress = 0;
+        maximumProgress = 100;
         progressText   = "0%";
     }
 
+    //paint和repaint方法,java所有的绘制都是对Graphics对象进行操作
     public void paint(Graphics g){
         super.paint(g);
         Graphics2D graphics2d = (Graphics2D) g;
@@ -53,8 +59,8 @@ public class CircleProgressBar extends JPanel {
         graphics2d.setColor(backgroundColor);
         graphics2d.drawArc(x, y, width, height, 0, 360);
         graphics2d.setColor(foregroundColor);
-        graphics2d.drawArc(x, y, width, height, 90, -(int)(360 * ((progress * 1.0) / (maxiumProgress
-                - miniumProgress))));
+        graphics2d.drawArc(x, y, width, height, 90, -(int)(360 * ((progress * 1.0) / (maximumProgress
+                - minimumProgress))));
         graphics2d.setFont(new Font("黑体", Font.BOLD, fontSize));
         FontMetrics fontMetrics   = graphics2d.getFontMetrics();
         int         digitalWidth  = fontMetrics.stringWidth(progressText);
@@ -67,20 +73,22 @@ public class CircleProgressBar extends JPanel {
         return progress;
     }
 
+    //设置进度
     public void setProgress(int progress){
-        if(progress >= miniumProgress && progress <= maxiumProgress)
+        if(progress >= minimumProgress && progress <= maximumProgress)
             this.progress = progress;
-        if(progress > maxiumProgress)
-            this.progress = maxiumProgress;
+        if(progress > maximumProgress)
+            this.progress = maximumProgress;
         
         this.progressText = String.valueOf(progress + "%");
         this.repaint();
     }
 
-    public Color getBackgrColor(){
+    public Color getBackgroundColor(){
         return backgroundColor;
     }
 
+    //设置背景色
     public void setBackgroundColor(Color backgroundColor){
         this.backgroundColor = backgroundColor;
         this.repaint();
@@ -90,8 +98,21 @@ public class CircleProgressBar extends JPanel {
         return foregroundColor;
     }
 
+    //设置前景色
     public void setForegroundColor(Color foregroundColor){
         this.foregroundColor = foregroundColor;
         this.repaint();
+    }
+
+    public static void main(String[] args) {
+        JPanel jp = new JPanel();
+
+        CircleProgressBar cpb = new CircleProgressBar();
+        cpb.setBackgroundColor(ColorUtil.blueColor);
+        cpb.setProgress(0);
+
+        jp.setLayout(new BorderLayout());
+        jp.add(cpb, BorderLayout.CENTER);
+        GUIUtil.showPanel(jp);
     }
 }
