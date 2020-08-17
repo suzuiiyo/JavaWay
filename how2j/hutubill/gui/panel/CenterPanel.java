@@ -18,9 +18,11 @@ public class CenterPanel extends JPanel{
     private boolean stretch;   //是否拉伸
 
     //构造函数
-    public CenterPanel(double rate, boolean strech){
+    public CenterPanel(double rate, boolean stretch){
         this.setLayout(null);
         this.rate = rate;
+        //是否拉伸
+        //不拉伸会导致后面环形进度条不显示
         this.stretch = stretch;
     }
 
@@ -45,6 +47,7 @@ public class CenterPanel extends JPanel{
         super.repaint();
     }
 
+    //先移除所有组件  再绘制新组件
     public void show(JComponent p){
         this.c = p;
         Component[] cs = getComponents();
@@ -57,10 +60,10 @@ public class CenterPanel extends JPanel{
     
     public static void main(String[] args) {
         JFrame f = new JFrame();
-        f.setSize(200, 200);
+        f.setSize(600, 500);
         f.setLocationRelativeTo(null);
         //设置拉伸比和是否拉伸
-        CenterPanel cp = new CenterPanel(0.85, true);
+        CenterPanel cp = new CenterPanel(0.25, true);
         f.setContentPane(cp);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);
