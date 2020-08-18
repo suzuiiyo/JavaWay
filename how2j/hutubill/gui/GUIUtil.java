@@ -19,16 +19,20 @@ public class GUIUtil {
     private static String imageFolder;
     //用System类获取根目录
     static{
-        imageFolder = System.getProperty("user.dir")+"\\img";    //获取项目根路径
+        imageFolder = System.getProperty("user.dir")+"\\how2j\\hutubill\\gui\\img";    //获取项目根路径
     }
 
     //给按钮设置图标和文本以及提示文字
     public static void setImageIcon(JButton b, String fileName, String tip) {
         ImageIcon i = new ImageIcon(new File(imageFolder, fileName).getAbsolutePath());
         b.setIcon(i);
+        //预设尺寸
         b.setPreferredSize(new Dimension(61, 81));
+        //设置按钮文字说明
         b.setToolTipText(tip);
+        //文字垂直布局，相对于按钮
         b.setVerticalTextPosition(JButton.BOTTOM);
+        //文字水平布局，相对于按钮
         b.setHorizontalTextPosition(JButton.CENTER);
         b.setText(tip);
     }
@@ -125,5 +129,10 @@ public class GUIUtil {
         }catch(Exception e){
             e.printStackTrace();
         }
+    }
+
+    //打印图标文件夹目录
+    public static void main(String[] args) {
+        System.out.println(imageFolder);
     }
 }
