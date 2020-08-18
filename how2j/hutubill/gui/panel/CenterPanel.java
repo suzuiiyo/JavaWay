@@ -30,6 +30,7 @@ public class CenterPanel extends JPanel{
         this(rate, true);
     }
 
+    //实现拉伸效果 
     public void repaint(){
         if(null != c){
             Dimension containerSize = this.getSize();
