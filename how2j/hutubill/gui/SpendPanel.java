@@ -32,7 +32,7 @@ public class SpendPanel extends JPanel {
 
     CircleProgressBar bar;
 
-    public SpendPanel(){
+    private SpendPanel(){
         this.setLayout(new BorderLayout());
         bar =  new CircleProgressBar();
         bar.setBackgroundColor(ColorUtil.blueColor);
@@ -50,6 +50,7 @@ public class SpendPanel extends JPanel {
         this.add(south(), BorderLayout.SOUTH);
     }
 
+    //center里面套了一个center2就是环形进度条
     private JPanel center(){
         JPanel p = new JPanel();
         p.setLayout(new BorderLayout());
@@ -65,7 +66,9 @@ public class SpendPanel extends JPanel {
 
     private Component west() {
         JPanel p = new JPanel();
+        //网格布局,四行一列
         p.setLayout(new GridLayout(4, 1));
+
         p.add(lMonthSpend);
         p.add(vMonthSpend);
         p.add(lTodaySpend);
@@ -75,6 +78,7 @@ public class SpendPanel extends JPanel {
 
     private JPanel south(){
         JPanel p = new JPanel();
+        //网格布局，两行四列
         p.setLayout(new GridLayout(2, 4));
 
         p.add(lAvgSpendPerDay);
