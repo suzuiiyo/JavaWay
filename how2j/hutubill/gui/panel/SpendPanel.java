@@ -1,29 +1,99 @@
 package hutubill.gui.panel;
 
-import javax.swing.JLabel;
+import java.awt.BorderLayout;
+import java.awt.Font;
+import java.awt.Component;
+import java.awt.GridLayout;
 
-public class SpendPanel {
-    //创建一个静态实例指向SpendPanel对象
-    //按理来说，应该私有化类属性指向实例化对象
-    //然后提供一个public方法，返回该类属性,从而达到获取对象的目的
-    //八种甚至更多种单例模式
+import javax.swing.JLabel;
+import javax.swing.JPanel;
+
+
+public class SpendPanel extends JPanel {
+    static {
+        GUIUtil.useLNF();
+    }
+
     public static SpendPanel instance = new SpendPanel();
 
-    JLabel lMonthSpend = new JLabel("本月消费");
-    JLabel lToday = new JLabel("今日消费");
-    JLabel lAvgSpendPerDay = new JLabel("日均消费");
-    JLabel lMonthLeft = new JLabel("本月剩余");
-    JLabel lDayAvgAvailable = new JLabel("日均可用");
-    JLabel lMonthLeftDay = new JLabel("距离月末");
+    public JLabel lMonthSpend = new JLabel("本月消费");
+    public JLabel lTodaySpend = new JLabel("今日消费");
+    public JLabel lAvgSpendPerDay = new JLabel("日均消费");
+    public JLabel lMonthLeft = new JLabel("本月剩余");
+    public JLabel lDayAvgAvailable = new JLabel("日均可用");
+    public JLabel lMonthLeftDay = new JLabel("距离月末");
 
-    JLabel vMonthSpend = new JLabel("本月消费");
-    JLabel vToday = new JLabel("今日消费");
-    JLabel vAvgSpendPerDay = new JLabel("日均消费");
-    JLabel vMonthLeft = new JLabel("本月剩余");
-    JLabel vDayAvgAvailable = new JLabel("日均可用");
-    JLabel vMonthLeftDay = new JLabel("距离月末");
+    public JLabel vMonthSpend = new JLabel("￥2300");
+    public JLabel vTodaySpend = new JLabel("￥25");
+    public JLabel vAvgSpendPerDay = new JLabel("￥120");
+    public JLabel vMonthAvailable = new JLabel("￥2084");
+    public JLabel vDayAvgAvailable = new JLabel("￥389");
+    public JLabel vMonthLeftDay = new JLabel("￥389");
 
-    //私有化构造方法
+    CircleProgressBar bar;
+
     private SpendPanel(){
+        this.setLayout(new BorderLayout());
+        bar =  new CircleProgressBar();
+        bar.setBackgroundColor(ColorUtil.blueColor);
+
+        GUIUtil.setColor(ColorUtil.grayColor, lMonthSpend, lTodaySpend, lAvgSpendPerDay, 
+                lMonthLeft, lDayAvgAvailable, lMonthLeftDay, vAvgSpendPerDay, vMonthAvailable, vDayAvgAvailable,
+                vMonthLeftDay);
+        
+        GUIUtil.setColor(ColorUtil.blueColor, vMonthSpend, vTodaySpend);
+
+        vMonthSpend.setFont(new Font("微软雅黑", Font.BOLD, 23));
+        vTodaySpend.setFont(new Font("微软雅黑", Font.BOLD, 23));
+
+        this.add(center(), BorderLayout.CENTER);
+        this.add(south(), BorderLayout.SOUTH);
+    }
+
+    //center里面套了一个center2就是环形进度条
+    private JPanel center(){
+        JPanel p = new JPanel();
+        p.setLayout(new BorderLayout());
+        p.add(west(), BorderLayout.WEST);
+        p.add(center2(), BorderLayout.CENTER);
+
+        return p;
+    }
+
+    private Component center2() {
+        return bar;
+    }
+
+    private Component west() {
+        JPanel p = new JPanel();
+        //网格布局,四行一列
+        p.setLayout(new GridLayout(4, 1));
+
+        p.add(lMonthSpend);
+        p.add(vMonthSpend);
+        p.add(lTodaySpend);
+        p.add(vTodaySpend);
+        return p;
+    }
+
+    private JPanel south(){
+        JPanel p = new JPanel();
+        //网格布局，两行四列
+        p.setLayout(new GridLayout(2, 4));
+
+        p.add(lAvgSpendPerDay);
+        p.add(lMonthLeft);
+        p.add(lDayAvgAvailable);
+        p.add(lMonthLeft);
+        p.add(vAvgSpendPerDay);
+        p.add(vMonthAvailable);
+        p.add(vDayAvgAvailable);
+        p.add(vMonthLeftDay);
+
+        return p;
+    }
+
+    public static void main(String[] args) {
+        GUIUtil.showPanel(SpendPanel.instance);
     }
 }

@@ -64,7 +64,7 @@ public class CenterPanel extends JPanel{
         f.setSize(600, 500);
         f.setLocationRelativeTo(null);
         //设置拉伸比和是否拉伸
-        CenterPanel cp = new CenterPanel(0.25, true);
+        CenterPanel cp = new CenterPanel(0.85, true);
         f.setContentPane(cp);
         f.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         f.setVisible(true);

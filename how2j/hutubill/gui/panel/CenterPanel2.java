@@ -24,6 +24,7 @@ public class CenterPanel2 extends JPanel {
         //让所有组件都自定义分布
         this.setLayout(null);
         this.rate = rate;
+        //不拉伸看效果
         this.stretch = stretch;
     }
 
@@ -59,7 +60,7 @@ public class CenterPanel2 extends JPanel {
 
     public static void main(String[] args){
         JFrame jf = new JFrame();
-        jf.setSize(200, 200);
+        jf.setSize(600, 500);
         jf.setLocationRelativeTo(null);
 
         CenterPanel2 cp = new CenterPanel2(0.85, true);
