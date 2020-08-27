@@ -30,6 +30,7 @@ public class Category {
         this.name = name;
     }
     //自动调用toString  显示在“记一笔"页面上
+    //TODO  toString方法，在后续JComboBox中显示得时候，会调用此方法,用于显示分类名称
     public String toString(){
         return name;
     }

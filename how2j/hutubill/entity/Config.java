@@ -2,7 +2,7 @@ package hutubill.entity;
 
 public class Config {
     private int id;
-    private String key;
+    private String key_;
     private String value;
 
     public int getId(){
@@ -12,11 +12,11 @@ public class Config {
     public void setId(int id){
         this.id = id;
     }
-    public String getKey(){
-        return key;
+    public String getKey_(){
+        return key_;
     }
-    public void setKey(String key){
-        this.key = key;
+    public void setKey_(String key){
+        this.key_ = key;
     }
     public String getValue(){
         return value;
