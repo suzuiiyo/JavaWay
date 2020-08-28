@@ -14,6 +14,8 @@ import javax.swing.JTextField;
 
 import org.jdesktop.swingx.JXDatePicker;
 
+import hutubill.gui.model.CategoryComboBoxModel;
+
 public class RecordPanel extends JPanel {
     static {
         GUIUtil.useLNF();

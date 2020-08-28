@@ -97,6 +97,9 @@ public class RecordDAO {
         return record;
     }
 
+    public List<Record> list(){
+        return list(0, Short.MAX_VALUE);
+    }
     //∑÷“≥≤È—Ø
     public List<Record> list(int start, int count){
         List<Record> records = new ArrayList<>();
@@ -127,8 +130,32 @@ public class RecordDAO {
         return records;
     }
 
-    public List<Record> list(){
-        return list(0, Short.MAX_VALUE);
+    public List<Record> list(int cid){
+        List<Record> records = new ArrayList<>();
+        String sql = "select * from record where cid = £ø";
+        try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
+            ps.setInt(1, cid);
+            ResultSet rs = ps.executeQuery();
+            while(rs.next()){
+                Record record = new Record();
+                int id = rs.getInt(1);
+                int spend = rs.getInt("spend");
+                String commment = rs.getString("comment");
+                Date date = rs.getDate(5);
+
+                record.setId(id);
+                record.setSpend(spend);
+                record.setComment(commment);
+                record.setDate(date);
+                record.setCid(cid);
+
+                records.add(record);
+            }
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        return records;
+
     }
 
     public Record getByCid(int cid){

@@ -1,4 +1,4 @@
-package hutubill.gui.panel;
+package hutubill.gui.model;
 
 import java.util.ArrayList;
 import java.util.List;

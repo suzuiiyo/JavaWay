@@ -30,7 +30,7 @@ public class CategoryDAO {
     public void add(Category category){
         String sql = "insert into category values(null, ?)";
         try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
-            ps.setString(2, category.getName());
+            ps.setString(1, category.getName());
             ps.executeUpdate();
 
             //默认操作，增加一个对象到数据库后将它的id取出来

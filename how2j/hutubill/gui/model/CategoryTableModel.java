@@ -1,17 +1,30 @@
-package hutubill.gui.panel;
+package hutubill.gui.model;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import javax.swing.event.TableModelListener;
 import javax.swing.table.TableModel;
 
+import hutubill.entity.Category;
+import hutubill.service.CategoryService;
 
 public class CategoryTableModel implements TableModel {
     String[] columnNames = new String[] { "分类名称", "消费次数" };
-    List<String> cs = new ArrayList<>();
+    //TODO  用CategoryService的list方法获取消费记录降序排列的category
+    public List<Category> categorys = new CategoryService().list();
+    //List<String> cs = new ArrayList<>();
 
-    public CategoryTableModel() {
+    //获取行数
+    public int getRowCount(){
+        return categorys.size();
+    }
+    //获取列数
+    public int getColumnCount(){
+        return columnNames.length;
+    }
+
+
+    /*public CategoryTableModel() {
         cs.add("餐饮");
         cs.add("交通");
         cs.add("住宿");
@@ -28,7 +41,7 @@ public class CategoryTableModel implements TableModel {
     public int getColumnCount() {
         // TODO Auto-generated method stub
         return columnNames.length;
-    }
+    }*/
 
     @Override
     public String getColumnName(int columnIndex) {
@@ -50,21 +63,24 @@ public class CategoryTableModel implements TableModel {
         return false;
     }
 
+    //先通过categorys.get(rowIndex)获取行对应的Category对象
+    //然后根据columnIndex返回对应的属性
     @Override
     public Object getValueAt(int rowIndex, int columnIndex) {
         // TODO Auto-generated method stub
+        Category h = categorys.get(rowIndex);
         if(0==columnIndex)
-            return cs.get(rowIndex);
+            return h.getName();
         if(1==columnIndex)
-            return 0;
-        if(2==columnIndex)
-            return 1;
+            return h.recordNumber;
+
         return null;
     }
 
     @Override
     public void setValueAt(Object aValue, int rowIndex, int columnIndex) {
         // TODO Auto-generated method stub
+
     }
 
     @Override
