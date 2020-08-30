@@ -25,11 +25,11 @@ public class BillTable {
         Connection conn = null;
         Connection newConn = null;
         //用DbUtil初始化并连接到how2java数据库
+        //jdbc必须先进入到一个数据库,才能用sql语句新建一个数据库
         DbUtil db = new DbUtil();
         conn = db.getCon();
         String databaseSql = "create database hutubill";
-        String tableSql = "CREATE TABLE custom (id int(100) AUTO_INCREMENT," + "food varchar(100)," + "close varchar(100)," +"traffic varchar(100),"
-                            + "entertainment varchar(100)," + "travel varchar(100)," + "medicine varchar(100)," + "PRIMARY KEY (id));"; 
+        String tableSql = "CREATE TABLE category (id int(100) AUTO_INCREMENT," + "name varchar(100)," + "PRIMARY KEY (id));"; 
 
         try(Statement ps = conn.createStatement()){
             if(conn != null){
