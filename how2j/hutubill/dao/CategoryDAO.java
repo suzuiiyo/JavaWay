@@ -27,11 +27,13 @@ public class CategoryDAO {
         return recordNumber;
     }
 
+    //TODO  mysql5.1.7版本之后的mysql-connector增加了返回GeneratedKeys的条件,如果需要返回GeneratedKeys,
+    //TODO  则PreparedStatement需要显式添加一个参数Statement.RETURN_GENERATED_KEYS
     public void add(Category category){
         String sql = "insert into category values(null, ?)";
-        try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
+        try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             ps.setString(1, category.getName());
-            ps.executeUpdate();
+            ps.execute();
 
             //默认操作，增加一个对象到数据库后将它的id取出来
             ResultSet rs = ps.getGeneratedKeys();
@@ -49,7 +51,7 @@ public class CategoryDAO {
         try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql);){
             ps.setString(1, category.getName());
             ps.setInt(2, category.getId());
-            ps.executeUpdate();
+            ps.execute();
 
         }catch(SQLException e){
             e.printStackTrace();

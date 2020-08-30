@@ -32,7 +32,7 @@ public class RecordDAO {
     public void add(Record record){
         String sql = "insert into record values(null, ?, ?, ?, ?)";
 
-        try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
+        try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             ps.setInt(1, record.getSpend());
             ps.setInt(2, record.getCid());
             ps.setString(3, record.getComment());
@@ -132,9 +132,8 @@ public class RecordDAO {
 
     public List<Record> list(int cid){
         List<Record> records = new ArrayList<>();
-        String sql = "select * from record where cid = ？";
+        String sql = "select * from record where cid =" + cid;
         try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
-            ps.setInt(1, cid);
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
                 Record record = new Record();
@@ -160,9 +159,8 @@ public class RecordDAO {
 
     public Record getByCid(int cid){
         Record record = null;
-        String sql = "select * from record where cid = ？";
+        String sql = "select * from record where cid =" + cid;
         try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
-            ps.setInt(1, cid);
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
                 record = new Record();
@@ -191,9 +189,8 @@ public class RecordDAO {
     //获取某天的消费记录信息
     public List<Record> list(Date day){
         List<Record> records = new ArrayList<>();
-        String sql = "select * from record where date = ?";
+        String sql = "select * from record where date = " + new java.sql.Date(day.getTime());
         try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
-            ps.setDate(1, new java.sql.Date(day.getTime()));
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
                 Record record = new Record();
@@ -226,7 +223,7 @@ public class RecordDAO {
     //获取某个时间范围内的消费记录信息
     public List<Record> list(Date start, Date end){
         List<Record> records = new ArrayList<>();
-        String sql = "select * from record where date >= ? adn date <= ?";
+        String sql = "select * from record where date >= ? and date <= ?";
         try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
             ps.setDate(1, new java.sql.Date(start.getTime()));
             ps.setDate(2, new java.sql.Date(end.getTime()));

@@ -30,7 +30,7 @@ public class ConfigDAO {
 
     public void add(Config config){
         String sql = "insert into config values(null, ?, ?)";
-        try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
+        try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             ps.setString(1, config.getKey_());
             ps.setString(2, config.getValue());
             ps.execute();
