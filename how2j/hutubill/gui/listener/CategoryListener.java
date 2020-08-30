@@ -2,10 +2,12 @@ package hutubill.gui.listener;
 
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.List;
 
 import javax.swing.JButton;
 import javax.swing.JOptionPane;
 
+import hutubill.dao.CategoryDAO;
 import hutubill.entity.Category;
 import hutubill.gui.panel.CategoryPanel;
 import hutubill.service.CategoryService;
@@ -14,6 +16,7 @@ public class CategoryListener implements ActionListener {
 
     @Override
     public void actionPerformed(ActionEvent e) {
+        CategoryDAO cateDao = new CategoryDAO();
         // TODO Auto-generated method stub
         CategoryPanel cp = CategoryPanel.instance;
 
@@ -26,8 +29,17 @@ public class CategoryListener implements ActionListener {
         }*/
         if(b == cp.bAdd){
             String name = JOptionPane.showInputDialog(null);
+            //如果点取消，则直接退出
             if(null == name)
                 return;
+            List<Category> categorys = cateDao.list();
+            for(Category c : categorys){
+                if(name.equals(c.getName())){
+                    JOptionPane.showMessageDialog(cp, "输入的分类名已存在!");
+                    return;
+                }
+            }
+            //如果输入为空,点确定,提示名称不能为空
             if(0 == name.length()){
                 JOptionPane.showMessageDialog(cp, "分类名称不能为空");
                 return;
@@ -47,6 +59,9 @@ public class CategoryListener implements ActionListener {
             Category c = cp.getSelectedCategory();
             int id = c.getId();
             String name = JOptionPane.showInputDialog("修改分类名称", c.getName());
+            //同bAdd，需增加判空.点击取消直接返回
+            if(null == name)
+                return;
             if(0 == name.length()){
                 JOptionPane.showMessageDialog(cp, "分类名称不能为0");
                 return;
