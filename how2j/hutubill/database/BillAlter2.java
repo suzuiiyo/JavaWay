@@ -13,8 +13,8 @@ public class BillAlter2 extends BillTable2 {
         String alterSql3 = "ALTER TABLE record ADD CONSTRAINT afk_record_category FOREIGN KEY (cid) REFERENCES category (id);";
         try(Statement smt = conn.createStatement()){
             if(conn != null){
-                System.out.println("已连接到数据库" + database);
-                /*int i = smt.executeUpdate(alterSql);
+                /*System.out.println("已连接到数据库" + database);
+                int i = smt.executeUpdate(alterSql);
                 if(i==0){
                     System.out.println("添加约束条件,设置主键成功!");
                 }
