@@ -9,7 +9,7 @@ public class ConfigService {
     //两个数据,一个预算一个Mysql路径,无论如何都应该是存在数据库中,所以会调用init把他们俩初始化
     public static final String budget = "budget";
     public static final String mysqlPath = "mysqlPath";
-    public static final String default_budget = "500";
+    public static final String default_budget = "2000";
 
     static ConfigDAO dao = new ConfigDAO();
     static{
