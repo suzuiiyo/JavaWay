@@ -4,6 +4,7 @@ import java.awt.BorderLayout;
 import java.awt.FlowLayout;
 import java.awt.GridLayout;
 import java.util.Date;
+import java.util.List;
 import java.awt.Font;
 
 import javax.swing.JButton;
@@ -14,25 +15,31 @@ import javax.swing.JTextField;
 
 import org.jdesktop.swingx.JXDatePicker;
 
+import hutubill.dao.CategoryDAO;
+import hutubill.dao.RecordDAO;
+import hutubill.entity.Category;
+import hutubill.gui.listener.RecordListener;
 import hutubill.gui.model.CategoryComboBoxModel;
+import hutubill.service.CategoryService;
+import hutubill.service.RecordService;
 
-public class RecordPanel extends JPanel {
+public class RecordPanel extends WorkingPanel {
     static {
         GUIUtil.useLNF();
     }
 
     public static RecordPanel instance = new RecordPanel();
 
-    public JLabel lSpend = new JLabel("花费(￥)");
+    public JLabel lSpend    = new JLabel("花费(￥)");
     public JLabel lCategory = new JLabel("分类");
-    public JLabel lComment = new JLabel("备注");
-    public JLabel lDate = new JLabel("日期");
+    public JLabel lComment  = new JLabel("备注");
+    public JLabel lDate     = new JLabel("日期");
 
-    //花费文本框
+    // 花费文本框
     public JTextField tfSpend = new JTextField("0");
-    //分类下拉框
-    public CategoryComboBoxModel cbModel = new CategoryComboBoxModel();
-    public JComboBox<String> cbCategory = new JComboBox<>(cbModel);
+    // 分类下拉框
+    public CategoryComboBoxModel cbModel  = new CategoryComboBoxModel();
+    public JComboBox<Category> cbCategory = new JComboBox<>(cbModel);
 
     //备注文本框
     public JTextField tfComment = new JTextField();
@@ -54,6 +61,8 @@ public class RecordPanel extends JPanel {
 
         this.add(pInput(), BorderLayout.NORTH);
         this.add(pSubmit(), BorderLayout.CENTER);
+
+        addListener();
     }
 
     private JPanel pInput(){
@@ -62,8 +71,9 @@ public class RecordPanel extends JPanel {
         p.setLayout(new GridLayout(4, 2, gap, gap));
         p.add(lSpend);
         p.add(tfSpend);
-
+        //“分类”标题
         p.add(lCategory);
+        //分类下拉栏
         p.add(cbCategory);
 
         p.add(lComment);
@@ -81,6 +91,34 @@ public class RecordPanel extends JPanel {
 
         p.add(bSubmit);
         return p;
+    }
+
+    //获取ComboBoxModel选中的category
+    public Category getSelectedCategory(){
+        return (Category) cbCategory.getSelectedItem();
+    }
+
+    public void addListener(){
+        RecordListener rl = new RecordListener();
+        bSubmit.addActionListener(rl);
+    }
+
+    public void updateData(){
+        //CategoryPanel添加的分类名立即通过CategoryService的DAO操作传递给RecordPanel的ComboBoxModel下拉栏显示
+        cbModel.categorys = new CategoryService().list();
+        //刷新显示
+        cbCategory.updateUI();
+        resetInput();
+        tfSpend.grabFocus();
+    }
+
+    //重置输入
+    public void resetInput(){
+        tfSpend.setText("0");
+        tfComment.setText("");
+        if(0!=cbModel.getSize())
+            cbCategory.setSelectedIndex(0);
+        datepick.setDate(new Date());
     }
 
     public static void main(String[] args) {

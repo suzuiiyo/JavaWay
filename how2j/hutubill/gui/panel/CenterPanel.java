@@ -56,6 +56,11 @@ public class CenterPanel extends JPanel{
             remove(c);
         }
         add(p);
+
+        //判断组件如果是WoringPanel的一个实例，即刷新数据
+        if(p instanceof WorkingPanel)
+            ((WorkingPanel) p).updateData();
+
         this.updateUI();
     }
     

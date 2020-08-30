@@ -15,7 +15,7 @@ import hutubill.service.CategoryService;
 import hutubill.gui.model.CategoryTableModel;
 
 
-public class CategoryPanel extends JPanel{
+public class CategoryPanel extends WorkingPanel{
     static{
         GUIUtil.useLNF();
     }
@@ -61,7 +61,7 @@ public class CategoryPanel extends JPanel{
 
     //方便获取JTable上当前选中的Category对象
     public Category getSelectedCategory(){
-        //获取索引
+        //获取下拉栏中选中的category的索引
         int index = t.getSelectedRow();
         //TODO   根据索引在ctm的categorys中获取category，ctm的category是由CategoryService的list方法通过DAO获取的
         return ctm.categorys.get(index);

@@ -8,8 +8,10 @@ import java.awt.GridLayout;
 import javax.swing.JLabel;
 import javax.swing.JPanel;
 
+import hutubill.service.SpendService;
 
-public class SpendPanel extends JPanel {
+
+public class SpendPanel extends WorkingPanel {
     static {
         GUIUtil.useLNF();
     }
@@ -23,12 +25,12 @@ public class SpendPanel extends JPanel {
     public JLabel lDayAvgAvailable = new JLabel("日均可用");
     public JLabel lMonthLeftDay = new JLabel("距离月末");
 
-    public JLabel vMonthSpend = new JLabel("￥2300");
-    public JLabel vTodaySpend = new JLabel("￥25");
-    public JLabel vAvgSpendPerDay = new JLabel("￥120");
-    public JLabel vMonthAvailable = new JLabel("￥2084");
-    public JLabel vDayAvgAvailable = new JLabel("￥389");
-    public JLabel vMonthLeftDay = new JLabel("￥389");
+    public JLabel vMonthSpend = new JLabel();
+    public JLabel vTodaySpend = new JLabel();
+    public JLabel vAvgSpendPerDay = new JLabel();
+    public JLabel vMonthAvailable = new JLabel();
+    public JLabel vDayAvgAvailable = new JLabel();
+    public JLabel vMonthLeftDay = new JLabel();
 
     CircleProgressBar bar;
 
@@ -84,7 +86,7 @@ public class SpendPanel extends JPanel {
         p.add(lAvgSpendPerDay);
         p.add(lMonthLeft);
         p.add(lDayAvgAvailable);
-        p.add(lMonthLeft);
+        p.add(lMonthLeftDay);
         p.add(vAvgSpendPerDay);
         p.add(vMonthAvailable);
         p.add(vDayAvgAvailable);
@@ -95,5 +97,36 @@ public class SpendPanel extends JPanel {
 
     public static void main(String[] args) {
         GUIUtil.showPanel(SpendPanel.instance);
+    }
+
+    @Override
+    public void updateData() {
+        // TODO Auto-generated method stub
+        SpendPage sd = new SpendService().getSpendPage();
+        vMonthSpend.setText(sd.monthSpend);
+        vTodaySpend.setText(sd.todaySpend);    
+        vAvgSpendPerDay.setText(sd.avgSpendPerDay);
+        vMonthAvailable.setText(sd.monthAvailable);
+        vDayAvgAvailable.setText(sd.dayAvgAvailable);
+        vMonthLeftDay.setText(sd.monthLeftDay);
+
+        //进度条设置进度
+        bar.setProgress(sd.usagePercentage);
+        if(sd.isOverSpend){
+            vMonthAvailable.setForeground(ColorUtil.warningColor);
+            vMonthSpend.setForeground(ColorUtil.warningColor);
+            vTodaySpend.setForeground(ColorUtil.warningColor);
+        }else{
+            vMonthAvailable.setForeground(ColorUtil.grayColor);
+            vMonthSpend.setForeground(ColorUtil.blueColor);
+            vTodaySpend.setForeground(ColorUtil.blueColor);
+        }
+        //进度条变色
+        bar.setForegroundColor(ColorUtil.getByPercentage(sd.usagePercentage));
+    }
+
+    @Override
+    public void addListener() {
+        // TODO Auto-generated method stub
     }
 }

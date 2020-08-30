@@ -11,16 +11,16 @@ import javax.swing.JTextField;
 import hutubill.gui.listener.ConfigListener;
 import hutubill.service.ConfigService;
 
-public class ConfigPanel extends JPanel {
+public class ConfigPanel extends WorkingPanel{
     static{
         GUIUtil.useLNF();
     }
     public static ConfigPanel instance = new ConfigPanel();
 
     public JLabel lBudget         = new JLabel("本月预算(￥)");
-    public JTextField tfBudget    = new JTextField(ConfigService.default_budget);
+    public JTextField tfBudget    = new JTextField();
     public JLabel lMysqlPath      = new JLabel("Mysql安装目录");
-    public JTextField tfMysqlPath = new JTextField("请在此处设置正确的mysql安装路径");
+    public JTextField tfMysqlPath = new JTextField();
     public JButton bSubmit        = new JButton("更新");
 
     public ConfigPanel(){
@@ -58,5 +58,16 @@ public class ConfigPanel extends JPanel {
 
     public static void main(String[] args) {
         GUIUtil.showPanel(ConfigPanel.instance);
+    }
+
+    //把数据库里的数据取出来 显示在面板上
+    @Override
+    public void updateData() {
+        // TODO Auto-generated method stub
+        String budget = new ConfigService().get(ConfigService.budget);
+        String mysqlPath = new ConfigService().get(ConfigService.mysqlPath);
+        tfBudget.setText(budget);
+        tfMysqlPath.setText(mysqlPath);
+        tfBudget.grabFocus();
     }
 }
