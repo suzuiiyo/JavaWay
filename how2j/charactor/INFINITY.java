@@ -1,3 +1,5 @@
+package charactor;
+
 public class INFINITY {
     public static void main(String[] args) {
         System.out.println("ÕýÎÞÇî´ó:" + Double.POSITIVE_INFINITY);

@@ -2,6 +2,20 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - INFINITY",
+            "request": "launch",
+            "mainClass": "charactor.INFINITY",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Cat",
+            "request": "launch",
+            "mainClass": "charactor.Cat",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - MainFrame",
             "request": "launch",
             "mainClass": "hutubill.gui.frame.MainFrame",
