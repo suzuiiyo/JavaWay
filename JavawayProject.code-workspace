@@ -7,7 +7,10 @@
 	"settings": {
 		"java.project.referencedLibraries": [
 			"lib/**/*.jar",
-			"how2j/lib/mysql-connector-java-8.0.19.jar"
+			"how2j/lib/mysql-connector-java-8.0.19.jar",
+			"how2j/lib/liquidlnf.jar",
+			"how2j/lib/chart.jar",
+			"how2j/lib/swingx-core-1.6.2.jar"
 		]
 	}
 }

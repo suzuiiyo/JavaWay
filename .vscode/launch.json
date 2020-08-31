@@ -2,6 +2,293 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - MainFrame",
+            "request": "launch",
+            "mainClass": "hutubill.gui.frame.MainFrame",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Power",
+            "request": "launch",
+            "mainClass": "matrix.matrix.Power",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - INFINITY",
+            "request": "launch",
+            "mainClass": "INFINITY",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - helloworld",
+            "request": "launch",
+            "mainClass": "helloworld",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SpendPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.SpendPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RecordPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.RecordPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BillAlter2",
+            "request": "launch",
+            "mainClass": "hutubill.database.BillAlter2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BillAlter",
+            "request": "launch",
+            "mainClass": "hutubill.database.BillAlter",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BillTable3",
+            "request": "launch",
+            "mainClass": "hutubill.database.BillTable3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BillTable2",
+            "request": "launch",
+            "mainClass": "hutubill.database.BillTable2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BillTable",
+            "request": "launch",
+            "mainClass": "hutubill.database.BillTable",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CategoryPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.CategoryPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestCalendar",
+            "request": "launch",
+            "mainClass": "hutubill.database.TestCalendar",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUIUtil",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.GUIUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ConfigPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.ConfigPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - testBoolean",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.testBoolean",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.MainPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Bootstrap",
+            "request": "launch",
+            "mainClass": "hutubill.startup.Bootstrap",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CenterPanel2",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.CenterPanel2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DateUtil2",
+            "request": "launch",
+            "mainClass": "hutubill.database.DateUtil2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestDate",
+            "request": "launch",
+            "mainClass": "hutubill.database.TestDate",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DateUtil",
+            "request": "launch",
+            "mainClass": "hutubill.database.DateUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainFrame",
+            "request": "launch",
+            "mainClass": "hutubill.gui.MainFrame",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RecoverPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.RecoverPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BackupPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.BackupPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ConfigPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.ConfigPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReportPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.ReportPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CategoryPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.CategoryPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CategoryTableModel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.CategoryTableModel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestStream",
+            "request": "launch",
+            "mainClass": "lambda.TestStream",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestIterator2",
+            "request": "launch",
+            "mainClass": "collection.TestIterator2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RecordPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.RecordPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SpendPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.SpendPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - GUIUtil",
+            "request": "launch",
+            "mainClass": "hutubill.gui.GUIUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MainPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.MainPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ChartUtil",
+            "request": "launch",
+            "mainClass": "hutubill.gui.ChartUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - CircleProgressBar",
+            "request": "launch",
+            "mainClass": "hutubill.gui.CircleProgressBar",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestCircleProgressBar",
+            "request": "launch",
+            "mainClass": "hutubill.gui.TestCircleProgressBar",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Protype",
+            "request": "launch",
+            "mainClass": "hutubill.gui.Protype",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestGUI",
+            "request": "launch",
+            "mainClass": "gui.TestGUI",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestGUIUtil",
+            "request": "launch",
+            "mainClass": "gui.TestGUIUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - CenterPanel",
             "request": "launch",
             "mainClass": "hutubill.gui.panel.CenterPanel",

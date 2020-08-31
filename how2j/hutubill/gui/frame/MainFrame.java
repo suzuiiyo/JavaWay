@@ -1,6 +1,8 @@
-package hutubill.gui.panel;
+package hutubill.gui.frame;
 
 import javax.swing.JFrame;
+
+import hutubill.gui.panel.MainPanel;
 
 public class MainFrame extends JFrame {
     public static MainFrame instance = new MainFrame();

@@ -13,6 +13,7 @@ public class DailyAdviceClient{
             System.out.println("Today you should: " + advice);
 
             reader.close();
+            s.close();
         } catch(IOException ex){
             ex.printStackTrace();
         }

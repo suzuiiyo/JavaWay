@@ -19,7 +19,7 @@ class StaticTests extends StaticSuper{
         System.out.println("constructor");
     }
 
-    StaticSuper(){
+    void StaticSuper() {
         System.out.println("XXXXXXXXXXXX");
         System.out.println("picapicachoo!");
     }

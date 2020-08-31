@@ -1,3 +1,5 @@
+package matrix;
+
 public class poww {
     public static void main(String[] args) {
         poww Tt = new poww();
