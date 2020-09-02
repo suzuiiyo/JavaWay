@@ -7,8 +7,8 @@ import java.io.File;
 import javax.swing.JOptionPane;
 
 import hutubill.gui.panel.ConfigPanel;
-import hutubill.gui.panel.GUIUtil;
 import hutubill.service.ConfigService;
+import hutubill.util.GUIUtil;
 
 public class ConfigListener implements ActionListener {
     @Override
