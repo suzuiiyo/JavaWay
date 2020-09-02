@@ -15,6 +15,7 @@ public class RecordService {
         r.setCid(c.getId());
         r.setComment(comment);
         r.setDate(date);
+        System.out.println("recordDAO接收到的日期是:" + date);
         recordDao.add(r);
     }
 }
