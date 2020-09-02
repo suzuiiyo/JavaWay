@@ -2,6 +2,48 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - RecoverPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.RecoverPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - BackupPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.BackupPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - MysqlUtil",
+            "request": "launch",
+            "mainClass": "hutubill.util.MysqlUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ReportPanel",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.ReportPanel",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - RecordDAO",
+            "request": "launch",
+            "mainClass": "hutubill.dao.RecordDAO",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - ChartUtil",
+            "request": "launch",
+            "mainClass": "hutubill.gui.panel.ChartUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - INFINITY",
             "request": "launch",
             "mainClass": "charactor.INFINITY",
