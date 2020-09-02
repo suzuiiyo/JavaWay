@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import hutubill.database.DBUtil;
+import hutubill.util.DBUtil;
 import hutubill.entity.Config;
 
 //ConfigDAO 专门用于把Config实例与Config表进行ORM映射

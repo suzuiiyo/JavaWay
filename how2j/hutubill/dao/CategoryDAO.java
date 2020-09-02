@@ -8,7 +8,7 @@ import java.sql.Statement;
 import java.util.ArrayList;
 import java.util.List;
 
-import hutubill.database.DBUtil;
+import hutubill.util.DBUtil;
 import hutubill.entity.Category;
 
 public class CategoryDAO {

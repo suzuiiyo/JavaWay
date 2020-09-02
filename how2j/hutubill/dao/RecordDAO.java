@@ -9,8 +9,8 @@ import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
-import hutubill.database.DBUtil;
-import hutubill.database.DateUtil;
+import hutubill.util.DBUtil;
+import hutubill.util.DateUtil;
 import hutubill.entity.Record;
 
 public class RecordDAO {
@@ -36,7 +36,8 @@ public class RecordDAO {
             ps.setInt(1, record.getSpend());
             ps.setInt(2, record.getCid());
             ps.setString(3, record.getComment());
-            ps.setDate(4, new java.sql.Date(record.getDate().getTime()));
+            ps.setDate(4, DateUtil.util2sql(record.getDate()));
+            System.out.println("insert进数据库的日期数据:" + DateUtil.util2sql(record.getDate()));
             ps.execute();
 
             //TODO   操作，增加一个对象到数据库后将它的id取出来，以备后用
@@ -190,13 +191,13 @@ public class RecordDAO {
     public List<Record> list(Date day){
         List<Record> records = new ArrayList<>();
         String sql = "select * from record where date = " + new java.sql.Date(day.getTime());
-        try(Connection conn = DBUtil.getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
-            ResultSet rs = ps.executeQuery();
+        try(Connection conn = DBUtil.getConn(); Statement s = conn.createStatement()){
+            ResultSet rs = s.executeQuery(sql);
             while(rs.next()){
                 Record record = new Record();
-                int id = rs.getInt(1);
+                int id = rs.getInt("id");
                 int spend = rs.getInt(2);
-                int cid = rs.getInt(3);
+                int cid = rs.getInt("cid");
                 String comment = rs.getString(4);
                 Date date = rs.getDate(5);
 
@@ -217,6 +218,8 @@ public class RecordDAO {
 
     //获取本月的消费记录信息
     public List<Record> listThisMonth(){
+        System.out.println("月初:" + DateUtil.monthBegin());
+        System.out.println("月末:" + DateUtil.monthEnd());
         return list(DateUtil.monthBegin(), DateUtil.monthEnd());
     }
 
@@ -230,11 +233,11 @@ public class RecordDAO {
             ResultSet rs = ps.executeQuery();
             while(rs.next()){
                 Record record = new Record();
-                int id = rs.getInt(1);
-                int spend = rs.getInt(2);
-                int cid = rs.getInt(3);
-                String comment = rs.getString(4);
-                Date date = rs.getDate(5);
+                int id = rs.getInt("id");
+                int spend = rs.getInt("spend");
+                int cid = rs.getInt("cid");
+                String comment = rs.getString("comment");
+                Date date = rs.getDate("date");
 
                 record.setId(id);
                 record.setSpend(spend);
