@@ -8,6 +8,9 @@ import javax.swing.JButton;
 import javax.swing.JPanel;
 import javax.swing.SwingWorker;
 
+import hutubill.util.ColorUtil;
+import hutubill.util.GUIUtil;
+
 public class TestCircleProgressBar {
     public static void main(String[] args) {
         GUIUtil.useLNF();

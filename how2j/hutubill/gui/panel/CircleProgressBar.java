@@ -11,6 +11,9 @@ import java.awt.BorderLayout;
 
 import javax.swing.JPanel;
 
+import hutubill.util.ColorUtil;
+import hutubill.util.GUIUtil;
+
 public class CircleProgressBar extends JPanel {
     /**
      *
