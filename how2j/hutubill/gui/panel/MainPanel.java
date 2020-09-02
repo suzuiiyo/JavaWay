@@ -7,6 +7,7 @@ import javax.swing.JPanel;
 import javax.swing.JToolBar;
 
 import hutubill.gui.listener.ToolBarListener;
+import hutubill.util.GUIUtil;
 
 public class MainPanel extends JPanel {
     static{

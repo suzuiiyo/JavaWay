@@ -9,6 +9,8 @@ import javax.swing.JLabel;
 import javax.swing.JPanel;
 
 import hutubill.service.SpendService;
+import hutubill.util.ColorUtil;
+import hutubill.util.GUIUtil;
 
 
 public class SpendPanel extends WorkingPanel {
@@ -97,6 +99,8 @@ public class SpendPanel extends WorkingPanel {
 
     public static void main(String[] args) {
         GUIUtil.showPanel(SpendPanel.instance);
+        SpendPage sd = new SpendService().getSpendPage();
+        System.out.println(sd.todaySpend);
     }
 
     @Override

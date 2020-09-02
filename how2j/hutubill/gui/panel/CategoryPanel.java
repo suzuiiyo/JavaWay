@@ -12,6 +12,8 @@ import javax.swing.ScrollPaneLayout;
 import hutubill.entity.Category;
 import hutubill.gui.listener.CategoryListener;
 import hutubill.service.CategoryService;
+import hutubill.util.ColorUtil;
+import hutubill.util.GUIUtil;
 import hutubill.gui.model.CategoryTableModel;
 
 

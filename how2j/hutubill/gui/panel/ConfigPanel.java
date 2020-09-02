@@ -10,6 +10,8 @@ import javax.swing.JTextField;
 
 import hutubill.gui.listener.ConfigListener;
 import hutubill.service.ConfigService;
+import hutubill.util.ColorUtil;
+import hutubill.util.GUIUtil;
 
 public class ConfigPanel extends WorkingPanel{
     static{

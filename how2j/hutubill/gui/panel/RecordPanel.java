@@ -22,6 +22,8 @@ import hutubill.gui.listener.RecordListener;
 import hutubill.gui.model.CategoryComboBoxModel;
 import hutubill.service.CategoryService;
 import hutubill.service.RecordService;
+import hutubill.util.ColorUtil;
+import hutubill.util.GUIUtil;
 
 public class RecordPanel extends WorkingPanel {
     static {
