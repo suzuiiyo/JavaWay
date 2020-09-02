@@ -38,4 +38,8 @@ public class Record {
     public void setSpend(int spend) {
         this.spend = spend;
     }
+
+    public String toString() {
+        return String.valueOf(date) + comment;
+    }
 }
