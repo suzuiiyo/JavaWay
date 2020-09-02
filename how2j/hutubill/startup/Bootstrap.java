@@ -4,10 +4,10 @@ import java.lang.reflect.InvocationTargetException;
 
 import javax.swing.SwingUtilities;
 
-import hutubill.gui.panel.GUIUtil;
 import hutubill.gui.frame.MainFrame;
 import hutubill.gui.panel.MainPanel;
 import hutubill.gui.panel.SpendPanel;
+import hutubill.util.GUIUtil;
 
 public class Bootstrap {
     public static void main(String[] args) throws InvocationTargetException, InterruptedException {
