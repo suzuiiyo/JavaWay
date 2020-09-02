@@ -6,7 +6,11 @@ import javax.swing.GroupLayout;
 import javax.swing.JButton;
 import javax.swing.JPanel;
 
-public class BackupPanel extends JPanel{
+import hutubill.gui.listener.backupListener;
+import hutubill.util.ColorUtil;
+import hutubill.util.GUIUtil;
+
+public class BackupPanel extends WorkingPanel{
     static{
         GUIUtil.useLNF();
     }
@@ -24,9 +28,21 @@ public class BackupPanel extends JPanel{
         //TODO   π”√GroupLayout
         //this.setLayout(new GroupLayout(bBackup));
         this.add(bBackup);
+
+        addListener();
+    }
+
+    public void addListener(){
+        backupListener bl = new backupListener();
+        bBackup.addActionListener(bl);
     }
 
     public static void main(String[] args) {
         GUIUtil.showPanel(BackupPanel.instance);
+    }
+
+    @Override
+    public void updateData() {
+        // TODO Auto-generated method stub
     }
 }
