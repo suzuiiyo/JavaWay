@@ -17,7 +17,7 @@ public class ObjectConfig {
         File f = new File("d:/Studio/JavaWay/AC/DC/hero.config");
 
         try(FileReader fr = new FileReader(f); BufferedReader br = new BufferedReader(fr)){
-            String className = null;
+            String className = br.readLine();
             APHero aphero = (APHero) Class.forName(className).getConstructor().newInstance();
             return aphero;
         }catch(Exception e){
