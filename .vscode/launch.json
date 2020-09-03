@@ -2,6 +2,83 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - SumUtil2",
+            "request": "launch",
+            "mainClass": "junit.SumUtil2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - SumUtil",
+            "request": "launch",
+            "mainClass": "junit.SumUtil",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestLog4j_1",
+            "request": "launch",
+            "mainClass": "log4j.TestLog4j_1",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "src.App",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestLog4j2",
+            "request": "launch",
+            "mainClass": "log4j.TestLog4j2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestLog4j",
+            "request": "launch",
+            "mainClass": "log4j.TestLog4j",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSpring",
+            "request": "launch",
+            "mainClass": "reflection.TestSpring",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestReflection",
+            "request": "launch",
+            "mainClass": "reflection.TestReflection",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HeroSuppressWarnings",
+            "request": "launch",
+            "mainClass": "annotation.HeroSuppressWarnings",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HeroDeprecated",
+            "request": "launch",
+            "mainClass": "annotation.HeroDeprecated",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestTool",
+            "request": "launch",
+            "mainClass": "annotation.TestTool",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - RecoverPanel",
             "request": "launch",
             "mainClass": "hutubill.gui.panel.RecoverPanel",

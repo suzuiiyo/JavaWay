@@ -10,7 +10,11 @@
 			"how2j/lib/mysql-connector-java-8.0.19.jar",
 			"how2j/lib/liquidlnf.jar",
 			"how2j/lib/chart.jar",
-			"how2j/lib/swingx-core-1.6.2.jar"
+			"how2j/lib/swingx-core-1.6.2.jar",
+			"how2j/lib/log4j-1.2.17.jar",
+			"how2j/lib/log4j-api-2.13.3.jar",
+			"how2j/lib/log4j-core-2.13.3.jar",
+			"how2j/lib/junit-4.9.jar"
 		]
 	}
 }
