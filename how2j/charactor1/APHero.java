@@ -29,6 +29,7 @@ public class APHero extends Hero implements AP, Mortal{
         String extName = hero.getName();
         System.out.println(extName + ",凡人终有一死");
     }
+
     public static void main(String[] args){
         APHero bm = new APHero();
         bm.name = "兽王";
