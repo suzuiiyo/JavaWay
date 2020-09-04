@@ -13,7 +13,7 @@ public class TestCase3 {
     }
     @After
     public void after(){
-        System.out.println("车市结束后的工作, 比如关闭链接等等");
+        System.out.println("测试结束后的工作, 比如关闭链接等等");
     }
 
     @Test

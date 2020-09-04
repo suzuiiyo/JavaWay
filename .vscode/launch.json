@@ -2,6 +2,62 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - TestModify",
+            "request": "launch",
+            "mainClass": "jsoup.TestModify",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestSelect",
+            "request": "launch",
+            "mainClass": "jsoup.TestSelect",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testjsoup4",
+            "request": "launch",
+            "mainClass": "jsoup.Testjsoup4",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testjsoup3",
+            "request": "launch",
+            "mainClass": "jsoup.Testjsoup3",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testjsoup2",
+            "request": "launch",
+            "mainClass": "jsoup.Testjsoup2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Testjsoup",
+            "request": "launch",
+            "mainClass": "jsoup.Testjsoup",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestHex2",
+            "request": "launch",
+            "mainClass": "hutool.TestHex2",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestHutool",
+            "request": "launch",
+            "mainClass": "hutool.TestHutool",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - SumUtil2",
             "request": "launch",
             "mainClass": "junit.SumUtil2",

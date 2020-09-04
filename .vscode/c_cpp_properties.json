@@ -10,16 +10,6 @@
                 "D:/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
                 "D:/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
                 "D:/Mingw64/bin/../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include",
-
-                //"D:/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++",
-                //"D:/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/x86_64-w64-mingw32",
-                //"D:/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/8.1.0/include/c++/backward",
-                //"D:/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/8.1.0/include",
-                //"C:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64C:/msys64/mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../include",
-                //"D:/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/8.1.0/include-fixed",
-                //"D:/Mingw64/lib/gcc/../../lib/gcc/x86_64-w64-mingw32/8.1.0/../../../../x86_64-w64-mingw32/include",
-                //"C:/mingw810/x86_64-810-posix-seh-rt_v6-rev0/mingw64/mingw/include"
-                //"D:\\Mingw64\\x86_64-w64-mingw32\\include"
             ],
             "defines": [
                 "_DEBUG",

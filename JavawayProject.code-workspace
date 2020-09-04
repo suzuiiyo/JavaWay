@@ -2,6 +2,10 @@
 	"folders": [
 		{
 			"path": "."
+		},
+		{
+			"name": "demo",
+			"path": "SpringBoot\\demo"
 		}
 	],
 	"settings": {
@@ -14,7 +18,2485 @@
 			"how2j/lib/log4j-1.2.17.jar",
 			"how2j/lib/log4j-api-2.13.3.jar",
 			"how2j/lib/log4j-core-2.13.3.jar",
-			"how2j/lib/junit-4.9.jar"
+			"how2j/lib/junit-4.9.jar",
+			"how2j/lib/hutool-all-5.4.1.jar",
+			"how2j/lib/jsoup-1.12.1.jar"
+		],
+		"java.configuration.updateBuildConfiguration": "automatic"
+	},
+	"launch": {
+		"version": "0.2.0",
+		"configurations": [
+			{
+				"type": "java",
+				"name": "Debug (Launch) - Current File",
+				"request": "launch",
+				"mainClass": "${file}"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ArrMin<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "ArrMin",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Boolean<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Boolean",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Bubble<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Bubble",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CalNum<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "CalNum",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ChooseSort<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "ChooseSort",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CopyArray<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "CopyArray",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Each<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Each",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FaceBack<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "FaceBack",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FiveMatrix<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "FiveMatrix",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Fuli<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Fuli",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GoldPoint<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "GoldPoint",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Helloworld<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Helloworld",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Hero2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HeroFuc<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "HeroFuc",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-InPut<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "InPut",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Item2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Item2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MergeArr<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "MergeArr",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Outloop<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Outloop",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-P357<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "P357",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Reserve<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Reserve",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Runnian<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Runnian",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Shuixian<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Shuixian",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestGeneric3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "TestGeneric3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestKg<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "TestKg",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestKg2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "TestKg2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Twodim<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "Twodim",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DBUtil<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation.DBUtil",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DBUtilChild<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation.DBUtilChild",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FindFiles<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation.FindFiles",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FindFiles2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation.FindFiles2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HeroDeprecated<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation.HeroDeprecated",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HeroSuppressWarnings<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation.HeroSuppressWarnings",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestTool<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation.TestTool",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DBUtil2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation_hibernate.DBUtil2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ParseHibernateAnnotation<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "annotation_hibernate.ParseHibernateAnnotation",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Cat<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Cat",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Fish<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Fish",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Hero",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero2<JavaWay_8823b0ed>(1)",
+				"request": "launch",
+				"mainClass": "charactor.Hero2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Hero3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Hero4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero5<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Hero5",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero6<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Hero6",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero7<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Hero7",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero8<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Hero8",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Hero9<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Hero9",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HeroSim<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.HeroSim",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HeroSim2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.HeroSim2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-INFINITY<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.INFINITY",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-NTR<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.NTR",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-SPHero<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.SPHero",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Spider<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Spider",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Test<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.Test",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestGiantDragon<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor.TestGiantDragon",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ADAPHero<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor1.ADAPHero",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ADHero<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor1.ADHero",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-APHero<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor1.APHero",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Support<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "charactor1.Support",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ConstructTree<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.ConstructTree",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CustomStringHashCode<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.CustomStringHashCode",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GenericArrayList<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.GenericArrayList",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HashSet<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.HashSet",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HashSetAllView<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.HashSetAllView",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HeroNode<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.HeroNode",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-InsertDataLinkedList<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.InsertDataLinkedList",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ItemStack<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.ItemStack",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-LocationDataLinkedList<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.LocationDataLinkedList",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MathPISet<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.MathPISet",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MyHashMap<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.MyHashMap",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MyStringBufferList<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.MyStringBufferList",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Node<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.Node",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-QuickPow<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.QuickPow",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCollection<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestCollection",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCollection2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestCollection2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCollections<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestCollections",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestComparetor<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestComparetor",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestContain<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestContain",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestHahMap<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestHahMap",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestHashMap3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestHashMap3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestHashSet<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestHashSet",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestHashSet2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestHashSet2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestHashSet3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestHashSet3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestHashTable<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestHashTable",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestHaspMap2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestHaspMap2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestIndexOf<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestIndexOf",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestIterator<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestIterator",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestIterator2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestIterator2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLinkedList<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestLinkedList",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLinkedList2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestLinkedList2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestListInterface<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestListInterface",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestRemove2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestRemove2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSerialsSet<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestSerialsSet",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSet<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestSet",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestShuffle<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestShuffle",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSortPerformance<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestSortPerformance",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSynchronizedList<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestSynchronizedList",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestTreeOperation<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TestTreeOperation",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Testremove<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.Testremove",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TesttoArray<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.TesttoArray",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-comparatorTreeSet<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.comparatorTreeSet",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-customDataType<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.customDataType",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-insertMiddle<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.insertMiddle",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-insertTail<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.insertTail",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-middleTraverseNode<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.middleTraverseNode",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-reverseHashMap<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.reverseHashMap",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-statisticksArrayList<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.statisticksArrayList",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-statisticksHashMap<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "collection.statisticksHashMap",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-customGeneric<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "customGeneric",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DateFormat<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "date.DateFormat",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCalendar<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "date.TestCalendar",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestDate<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "date.TestDate",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestDate2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "date.TestDate2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestRandomTime<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "date.TestRandomTime",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-WhichDay<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "date.WhichDay",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Account<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.Account",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CompareString<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.CompareString",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-EachUpper<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.EachUpper",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GenericArrayList2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.GenericArrayList2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-InsertSort<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.InsertSort",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-JudgePrime<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.JudgePrime",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-LastUpper<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.LastUpper",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Log<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.Log",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MyStringBuffer<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.MyStringBuffer",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MyStringBufferCopy<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.MyStringBufferCopy",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Passwd<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.Passwd",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Prime<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.Prime",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Raokouling<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.Raokouling",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Replace<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.Replace",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestByte<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestByte",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestChar<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestChar",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestChar3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestChar3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestDouble<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestDouble",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestFuzhi<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestFuzhi",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestMain<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestMain",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestNum3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestNum3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestNum4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestNum4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestNumber<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestNumber",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestNumber2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestNumber2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestNumber3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestNumber3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPerformance<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestPerformance",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestString<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestString",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestString2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestString2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestString3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestString3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestString4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestString4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestString5<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestString5",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestString6<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestString6",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestString7<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestString7",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestStringEqual<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestStringEqual",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestStringEqual2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TestStringEqual2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Testchar2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.Testchar2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TsetSubString<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.TsetSubString",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-checkingAccount<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.checkingAccount",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-interval<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "digit.interval",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestException<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "exception.TestException",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestOpenException<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "exception.TestOpenException",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThrowable<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "exception.TestThrowable",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DecodeFile<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.DecodeFile",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FileRead<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.FileRead",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FindWindows<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.FindWindows",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ForceDecode<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.ForceDecode",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-InputStreamtoByteArray<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.InputStreamtoByteArray",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCharStream<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.TestCharStream",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCharStream3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.TestCharStream3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestFile<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.TestFile",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestFile2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.TestFile2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestFile3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.TestFile3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPrintStream<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.TestPrintStream",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSplitFile<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.TestSplitFile",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestStream<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.TestStream",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-compareFileSize<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.compareFileSize",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-encodingFile<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.encodingFile",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-fileSplit2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.fileSplit2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-mergeFiles<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.mergeFiles",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-testCharStream2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "file.testCharStream2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GenericNode<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.GenericNode",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GenericTNode<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.GenericTNode",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MyStackGeneric<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.MyStackGeneric",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestExtendsGeneric<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.TestExtendsGeneric",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestGeneric<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.TestGeneric",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestGeneric2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.TestGeneric2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestGeneric3<JavaWay_8823b0ed>(1)",
+				"request": "launch",
+				"mainClass": "generic.TestGeneric3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestGeneric4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.TestGeneric4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSuperGeneric<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.TestSuperGeneric",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ViewGeneric<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "generic.ViewGeneric",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestActionListener<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "gui.TestActionListener",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestButtonListener<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "gui.TestButtonListener",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestGUI<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "gui.TestGUI",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestKeyListener<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "gui.TestKeyListener",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestMouseAdapter<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "gui.TestMouseAdapter",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestMouseListener<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "gui.TestMouseListener",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-BillAlter<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.database.BillAlter",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-BillAlter2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.database.BillAlter2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-BillTable<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.database.BillTable",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-BillTable2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.database.BillTable2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-BillTable3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.database.BillTable3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCalendar<JavaWay_8823b0ed>(1)",
+				"request": "launch",
+				"mainClass": "hutubill.database.TestCalendar",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MainFrame<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.frame.MainFrame",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-BackupPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.BackupPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CategoryPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.CategoryPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CenterPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.CenterPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CenterPanel2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.CenterPanel2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CircleProgressBar<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.CircleProgressBar",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ConfigPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.ConfigPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MainPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.MainPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Protype<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.Protype",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-RecordPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.RecordPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-RecoverPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.RecoverPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ReportPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.ReportPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-SpendPanel<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.SpendPanel",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCircleProgressBar<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.gui.panel.TestCircleProgressBar",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Bootstrap<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.startup.Bootstrap",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ChartUtil<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.util.ChartUtil",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DateUtil<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.util.DateUtil",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DateUtil2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.util.DateUtil2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GUIUtil<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.util.GUIUtil",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-MysqlUtil<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.util.MysqlUtil",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestGUIUtil<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "hutubill.util.TestGUIUtil",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-AutoResponseClient<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.AutoResponseClient",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-AutoResponseClientDAO<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.AutoResponseClientDAO",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-AutoResponseServer<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.AutoResponseServer",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-AutoResponseServerDAO<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.AutoResponseServerDAO",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CreateDataSource<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.CreateDataSource",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CreateDatabase<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.CreateDatabase",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DbUtil<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.DbUtil",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-JDBCPerformance<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.JDBCPerformance",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-JDBCPerformance2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.JDBCPerformance2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestAutoIncreaseId<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestAutoIncreaseId",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCUD<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestCUD",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestConnectionPool<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestConnectionPool",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestConnectionPool2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestConnectionPool2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestCreateTables<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestCreateTables",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestExcuteUpdate<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestExcuteUpdate",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestExcuteUpdateDiff<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestExcuteUpdateDiff",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestExecuteQuery<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestExecuteQuery",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestJDBC<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestJDBC",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestJDBC2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestJDBC2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestJDBC3del<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestJDBC3del",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestJDBC4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestJDBC4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestMetaData<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestMetaData",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestORM<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestORM",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPageQuery<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestPageQuery",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPageQuery2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestPageQuery2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPerformance<JavaWay_8823b0ed>(1)",
+				"request": "launch",
+				"mainClass": "jdbc.TestPerformance",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPreparedStatement<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestPreparedStatement",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPreparedStatement2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestPreparedStatement2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPreparedStatement3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestPreparedStatement3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestReturnObject<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestReturnObject",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSqlCount<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestSqlCount",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestTryWithResource<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.TestTryWithResource",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-UpdateAndriodDatabase<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "jdbc.UpdateAndriodDatabase",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-SumUtil<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "junit.SumUtil",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-SumUtil2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "junit.SumUtil2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CommonFunc<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.CommonFunc",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestComparator<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestComparator",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLambda<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestLambda",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLambda2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestLambda2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLambda3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestLambda3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLambda4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestLambda4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLambda5<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestLambda5",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLambda6<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestLambda6",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLambdaHero<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestLambdaHero",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestStream<JavaWay_8823b0ed>(1)",
+				"request": "launch",
+				"mainClass": "lambda.TestStream",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestStream2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "lambda.TestStream2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLog<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "log4j.TestLog",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLog4j<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "log4j.TestLog4j",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLog4j2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "log4j.TestLog4j2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestLog4j_1<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "log4j.TestLog4j_1",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-matrixClass<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "matrixClass",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-AnonymosInnerClass<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.AnonymosInnerClass",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DeadLock2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.DeadLock2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-EnumCrackThread<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.EnumCrackThread",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-EnumCrackThread2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.EnumCrackThread2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-EnumCrackThread3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.EnumCrackThread3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ProducerCustomer<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.ProducerCustomer",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestAtomicInteger<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestAtomicInteger",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestAtomicInteger2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestAtomicInteger2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestDeadLock<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestDeadLock",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestDeadLock2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestDeadLock2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestFindContent<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestFindContent",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSkill<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestSkill",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSychronized<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestSychronized",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSychronized2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestSychronized2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSychronized3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestSychronized3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSynchronized4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestSynchronized4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThread<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThread",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThread2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThread2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThread3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThread3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThread4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThread4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThread5<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThread5",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThreadDaemon<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThreadDaemon",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThreadJoin<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThreadJoin",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThreadPool<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThreadPool",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThreadPool2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThreadPool2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThreadPool3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThreadPool3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThreadPoolExcutor<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThreadPoolExcutor",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestThreadPriority<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestThreadPriority",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestWaitAndNotify<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestWaitAndNotify",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestWaitAndNotify2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestWaitAndNotify2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestbadFun<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.TestbadFun",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Testlock<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.Testlock",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ThreadPoolFindFile<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.ThreadPoolFindFile",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ThreadPoolFindFile2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "multithreading.ThreadPoolFindFile2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Cient3_1<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Cient3_1",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Client<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Client",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Client2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Client2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Client3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Client3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Client4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Client4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ClientT<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.ClientT",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GUIClient<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.GUIClient",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GUIServer<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.GUIServer",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Server2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Server2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Server3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Server3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Server4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Server4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ServerT<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.ServerT",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Srever<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.Srever",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestAvailableIP<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.TestAvailableIP",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestPing<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.TestPing",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSocket<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "network.TestSocket",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Armor<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "property.Armor",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Item<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "property.Item",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ChangeProperity<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.ChangeProperity",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CreateObject<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.CreateObject",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ObjectConfig<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.ObjectConfig",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-ObjectConfig2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.ObjectConfig2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-SetAccess<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.SetAccess",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestModifierPrivate<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.TestModifierPrivate",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestReflection<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.TestReflection",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestReflection2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.TestReflection2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestReflection3<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.TestReflection3",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestReflection4<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.TestReflection4",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestService<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.TestService",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSpring<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "reflection.TestSpring",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-App<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "src.App",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-AutoCreateClass<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.AutoCreateClass",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CopyFile<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.CopyFile",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CopyFileContents<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.CopyFileContents",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-CopyFolder<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.CopyFolder",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-Deunicode<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.Deunicode",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-EncodeChinese<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.EncodeChinese",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-EncodeOfChinese<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.EncodeOfChinese",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-FileReaderChinese<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.FileReaderChinese",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-GetFileName<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.GetFileName",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-HeroSerial<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.HeroSerial",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-RemoveBOM<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.RemoveBOM",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestBOM<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.TestBOM",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestBufferData<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.TestBufferData",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestBufferData2<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.TestBufferData2",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestBufferedReader<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.TestBufferedReader",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestDataStream<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.TestDataStream",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestObjetcStream<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.TestObjetcStream",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-TestSystemIn<JavaWay_8823b0ed>",
+				"request": "launch",
+				"mainClass": "stream.TestSystemIn",
+				"projectName": "JavaWay_8823b0ed"
+			},
+			{
+				"type": "java",
+				"name": "Debug (Launch)-DemoApplication<demo>",
+				"request": "launch",
+				"mainClass": "com.example.demo.DemoApplication",
+				"projectName": "demo"
+			}
 		]
 	}
 }
