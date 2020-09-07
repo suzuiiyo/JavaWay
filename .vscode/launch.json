@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - HelloServlet",
+            "request": "launch",
+            "mainClass": "HelloServlet",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloServlet",
+            "request": "launch",
+            "mainClass": "reflection.HelloServlet",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - HelloServlet",
+            "request": "launch",
+            "mainClass": "HelloServlet",
+            "projectName": "junit"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - TestModify",
             "request": "launch",
             "mainClass": "jsoup.TestModify",
