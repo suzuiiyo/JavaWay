@@ -11,6 +11,7 @@ public class Hero {
     private int id;
     private String name;
     public static void main(String[] args){
-        System.out.println(new Hero().);
+        System.out.println(new Hero().toString());
+        System.out.println("偷懒的极致");
     }
 }
