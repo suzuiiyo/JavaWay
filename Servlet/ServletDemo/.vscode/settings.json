@@ -1,0 +1,6 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Studio\\JavaWay\\how2j\\lib\\servlet-api.jar"
+    ]
+}

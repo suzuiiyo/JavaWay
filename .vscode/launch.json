@@ -2,6 +2,27 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - LoginServlet",
+            "request": "launch",
+            "mainClass": "LoginServlet",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - TestInteger",
+            "request": "launch",
+            "mainClass": "TestInteger",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - FirstServlet",
+            "request": "launch",
+            "mainClass": "FirstServlet",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - HelloServlet",
             "request": "launch",
             "mainClass": "HelloServlet",
