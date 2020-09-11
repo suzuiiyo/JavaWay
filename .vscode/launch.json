@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - InstanceServlet",
+            "request": "launch",
+            "mainClass": "InstanceServlet",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - LoginServlet",
             "request": "launch",
             "mainClass": "LoginServlet",
