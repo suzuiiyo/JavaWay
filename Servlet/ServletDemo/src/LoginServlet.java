@@ -16,7 +16,7 @@ public class LoginServlet extends HttpServlet {
         String html = null;
 
         //字符串放前面判断防止输入为空 导致nullPointer异常
-        if("牛逼".equals(name) && "123".equals(password))
+        if("login".equals(name) && "123".equals(password))
             html = "<div style= 'color:green'>登陆成功</div>";
         else
             html = "<div style= 'color:red'>账户密码不匹配，登陆失败!</div>";

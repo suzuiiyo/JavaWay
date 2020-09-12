@@ -22,12 +22,12 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>LoginServlet</servlet-name>
+        <servlet-name>FirstServlet</servlet-name>
         <servlet-class>InstanceServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>LoginServlet</servlet-name>
+        <servlet-name>FirstServlet</servlet-name>
         <url-pattern>/instance</url-pattern>
     </servlet-mapping>
 

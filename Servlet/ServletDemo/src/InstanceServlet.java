@@ -6,10 +6,6 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-import digit.Prime;
-
-
-
 public class InstanceServlet extends HttpServlet {
     public InstanceServlet(){
         System.out.println("InstanceServlet 构造方法被调用");
@@ -23,15 +19,18 @@ public class InstanceServlet extends HttpServlet {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
 
-        String html = null;
-        if("牛逼".equals(name) && "123".equals(password))
-            html = "<div style= 'color:green' >登陆成功!</div>";
+        //String html = null;
+        if("instance".equals(name) && "123".equals(password))
+            //html = "<div style= 'color:green' >登陆成功!</div>";
+            request.getRequestDispatcher("success.html").forward(request, response);
         else
-            html = "<div style= 'color:red' >账户密码匹配不成功，登陆失败!</div>";
+            //html = "<div style= 'color:red' >错误的账户密码对,登陆失败!</div>";
+            //request.getRequestDispatcher("fail.html").forward(request, response);
+            response.sendRedirect("fail.html");
 
-        response.setContentType("text/html; charset=GB2312");
+        /*response.setContentType("text/html; charset=GB2312");
         PrintWriter pw = response.getWriter();
-        pw.println(html);
+        pw.println(html);*/
     }
 
     @Override
@@ -47,7 +46,6 @@ public class InstanceServlet extends HttpServlet {
         //super.destroy();
         System.out.println("调用destroy()方法");
     }
-
     public static void main(String[] args) {
         
     }
