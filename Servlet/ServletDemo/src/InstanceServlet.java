@@ -19,7 +19,7 @@ public class InstanceServlet extends HttpServlet {
         String name = request.getParameter("name");
         String password = request.getParameter("password");
 
-        System.out.println("浏览器发出请求时的完整URL,包括协议 主机名 端口(如果有): " + request.getRequestURI());
+        System.out.println("浏览器发出请求时的完整URL,包括协议 主机名 端口(如果有): " + request.getRequestURL());
         System.out.println("浏览器发出的请求的资源名部分，去掉了协议和主机名: " + request.getRequestURI());
         System.out.println("请求行中的参数部分: " + request.getQueryString());
         System.out.println("浏览器所处于的客户机的IP地址: " + request.getRemoteAddr());
@@ -42,6 +42,18 @@ public class InstanceServlet extends HttpServlet {
         /*response.setContentType("text/html; charset=GB2312");
         PrintWriter pw = response.getWriter();
         pw.println(html);*/
+    }
+
+    public void doGet(HttpServletRequest request, HttpServletResponse response){
+        try{
+            PrintWriter pw = response.getWriter();
+            pw.println("<h1>Hello Servlet</h1>");
+
+            //浏览器识别不了，弹出一个下载的对话框
+            response.setContentType("text/lol");
+        }catch(IOException e){
+            e.printStackTrace();
+        }
     }
 
     @Override

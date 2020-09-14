@@ -7,7 +7,8 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 public class RegisterServlet extends HttpServlet {
-    public void doGET(HttpServletRequest request, HttpServletResponse response){
+    //public void doGET(HttpServletRequest request, HttpServletResponse response){
+    protected void service(HttpServletRequest request, HttpServletResponse response){
         System.out.println("获取单值参数name:" + request.getParameter("name"));
 
         //获取bobits的值存入数组
@@ -22,5 +23,8 @@ public class RegisterServlet extends HttpServlet {
             String[] value = parameters.get(param);
             System.out.println(param + "." + Arrays.asList(value));
         }
+    }
+    public static void main(String[] args) {
+        
     }
 }

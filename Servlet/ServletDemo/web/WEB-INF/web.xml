@@ -22,22 +22,22 @@
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>FirstServlet</servlet-name>
+        <servlet-name>InstanceServlet</servlet-name>
         <servlet-class>InstanceServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>FirstServlet</servlet-name>
+        <servlet-name>InstanceServlet</servlet-name>
         <url-pattern>/instance</url-pattern>
     </servlet-mapping>
 
     <servlet>
-        <servlet-name>FirstServlet</servlet-name>
+        <servlet-name>RegisterServlet</servlet-name>
         <servlet-class>RegisterServlet</servlet-class>
     </servlet>
 
     <servlet-mapping>
-        <servlet-name>FirstServlet</servlet-name>
+        <servlet-name>RegisterServlet</servlet-name>
         <url-pattern>/register</url-pattern>
     </servlet-mapping>
 
