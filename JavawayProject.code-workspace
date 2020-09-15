@@ -22,7 +22,9 @@
 				"how2j/lib/junit-4.9.jar",
 				"how2j/lib/hutool-all-5.4.1.jar",
 				"how2j/lib/jsoup-1.12.1.jar",
-				"how2j/lib/servlet-api.jar"
+				"how2j/lib/servlet-api.jar",
+				"Servlet/ServletDemo/web/WEB-INF/lib/commons-io-1.4.jar",
+				"Servlet/ServletDemo/web/WEB-INF/lib/commons-fileupload-1.2.2.jar"
 			],
 			"exclude": [
 				"d:\\tomcat\\lib\\servlet-api.jar"
