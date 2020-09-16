@@ -51,4 +51,14 @@
         <url-pattern>/uploadPhoto</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>UploadPhotoServlet2</servlet-name>
+        <servlet-class>UploadPhotoServlet2</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>UploadPhotoServlet2</servlet-name>
+        <url-pattern>/uploadPhoto2</url-pattern>
+    </servlet-mapping>
+
 </web-app>

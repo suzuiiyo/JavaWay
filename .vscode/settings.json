@@ -5,5 +5,13 @@
         "**/.project": true,
         "**/.settings": true,
         "**/.factorypath": true
-    }
+    },
+
+    "clang.cflags": [
+        "-std=c99",
+        "-I/D:/Mingw64/include",
+        "-I/D:/Mingw64/lib/gcc/x86_64-w64-mingw32/8.1.0/include",
+        "-I${workspaceRoot}/include",
+        "-I${cwd}"
+    ]
 } 

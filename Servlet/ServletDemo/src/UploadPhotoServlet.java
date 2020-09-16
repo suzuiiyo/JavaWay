@@ -19,13 +19,16 @@ public class UploadPhotoServlet extends HttpServlet{
     public void doPost(HttpServletRequest request, HttpServletResponse response){
         String filename = null;
         try{
+            //创建DiskFileItemFactory对象,设置缓冲区大小和临时文件目录
             DiskFileItemFactory factory = new DiskFileItemFactory();
+            //使用DiskFileItemFactory对象创建ServletFileUpload对象
             ServletFileUpload upload = new ServletFileUpload(factory);
             //设置上传文件的大小限制为1M
             factory.setSizeThreshold(1024 * 1024);
 
             List items = null;
             try{
+                //对request对象进行解析得到字段
                 items = upload.parseRequest(request);
             }catch(FileUploadException e){
                 e.printStackTrace();
@@ -44,8 +47,8 @@ public class UploadPhotoServlet extends HttpServlet{
                     File f = new File(photoFolder, filename);
                     f.getParentFile().mkdirs();
 
-                    //通过item.getInputStream()获取浏览器上传的文件的输入流
-                    InputStream is = item.getInputStream();
+                    //TODO  通过item.getInputStream()获取浏览器上传的文件item的输入流
+                    /*InputStream is = item.getInputStream();
 
                     //复制文件
                     FileOutputStream fos = new FileOutputStream(f);
@@ -56,7 +59,10 @@ public class UploadPhotoServlet extends HttpServlet{
                         //把数组b的内容写到文件f
                         fos.write(b, 0, length);
                     }
-                    fos.close();
+                    fos.close();*/
+
+                    item.write(f);
+
                 }else{
                     System.out.println(item.getFieldName());
                     String value = item.getString();
@@ -64,7 +70,7 @@ public class UploadPhotoServlet extends HttpServlet{
                     System.out.println(value);
                 }
             }
-            String html = "<img width='200' height='150' src='uploaded/%s' />";
+            String html = "<img width='300' height='650' src='uploaded/%s' />";
             response.setContentType("text/html");
             PrintWriter pw = response.getWriter();
 
@@ -74,8 +80,5 @@ public class UploadPhotoServlet extends HttpServlet{
         }catch(Exception e){
             e.printStackTrace();
         }
-    }
-    public static void main(String[] args) {
-        
     }
 }

@@ -1,23 +1,31 @@
 import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileOutputStream;
+import java.io.FilenameFilter;
+import java.io.IOException;
 import java.io.InputStream;
 import java.io.PrintWriter;
 import java.util.Iterator;
 import java.util.List;
 
+import javax.servlet.ServletException;
+import javax.servlet.annotation.MultipartConfig;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.Part;
 
 import org.apache.commons.fileupload.FileItem;
 import org.apache.commons.fileupload.FileUploadException;
 import org.apache.commons.fileupload.disk.DiskFileItemFactory;
 import org.apache.commons.fileupload.servlet.ServletFileUpload;
 
-
-public class uploadPhotoServlet2 {
-    public void doPost(HttpServletRequest request, HttpServletResponse response){
-        String filename = null;
+@MultipartConfig //这个注解必不可少
+public class UploadPhotoServlet2 extends HttpServlet {
+    @Override
+    protected void doPost(HttpServletRequest request, HttpServletResponse response) throws IOException,
+            ServletException {
+        /*String filename = null;
         try{
             DiskFileItemFactory factory = new DiskFileItemFactory();
             ServletFileUpload upload = new ServletFileUpload(factory);
@@ -59,6 +67,7 @@ public class uploadPhotoServlet2 {
                         fos.write(b, 0, length);
                     }
                     fos.close();
+                    
                 }else{
                     System.out.println(item.getFieldName());
                     String value = item.getString();
@@ -75,6 +84,30 @@ public class uploadPhotoServlet2 {
             e.printStackTrace();
         }catch(Exception e){
             e.printStackTrace();
+        }*/
+        response.getWriter().println("post!!!!!");
+        Part upFile = request.getPart("filepath");
+        String upLoadPath = request.getServletContext().getRealPath("uploaded");
+        String fileName = upFile.getName() + System.currentTimeMillis() + ".jpg";
+        File f = new File(upLoadPath, fileName);
+        f.getParentFile().mkdirs();
+
+        try(InputStream is = upFile.getInputStream(); FileOutputStream fos = new FileOutputStream(f)){
+            byte[] buffer = new byte[1024 * 1024];
+            int length = 0;
+            while((length = is.read(buffer))>-1){
+                fos.write(buffer, 0, length);
+            }
+
+            String imgPath = f.getName();
+            String html = String.format("<img width='300' height='650' src='uploaded/%s' />", imgPath);
+            response.setContentType("text/html");
+            //PrintWriter pw = response.getWriter();
+            //pw.format(html, fileName);
+            response.getWriter().println(html);
+		} catch (IllegalStateException | IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
         }
     }
 }

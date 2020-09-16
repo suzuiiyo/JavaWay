@@ -1,6 +1,7 @@
 package log4j;
 
 public class TestLog {
+
     public static void main(String[] args) {
         System.out.println("跟踪信息");
         System.out.println("调试信息");

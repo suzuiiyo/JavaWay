@@ -1,0 +1,45 @@
+{
+	"version": "2.0.0",
+	"tasks": [
+		{
+			"type": "shell",
+			"label": "C/C++: clang.exe build active file",
+			"command": "D:/LLVM/bin/clang.exe",
+			"args": [
+				"-g",
+				"${file}",
+				"-o",
+				"${fileDirname}\\${fileBasenameNoExtension}.exe"
+			],
+			"options": {
+				"cwd": "D:/LLVM/bin"
+			},
+			"problemMatcher": [
+				"$gcc"
+			],
+			"group": "build"
+		},
+
+		{
+			// See https://go.microsoft.com/fwlink/?LinkId=733558
+			// for the documentation about the tasks.json format
+			"type":"shell",
+			"label": "Build", // 任务名称，与launch.json的preLaunchTask相对应
+			"version": "2.0.0",
+			"command": "gcc",
+			"args": [ "${file}", "-o",  "${fileDirname}/${fileBasenameNoExtension}.exe",  "-g", ],
+			"problemMatcher": {
+				"owner": "cpp",
+				"fileLocation":  ["relative", "${workspaceRoot}"],
+				"pattern": {
+					"regexp": "^(.*):(\\d+):(\\d+):\\s+(warning|error):\\s+(.*)$",
+					"file": 1,
+					"line": 2,
+					"column": 3,
+					"severity": 4,
+					"message": 5
+				}
+			}
+		}
+	]
+}
