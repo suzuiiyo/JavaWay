@@ -8,7 +8,7 @@ import java.io.FileOutputStream;
 
 public class fileSplit2 {
     public static void main(String[] args){
-        String dirHead = "d:Studio/JavaWay/AC/DC/";
+        String dirHead = "d:/Studio/JavaWay/AC/DC/";
         String name = "scared";
         String dirTail = ".gif";
         double size = Math.pow(2, 10)*100;
