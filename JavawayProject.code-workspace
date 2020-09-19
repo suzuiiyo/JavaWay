@@ -4,8 +4,7 @@
 			"path": "."
 		},
 		{
-			"name": "demo",
-			"path": "SpringBoot\\demo"
+			"path": "SpringBoot"
 		}
 	],
 	"settings": {
@@ -24,7 +23,8 @@
 				"how2j/lib/jsoup-1.12.1.jar",
 				"how2j/lib/servlet-api.jar",
 				"Servlet/ServletDemo/web/WEB-INF/lib/commons-io-1.4.jar",
-				"Servlet/ServletDemo/web/WEB-INF/lib/commons-fileupload-1.2.2.jar"
+				"Servlet/ServletDemo/web/WEB-INF/lib/commons-fileupload-1.2.2.jar",
+				"how2j/lib/lombok.jar"
 			],
 			"exclude": [
 				"d:\\tomcat\\lib\\servlet-api.jar"
