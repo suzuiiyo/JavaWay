@@ -39,7 +39,4 @@ public class FirstServlet extends HttpServlet {
             e.printStackTrace();
         }
     }
-    public static void main(String[] args) {
-        
-    }
 }
