@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app>
+
+    <servlet>
+        <servlet-name>DynamicServlet</servlet-name>
+        <servlet-class>DynamicWebDemo.src.DynamicServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>DynamicServlet</servlet-name>
+        <url-pattern>/dynamic</url-pattern>
+    </servlet-mapping>
+
+</web-app>
