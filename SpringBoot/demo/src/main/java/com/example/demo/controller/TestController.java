@@ -16,7 +16,7 @@ public class TestController {
      */
     @RequestMapping("/hello")
     public String helloHtml(HashMap<String, Object> map){
-        map.put("hello", "最惨不过要饭，不死总会出头!");
+        map.put("hello", "听风就是雨");
         return "/index";
     }
 }
