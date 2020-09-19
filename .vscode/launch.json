@@ -2,6 +2,44 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - FirstServlet",
+            "request": "launch",
+            "mainClass": "FirstServlet"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - Hero",
+            "request": "launch",
+            "mainClass": "Hero"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DynamicServlet",
+            "request": "launch",
+            "mainClass": "DynamicServlet"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "App"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - App",
+            "request": "launch",
+            "mainClass": "App",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
+            "name": "CodeLens (Launch) - DynamicServlet",
+            "request": "launch",
+            "mainClass": "DynamicServlet",
+            "projectName": "JavaWay_8823b0ed"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - FileSafeCode",
             "request": "launch",
             "mainClass": "FileSafeCode",

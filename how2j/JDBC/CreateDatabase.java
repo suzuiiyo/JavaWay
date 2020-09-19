@@ -16,8 +16,6 @@ public class CreateDatabase {
     String newUrl = "jdbc:mysql://localhost:3306/";
     String uname = "root";
     String upassword = "admin";
-    Connection conn = null;
-    Connection newConn = null;
 
     public Connection getConn(String database){
         try{

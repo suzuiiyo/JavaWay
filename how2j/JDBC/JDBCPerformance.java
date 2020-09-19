@@ -13,7 +13,7 @@ public class JDBCPerformance {
                 public void run(){
                     String sql = "insert into hero values(null, ?, ?, ?)";
                     try(Connection c = dao.getConnection(); PreparedStatement ps = c.prepareStatement(sql);){
-                        ps.setString(1, "¸«Íõ");
+                        ps.setString(1, "????");
                         ps.setFloat(2, (float)Math.random()*1000);
                         ps.setInt(3, (int)Math.random()*1000);
                         ps.execute();
@@ -25,6 +25,6 @@ public class JDBCPerformance {
             t1.start();
         }
         long tt2 = System.currentTimeMillis();
-        System.out.println("×ÜºÄÊ±:" + (tt2-tt1));
+        System.out.println("¡Á????¡À:" + (tt2-tt1));
     }
 }

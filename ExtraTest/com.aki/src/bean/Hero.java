@@ -1,4 +1,4 @@
-package DynamicWebDemo.material.bean;
+package bean;
 
 import lombok.Data;
 

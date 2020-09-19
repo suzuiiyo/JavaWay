@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<web-app>
+
+    <servlet>
+        <servlet-name>HowServlet</servlet-name>
+        <servlet-class>HowServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>HowServlet</servlet-name>
+        <url-pattern>/how</url-pattern>
+    </servlet-mapping>
+
+</web-app>
