@@ -13,7 +13,7 @@ public class TestPerformance {
         for(int j=0; j<10000; j++)
             str+=(char)(rand.nextInt('z'-'A')+'A');
         double t2 = System.currentTimeMillis();
-        System.out.printf("StringºÄÊ±£º%.2f\n", t2-t1);
+        System.out.printf("String???¡À??%.2f\n", t2-t1);
         //System.out.println(str);
 
         StringBuffer str1 = new StringBuffer(str);
@@ -21,7 +21,7 @@ public class TestPerformance {
         for(int j=0; j<10000; j++)
             str1.append((char)(rand.nextInt('z'-'A')+'A'));
         double t4 = System.currentTimeMillis();
-        System.out.printf("StringBufferºÄÊ±£º%.2f\n", t4 - t3);
+        System.out.printf("StringBuffer???¡À??%.2f\n", t4 - t3);
 //        System.out.println(str1);
         
         MyStringBuffer str2 = new MyStringBuffer(str);
@@ -29,6 +29,6 @@ public class TestPerformance {
         for(int j=0; j<10000; j++)
             str2.append((char)(Math.random()*10000));
         double t6 = System.currentTimeMillis();
-        System.out.printf("MyStringBufferºÄÊ±: %.2f\n", t6-t5);
+        System.out.printf("MyStringBuffer???¡À: %.2f\n", t6-t5);
     }
 }
