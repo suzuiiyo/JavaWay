@@ -1,0 +1,8 @@
+{
+    "java.project.referencedLibraries": [
+        "lib/**/*.jar",
+        "d:\\Studio\\JavaWay\\how2j\\lib\\servlet-api.jar",
+        "d:\\Studio\\JavaWay\\how2j\\lib\\lombok.jar",
+        "d:\\Studio\\JavaWay\\how2j\\lib\\mysql-connector-java-8.0.19.jar"
+    ]
+}

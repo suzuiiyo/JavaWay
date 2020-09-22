@@ -11,4 +11,23 @@
         <url-pattern>/how</url-pattern>
     </servlet-mapping>
 
+    <servlet> 
+        <servlet-name>HeroListServlet</servlet-name> 
+        <servlet-class>HeroListServlet</servlet-class> 
+    </servlet> 
+    
+    <servlet-mapping> 
+        <servlet-name>HeroListServlet</servlet-name> 
+        <url-pattern>/listHero</url-pattern> 
+    </servlet-mapping> 
+
+    <servlet> 
+        <servlet-name>HeroDeleteServlet</servlet-name> 
+        <servlet-class>HeroDeleteServlet</servlet-class> 
+    </servlet> 
+    
+    <servlet-mapping> 
+        <servlet-name>HeroDeleteServlet</servlet-name> 
+        <url-pattern>/deleteHero</url-pattern> 
+    </servlet-mapping> 
 </web-app>
