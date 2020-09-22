@@ -5,7 +5,6 @@ import java.sql.DriverManager;
 import java.sql.SQLException;
 import java.sql.Statement;
 
-
 public class GenHeroDB {
     private String driver = "com.mysql.cj.jdbc.Driver";
     private String url = "jdbc:mysql://localhost:3306/";
@@ -25,7 +24,7 @@ public class GenHeroDB {
 
         try{
             String databaseSql = "create database " + newDatabase;
-            String tableSql = "CREATE TABLE hero (id int(100) AUTO_INCREMENT," + "name varchar(100)," + "attack float(20,4)," + "PRIMARY KEY (id));";
+            String tableSql = "CREATE TABLE hero (id int(100) AUTO_INCREMENT," + "name varchar(100)," + "hp float(20, 4)," + "attack float(20,4)," + "PRIMARY KEY (id));";
 
             conn = DriverManager.getConnection(url + database + factor, user, password);
             Statement smt = conn.createStatement();

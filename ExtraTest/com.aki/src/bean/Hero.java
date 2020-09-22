@@ -1,10 +1,35 @@
 package bean;
 
-import lombok.Data;
-
-@Data
 public class Hero {
-    String name;
-    float hp;
-    float attack;
+    public int id;
+    private String name;
+    private float hp;
+    private float attack;
+    public int getId(){
+        return id;
+    }
+
+    public void setName(String name){
+        this.name = name;
+    }
+
+	public String getName() {
+		return name;
+    }
+    
+    public void setHp(float hp) {
+        this.hp = hp;
+    }
+
+    public float getHp() {
+        return hp;
+    }
+
+    public void setAttack(float attack) {
+        this.attack = attack;
+    }
+
+    public float getAttack() {
+        return attack;
+    }
 }
