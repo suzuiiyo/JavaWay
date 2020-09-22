@@ -16,6 +16,7 @@ public class CreateDatabase {
     String newUrl = "jdbc:mysql://localhost:3306/";
     String uname = "root";
     String upassword = "admin";
+    Connection conn = null;
 
     public Connection getConn(String database){
         try{
@@ -29,7 +30,7 @@ public class CreateDatabase {
             String databaseSql = "create database " + database;
             String tableSql = "CREATE TABLE dictionary (id int(100) AUTO_INCREMENT," + "receive varchar(100)," + "response varchar(100)," + "PRIMARY KEY (id));";
 
-            Connection conn = DriverManager.getConnection(url+factor, uname, upassword);
+            conn = DriverManager.getConnection(url+factor, uname, upassword);
             Statement smt = conn.createStatement();
             if(conn != null){
                 System.out.println("数据库连接成功!");
