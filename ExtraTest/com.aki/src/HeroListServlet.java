@@ -17,13 +17,13 @@ public class HeroListServlet extends HttpServlet {
         //整个一张表是个StringBuffer？
         StringBuffer sb = new StringBuffer();
         sb.append("<table align='center' border='1' cellspacing='0'>\r\n");
-        sb.append("<tr><td>id</td><td>name</td><td>hp</td><td>attack</td><td>delete</td></tr>\r\n");
+        sb.append("<tr><td>id</td><td>name</td><td>hp</td><td>attack</td><td>delete</td><td>edit</td></tr>\r\n");
 
         //通过id删除
-        String trFormat = "<tr><td>%d</td><td>%s</td><td>%f</td><td>%f</td><td><a href='deleteHero?id=%d'>delete</a></td></tr>\r\n";
+        String trFormat = "<tr><td>%d</td><td>%s</td><td>%f</td><td>%f</td><td><a href='deleteHero?id=%d'>delete</a></td><td><a href='editHero?id=%d'>edit</a></td></tr>\r\n";
 
         for(Hero hero : heros){
-            String tr = String.format(trFormat, hero.getId(), hero.getName(), hero.getHp(), hero.getAttack(), hero.getId());
+            String tr = String.format(trFormat, hero.getId(), hero.getName(), hero.getHp(), hero.getAttack(), hero.getId(), hero.getId());
             sb.append(tr);
         }
         sb.append("</table>");

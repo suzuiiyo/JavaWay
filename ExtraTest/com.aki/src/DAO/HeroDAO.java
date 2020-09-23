@@ -14,7 +14,7 @@ import bean.Hero;
 public class HeroDAO {
     private String driver = "com.mysql.cj.jdbc.Driver";
     private String url = "jdbc:mysql://localhost:3306/";
-    private String database = "how2java";
+    private String database = "hero";
     private String factor = "?characterEncoding=UTF-8&serverTimezone=UTC";
     private String user = "root";
     private String password = "admin";
@@ -84,7 +84,7 @@ public class HeroDAO {
     }
 
     public void update(Hero hero){
-        String sql = "update hero set name = ?, hp =?, attack= ? where id = ?";
+        String sql = "update hero set name= ?, hp = ? , attack = ? where id = ?";
         try(Connection conn = getConn(); PreparedStatement ps = conn.prepareStatement(sql)){
             ps.setString(1, hero.getName());
             ps.setFloat(2, hero.getHp());
