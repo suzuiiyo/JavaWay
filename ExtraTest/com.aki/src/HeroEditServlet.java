@@ -31,4 +31,7 @@ public class HeroEditServlet extends HttpServlet {
         String html = String.format(format.toString(), hero.getName(), hero.getHp(), hero.getAttack(), hero.getId());
         resp.getWriter().write(html);
     }
+    public static void main(String[] args) {
+        
+    }
 }

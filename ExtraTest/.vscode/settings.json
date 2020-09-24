@@ -3,6 +3,13 @@
         "lib/**/*.jar",
         "d:\\Studio\\JavaWay\\how2j\\lib\\servlet-api.jar",
         "d:\\Studio\\JavaWay\\how2j\\lib\\lombok.jar",
-        "d:\\Studio\\JavaWay\\how2j\\lib\\mysql-connector-java-8.0.19.jar"
+        "d:\\Studio\\JavaWay\\how2j\\lib\\mysql-connector-java-8.0.19.jar",
+        "com.aki/WebContent/WEB-INF/lib/json-lib-2.1-jdk15.jar",
+        "com.aki/WebContent/WEB-INF/lib/commons-beanutils-1.7.0.jar",
+        "com.aki/WebContent/WEB-INF/lib/commons-collections-3.1.jar",
+        "com.aki/WebContent/WEB-INF/lib/commons-lang-2.5.jar",
+        "com.aki/WebContent/WEB-INF/lib/commons-logging.jar",
+        "com.aki/WebContent/WEB-INF/lib/ezmorph-1.0.3.jar",
+        "com.aki/WebContent/WEB-INF/lib/mysql-connector-java-8.0.19.jar"
     ]
 }

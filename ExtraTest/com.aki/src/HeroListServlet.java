@@ -10,12 +10,13 @@ import bean.Hero;
 
 public class HeroListServlet extends HttpServlet {
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws IOException {
-        resp.setContentType("text/html; charset=UTF-8");
+        resp.setContentType("text/html; charset=GB2312");
 
         List<Hero> heros = new HeroDAO().list();
 
         //整个一张表是个StringBuffer？
         StringBuffer sb = new StringBuffer();
+        sb.append("<meta http-equiv='Content-Type' content='text/html; charset=GB2312'>");
         sb.append("<table align='center' border='1' cellspacing='0'>\r\n");
         sb.append("<tr><td>id</td><td>name</td><td>hp</td><td>attack</td><td>delete</td><td>edit</td></tr>\r\n");
 

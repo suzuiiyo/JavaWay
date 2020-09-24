@@ -32,4 +32,9 @@ public class Hero {
     public float getAttack() {
         return attack;
     }
+
+    @Override
+    public String toString(){
+        return "hero [name=" + name + ", hp=" + hp + "]";
+    }
 }
