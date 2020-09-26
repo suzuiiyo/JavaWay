@@ -1,4 +1,3 @@
-
 <!DOCTYPE html>
 <head>
     <meta http-equiv="ContentType" content="text/html; charset=GBK">
@@ -18,7 +17,7 @@
             url,
             function(data){
                 var heros = $.parseJSON(data);
-                for(i in heros){?
+                for(i in heros){
                     var old = $("#messageDiv").html();
                     var hero = heros[i];
                     $("#messageDiv").html(old + "<br>" + hero.name + " ------ " + hero.hp);
