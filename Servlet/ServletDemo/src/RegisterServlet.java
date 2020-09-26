@@ -24,7 +24,4 @@ public class RegisterServlet extends HttpServlet {
             System.out.println(param + "." + Arrays.asList(value));
         }
     }
-    public static void main(String[] args) {
-        
-    }
 }
