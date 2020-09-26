@@ -80,4 +80,14 @@
         <servlet-name>GetManyServlet</servlet-name> 
         <url-pattern>/getManyServlet</url-pattern> 
     </servlet-mapping>
+
+    <servlet> 
+        <servlet-name>HeroAddServlet</servlet-name> 
+        <servlet-class>HeroAddServlet</servlet-class> 
+    </servlet> 
+    
+    <servlet-mapping> 
+        <servlet-name>HeroAddServlet</servlet-name> 
+        <url-pattern>/addHero</url-pattern> 
+    </servlet-mapping>
 </web-app>
