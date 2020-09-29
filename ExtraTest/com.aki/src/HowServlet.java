@@ -11,7 +11,7 @@ public class HowServlet extends HttpServlet {
         SimpleDateFormat sdf = new SimpleDateFormat();
         Date d = new Date();
         String html = "<div style='color :  green'>How can I save my life?</div>";
-        resp.setCharacterEncoding("GB2312");
+        resp.setCharacterEncoding("GBK");
         resp.getWriter().println(html);;
         resp.getWriter().println(sdf.format(d));
     }

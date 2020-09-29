@@ -55,7 +55,7 @@ public class HeroDAO {
 
     public void add(Hero hero){
         String sql = "insert into hero values(null, ?, ?, ?)";
-        //TODO  È¡×ÔÔöid£¬Òª¼ÓStatement.RETURN_GENERATED_KEYS
+        //TODO  å–è‡ªå¢idï¼Œè¦åŠ Statement.RETURN_GENERATED_KEYS
         try(Connection conn = getConn(); PreparedStatement ps = conn.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS)){
             ps.setString(1, hero.getName());
             ps.setFloat(2, hero.getHp());
@@ -63,7 +63,7 @@ public class HeroDAO {
 
             ps.execute();
 
-            //Á¢¼´È¡³ö²åÈëµÄidÖµ
+            //ç«‹å³å–å‡ºæ’å…¥çš„idå€¼
             ResultSet rs = ps.getGeneratedKeys();
             if(rs.next()){
                 int id = rs.getInt(1);

@@ -90,4 +90,14 @@
         <servlet-name>HeroAddServlet</servlet-name> 
         <url-pattern>/addHero</url-pattern> 
     </servlet-mapping>
+
+    <servlet> 
+        <servlet-name>HeroEdit2Servlet</servlet-name> 
+        <servlet-class>HeroEdit2Servlet</servlet-class> 
+    </servlet> 
+    
+    <servlet-mapping> 
+        <servlet-name>HeroEdit2Servlet</servlet-name> 
+        <url-pattern>/edit2Hero</url-pattern> 
+    </servlet-mapping>
 </web-app>
