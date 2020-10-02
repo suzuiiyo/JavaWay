@@ -100,4 +100,14 @@
         <servlet-name>HeroEdit2Servlet</servlet-name> 
         <url-pattern>/edit2Hero</url-pattern> 
     </servlet-mapping>
+
+    <servlet> 
+        <servlet-name>HeroGetOneServlet</servlet-name> 
+        <servlet-class>HeroGetOneServlet</servlet-class> 
+    </servlet> 
+    
+    <servlet-mapping> 
+        <servlet-name>HeroGetOneServlet</servlet-name> 
+        <url-pattern>/getOneHero</url-pattern> 
+    </servlet-mapping>
 </web-app>
